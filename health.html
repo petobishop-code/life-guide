@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>건강정보 | 라이프가이드</title>
-  <meta name="description" content="건강검진, 다이어트, 임신, 출산, 생활건강 등 일상에 필요한 다양한 건강정보를 라이프가이드에서 확인하세요.">
+  <meta name="description" content="건강검진, 서재걸 다이어트, 남재현 다이어트, 임신, 출산, 생활건강 등 다양한 건강정보를 라이프가이드에서 확인하세요.">
 
   <style>
     * {
@@ -66,7 +66,6 @@
       font-size: 14px;
       font-weight: 600;
       color: #1f2937;
-      transition: 0.2s;
     }
 
     .nav a:hover,
@@ -134,7 +133,7 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.07);
     }
 
     .category-card {
@@ -189,7 +188,6 @@
 
     .section-title {
       font-size: 32px;
-      letter-spacing: -1px;
       margin-bottom: 30px;
     }
 
@@ -279,10 +277,7 @@
     }
 
     @media (max-width: 900px) {
-      .nav {
-        display: none;
-      }
-
+      .nav,
       .search-box {
         display: none;
       }
@@ -322,10 +317,6 @@
       .category-card p {
         display: none;
       }
-
-      .section-title {
-        font-size: 27px;
-      }
     }
   </style>
 </head>
@@ -333,7 +324,6 @@
 <body>
 
 <header class="header">
-
   <div class="header-inner">
 
     <a href="/" class="logo">
@@ -341,45 +331,16 @@
     </a>
 
     <nav class="nav">
-
       <a href="/">홈</a>
-
-      <a href="/health.html" class="active">
-        건강
-      </a>
-
-      <a href="#">
-        보험
-      </a>
-
-      <a href="#">
-        웨딩
-      </a>
-
-      <a href="#">
-        금융
-      </a>
-
-      <a href="#">
-        법률
-      </a>
-
-      <a href="#">
-        자동차
-      </a>
-
-      <a href="#">
-        여행
-      </a>
-
-      <a href="#">
-        교육
-      </a>
-
-      <a href="#">
-        생활정보
-      </a>
-
+      <a href="/health.html" class="active">건강</a>
+      <a href="#">보험</a>
+      <a href="#">웨딩</a>
+      <a href="#">금융</a>
+      <a href="#">법률</a>
+      <a href="#">자동차</a>
+      <a href="#">여행</a>
+      <a href="#">교육</a>
+      <a href="#">생활정보</a>
     </nav>
 
     <div class="search-box">
@@ -387,12 +348,10 @@
     </div>
 
   </div>
-
 </header>
 
 
 <section class="hero">
-
   <div class="hero-inner">
 
     <div class="hero-label">
@@ -406,91 +365,56 @@
 
     <p>
       건강검진부터 다이어트, 임신과 출산, 생활건강까지<br>
-      일상에서 알아두면 좋은 건강정보를 쉽고 빠르게 확인하세요.
+      일상에서 알아두면 좋은 정보를 확인하세요.
     </p>
 
   </div>
-
 </section>
 
 
 <section class="category-section">
-
   <div class="category-box">
 
     <a href="health-checkup.html" class="category-card">
-
-      <div class="category-icon">
-        🩺
-      </div>
-
-      <h3>
-        건강검진
-      </h3>
-
+      <div class="category-icon">🩺</div>
+      <h3>건강검진</h3>
       <p>
         건강검진 준비사항과
         검진 전 알아둘 정보를 확인하세요.
       </p>
-
     </a>
 
 
     <a href="seojaegeol-diet.html" class="category-card">
-
-      <div class="category-icon">
-        🥗
-      </div>
-
-      <h3>
-        서재걸 다이어트
-      </h3>
-
+      <div class="category-icon">🥗</div>
+      <h3>서재걸 다이어트</h3>
       <p>
         서재걸 면역 다이어트의 특징과
         프로그램 정보를 확인하세요.
       </p>
+    </a>
 
+
+    <a href="namjaehyun-diet.html" class="category-card">
+      <div class="category-icon">⚖️</div>
+      <h3>남재현 다이어트</h3>
+      <p>
+        남재현 체지방 다이어트의
+        특징과 원료 정보를 확인하세요.
+      </p>
     </a>
 
 
     <a href="#" class="category-card">
-
-      <div class="category-icon">
-        🤰
-      </div>
-
-      <h3>
-        임신 · 출산
-      </h3>
-
+      <div class="category-icon">🤰</div>
+      <h3>임신 · 출산</h3>
       <p>
         임신 준비와 임신 주차별 정보,
         출산 전 알아둘 내용을 확인하세요.
       </p>
-
-    </a>
-
-
-    <a href="#" class="category-card">
-
-      <div class="category-icon">
-        💙
-      </div>
-
-      <h3>
-        생활 건강
-      </h3>
-
-      <p>
-        일상생활에서 알아두면 좋은
-        건강관리 정보를 확인하세요.
-      </p>
-
     </a>
 
   </div>
-
 </section>
 
 
@@ -525,8 +449,8 @@
         </h3>
 
         <p>
-          검진 전 준비사항부터
-          검사 당일 알아두면 좋은 내용을 확인하세요.
+          검진 전 준비사항과 검사 당일
+          알아두면 좋은 내용을 확인하세요.
         </p>
 
       </div>
@@ -537,12 +461,10 @@
     <a href="seojaegeol-diet.html" class="article-card">
 
       <div class="article-image">
-
         <img
           src="assets/seojaegeol-diet-01.png"
           alt="서재걸 다이어트 프로그램 소개"
         >
-
       </div>
 
       <div class="article-content">
@@ -557,7 +479,7 @@
 
         <p>
           서재걸 면역 다이어트의 특징과
-          프로그램 구성, 후기 정보를 확인하세요.
+          프로그램 구성 정보를 확인하세요.
         </p>
 
       </div>
@@ -565,31 +487,33 @@
     </a>
 
 
-    <a href="#" class="article-card">
+    <a href="namjaehyun-diet.html" class="article-card">
 
       <div class="article-image">
-        🤰
+        <img
+          src="assets/namjaehyun-diet-02.png"
+          alt="남재현 체지방 다이어트 프로그램 소개"
+        >
       </div>
 
       <div class="article-content">
 
         <span class="article-tag">
-          임신정보
+          다이어트
         </span>
 
         <h3>
-          임신 초기 알아두면 좋은 생활수칙과 주의사항
+          남재현 다이어트 체지방 관리 프로그램 알아보기
         </h3>
 
         <p>
-          임신 초기 몸의 변화와 일상생활에서
-          조심해야 할 내용을 알아봅니다.
+          남재현 체지방 다이어트의 특징과
+          제품 구성, 원료 정보를 확인하세요.
         </p>
 
       </div>
 
     </a>
-
 
   </div>
 
@@ -597,7 +521,6 @@
 
 
 <footer>
-
   <div class="footer-inner">
 
     <div class="footer-logo">
@@ -610,9 +533,7 @@
     </p>
 
   </div>
-
 </footer>
-
 
 </body>
 </html>
