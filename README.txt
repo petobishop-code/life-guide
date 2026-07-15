@@ -1,23 +1,9 @@
-라이프가이드 메인사이트
+라이프가이드 법률정보 19페이지 패키지
 
-파일 구성
-- index.html
-- styles.css
-- script.js
-- robots.txt
-- sitemap.xml
-- assets/
+1. 이 폴더의 HTML 19개를 기존 GitHub 저장소 루트에 업로드하세요.
+2. sitemap.xml은 기존 파일을 교체하기 전에 기존 사이트맵에 다른 URL이 있는지 확인하세요.
+   현재 포함: 메인 + 이번 법률 19페이지.
+3. 배포 후 각 URL 접속을 확인하세요.
+4. 네이버 서치어드바이저에서 중요한 페이지부터 웹페이지 수집 요청하세요.
 
-GitHub 업로드
-1. 새 저장소를 생성합니다.
-2. 저장소 main 브랜치에서 Add file → Upload files를 누릅니다.
-3. 이 폴더 안의 파일 전체를 업로드합니다.
-4. Commit changes를 누릅니다.
-5. Vercel에서 저장소를 Import하고 Deploy합니다.
-
-도메인 연결 후 수정할 곳
-- index.html의 canonical/OG URL은 실제 도메인 확정 후 추가하세요.
-- robots.txt와 sitemap.xml의 your-lifeguide-domain.kr을 실제 도메인으로 수정하세요.
-
-현재 검색창과 구독 폼은 디자인 확인용 예시 기능입니다.
-실제 콘텐츠 페이지를 추가하면서 검색 및 링크를 연결할 수 있습니다.
+주의: 메인페이지의 '법률' 메뉴/법률정보 카드 링크는 기존 index.html 구조를 확인한 뒤 연결해야 합니다.
