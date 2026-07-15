@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 도메인 연결 후 아래 주소를 실제 도메인으로 수정하세요.
+# Sitemap: https://your-lifeguide-domain.kr/sitemap.xml
