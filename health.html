@@ -25,7 +25,6 @@
       color: inherit;
     }
 
-    /* 상단 헤더 */
     .header {
       background: #ffffff;
       border-bottom: 1px solid #e5e7eb;
@@ -39,7 +38,6 @@
       height: 70px;
       margin: 0 auto;
       padding: 0 20px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -82,22 +80,18 @@
       border: 1px solid #d1d5db;
       border-radius: 9px;
       padding: 0 15px;
-
       display: flex;
       align-items: center;
-
       font-size: 13px;
       color: #6b7280;
     }
 
-    /* 히어로 */
     .hero {
       background: linear-gradient(
         120deg,
         #e8f2ff,
         #f5f9ff
       );
-
       padding: 75px 20px;
     }
 
@@ -130,7 +124,6 @@
       line-height: 1.8;
     }
 
-    /* 카테고리 */
     .category-section {
       max-width: 1200px;
       margin: -30px auto 0;
@@ -142,11 +135,9 @@
       background: #ffffff;
       border-radius: 20px;
       padding: 30px;
-
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
-
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
     }
 
@@ -168,14 +159,11 @@
       width: 58px;
       height: 58px;
       margin: 0 auto 15px;
-
       border-radius: 50%;
       background: #eff6ff;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       font-size: 26px;
     }
 
@@ -190,7 +178,6 @@
       line-height: 1.6;
     }
 
-    /* 추천 콘텐츠 */
     .content-section {
       max-width: 1200px;
       margin: 70px auto;
@@ -232,11 +219,9 @@
     .article-image {
       height: 180px;
       background: #eaf2ff;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       font-size: 50px;
     }
 
@@ -267,7 +252,6 @@
       line-height: 1.7;
     }
 
-    /* 하단 */
     footer {
       background: #111827;
       color: #9ca3af;
@@ -292,9 +276,7 @@
       line-height: 1.8;
     }
 
-    /* 모바일 */
     @media (max-width: 900px) {
-
       .nav {
         display: none;
       }
@@ -317,7 +299,6 @@
     }
 
     @media (max-width: 500px) {
-
       .hero {
         padding: 55px 20px;
       }
@@ -344,14 +325,11 @@
         font-size: 27px;
       }
     }
-
   </style>
 </head>
 
-
 <body>
 
-<!-- 상단 메뉴 -->
 <header class="header">
 
   <div class="header-inner">
@@ -411,7 +389,6 @@
 </header>
 
 
-<!-- 건강정보 메인 -->
 <section class="hero">
 
   <div class="hero-inner">
@@ -435,12 +412,12 @@
 </section>
 
 
-<!-- 건강 카테고리 -->
 <section class="category-section">
 
   <div class="category-box">
 
-    <a href="#" class="category-card">
+    <!-- 건강검진 상세페이지 연결 -->
+    <a href="health-checkup.html" class="category-card">
 
       <div class="category-icon">
         🩺
@@ -516,8 +493,6 @@
 </section>
 
 
-
-<!-- 추천 건강 콘텐츠 -->
 <section class="content-section">
 
   <div class="section-label">
@@ -532,7 +507,8 @@
   <div class="article-grid">
 
 
-    <a href="#" class="article-card">
+    <!-- 건강검진 상세페이지 연결 -->
+    <a href="health-checkup.html" class="article-card">
 
       <div class="article-image">
         🩺
@@ -545,12 +521,12 @@
         </span>
 
         <h3>
-          2026년 국가건강검진 대상자와 검사항목 알아보기
+          건강검진 전 알아두면 좋은 준비사항
         </h3>
 
         <p>
-          국가건강검진 대상자 확인 방법부터
-          검진 전 준비사항까지 알아봅니다.
+          검진 전 준비사항부터
+          검사 당일 알아두면 좋은 내용을 확인하세요.
         </p>
 
       </div>
@@ -617,8 +593,6 @@
 </section>
 
 
-
-<!-- 하단 -->
 <footer>
 
   <div class="footer-inner">
