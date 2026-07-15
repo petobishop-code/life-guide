@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>건강정보 | 라이프가이드</title>
-  <meta name="description" content="건강검진, 임신, 출산, 생활건강 등 일상에 필요한 다양한 건강정보를 라이프가이드에서 확인하세요.">
+  <meta name="description" content="건강검진, 다이어트, 임신, 출산, 생활건강 등 일상에 필요한 다양한 건강정보를 라이프가이드에서 확인하세요.">
 
   <style>
     * {
@@ -87,11 +87,7 @@
     }
 
     .hero {
-      background: linear-gradient(
-        120deg,
-        #e8f2ff,
-        #f5f9ff
-      );
+      background: linear-gradient(120deg, #e8f2ff, #f5f9ff);
       padding: 75px 20px;
     }
 
@@ -223,6 +219,12 @@
       align-items: center;
       justify-content: center;
       font-size: 50px;
+    }
+
+    .article-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .article-content {
@@ -403,7 +405,7 @@
     </h1>
 
     <p>
-      건강검진부터 임신과 출산, 식생활과 생활건강까지<br>
+      건강검진부터 다이어트, 임신과 출산, 생활건강까지<br>
       일상에서 알아두면 좋은 건강정보를 쉽고 빠르게 확인하세요.
     </p>
 
@@ -416,7 +418,6 @@
 
   <div class="category-box">
 
-    <!-- 건강검진 상세페이지 연결 -->
     <a href="health-checkup.html" class="category-card">
 
       <div class="category-icon">
@@ -428,8 +429,26 @@
       </h3>
 
       <p>
-        건강검진 대상자와 검사항목,
+        건강검진 준비사항과
         검진 전 알아둘 정보를 확인하세요.
+      </p>
+
+    </a>
+
+
+    <a href="seojaegeol-diet.html" class="category-card">
+
+      <div class="category-icon">
+        🥗
+      </div>
+
+      <h3>
+        서재걸 다이어트
+      </h3>
+
+      <p>
+        서재걸 면역 다이어트의 특징과
+        프로그램 정보를 확인하세요.
       </p>
 
     </a>
@@ -448,24 +467,6 @@
       <p>
         임신 준비와 임신 주차별 정보,
         출산 전 알아둘 내용을 확인하세요.
-      </p>
-
-    </a>
-
-
-    <a href="#" class="category-card">
-
-      <div class="category-icon">
-        🥗
-      </div>
-
-      <h3>
-        식생활 · 영양
-      </h3>
-
-      <p>
-        건강한 식습관과 음식,
-        영양에 관한 정보를 확인하세요.
       </p>
 
     </a>
@@ -507,7 +508,6 @@
   <div class="article-grid">
 
 
-    <!-- 건강검진 상세페이지 연결 -->
     <a href="health-checkup.html" class="article-card">
 
       <div class="article-image">
@@ -534,6 +534,36 @@
     </a>
 
 
+    <a href="seojaegeol-diet.html" class="article-card">
+
+      <div class="article-image">
+
+        <img
+          src="assets/seojaegeol-diet-01.png"
+          alt="서재걸 다이어트 프로그램 소개"
+        >
+
+      </div>
+
+      <div class="article-content">
+
+        <span class="article-tag">
+          다이어트
+        </span>
+
+        <h3>
+          서재걸 다이어트 특징과 프로그램 알아보기
+        </h3>
+
+        <p>
+          서재걸 면역 다이어트의 특징과
+          프로그램 구성, 후기 정보를 확인하세요.
+        </p>
+
+      </div>
+
+    </a>
+
 
     <a href="#" class="article-card">
 
@@ -554,33 +584,6 @@
         <p>
           임신 초기 몸의 변화와 일상생활에서
           조심해야 할 내용을 알아봅니다.
-        </p>
-
-      </div>
-
-    </a>
-
-
-
-    <a href="#" class="article-card">
-
-      <div class="article-image">
-        🥗
-      </div>
-
-      <div class="article-content">
-
-        <span class="article-tag">
-          생활건강
-        </span>
-
-        <h3>
-          건강한 생활을 위한 올바른 식습관 알아보기
-        </h3>
-
-        <p>
-          일상에서 쉽게 실천할 수 있는
-          건강한 식습관을 알아봅니다.
         </p>
 
       </div>
