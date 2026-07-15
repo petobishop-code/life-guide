@@ -4,198 +4,511 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>더루트 알지쓰리 정보 | 제품 특징과 구성 알아보기 - 라이프가이드</title>
-  <meta
-    name="description"
-    content="더루트 알지쓰리 제품 특징과 구성, 관련 정보를 확인해보세요. 제품을 선택하기 전 알아두면 좋은 내용을 정리했습니다."
-  >
+  <title>더루트 알지쓰리 알아보기 | 제품 정보와 특징 | 라이프가이드</title>
+
+  <meta name="description" content="더루트 알지쓰리에 대해 알아봅니다. 제품 특징과 소개 자료, 제품 선택 전 확인할 정보와 관련 내용을 확인하세요.">
+
+  <meta name="keywords" content="더루트 알지쓰리, 더루트 RG3, 알지쓰리, 건강제품, 건강정보, 제품정보">
+
+  <meta name="robots" content="index,follow">
+
+  <link rel="canonical" href="https://www.life-guide.co.kr/the-root-rg3.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="더루트 알지쓰리 알아보기 | 라이프가이드">
+  <meta property="og:description" content="더루트 알지쓰리의 특징과 구성, 관련 제공 자료를 살펴봅니다.">
+  <meta property="og:url" content="https://www.life-guide.co.kr/the-root-rg3.html">
 
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
 
     body {
-      font-family: Arial, "Noto Sans KR", sans-serif;
-      background: #f7f8f7;
-      color: #222;
-      line-height: 1.8;
+      font-family:Arial,"Noto Sans KR",sans-serif;
+      background:#ffffff;
+      color:#111827;
+      line-height:1.8;
+      word-break:keep-all;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+    a { text-decoration:none; color:inherit; }
+    img { max-width:100%; display:block; }
 
-    header {
-      background: #ffffff;
-      border-bottom: 1px solid #e5e5e5;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+    .header {
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(255,255,255,0.96);
+      border-bottom:1px solid #e5e7eb;
+      backdrop-filter:blur(10px);
     }
 
     .header-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 18px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      max-width:1200px;
+      height:70px;
+      margin:0 auto;
+      padding:0 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
     }
 
     .logo {
-      font-size: 23px;
-      font-weight: 800;
-      color: #21633d;
+      font-size:23px;
+      font-weight:800;
+      color:#2563eb;
+      white-space:nowrap;
     }
 
-    .home-link {
-      font-size: 14px;
-      color: #555;
-      font-weight: 600;
+    .logo span { color:#111827; }
+
+    .nav {
+      display:flex;
+      align-items:center;
+      gap:24px;
+      margin-left:35px;
+      margin-right:auto;
+    }
+
+    .nav a {
+      font-size:14px;
+      font-weight:600;
+      color:#1f2937;
+    }
+
+    .nav a:hover,
+    .nav a.active { color:#2563eb; }
+
+    .header-button {
+      padding:11px 18px;
+      border-radius:10px;
+      background:#16a34a;
+      color:#ffffff;
+      font-size:13px;
+      font-weight:800;
+    }
+
+    .breadcrumb {
+      max-width:1000px;
+      margin:0 auto;
+      padding:30px 20px 0;
+      font-size:14px;
+      color:#64748b;
+    }
+
+    .breadcrumb a {
+      color:#2563eb;
+      font-weight:600;
     }
 
     .hero {
-      background: linear-gradient(135deg, #edf8f1, #ffffff);
-      padding: 70px 20px;
-      text-align: center;
+      padding:60px 20px 70px;
+      background:linear-gradient(135deg,#ecfdf5 0%,#f0f9ff 45%,#ffffff 100%);
     }
 
-    .hero .category {
-      display: inline-block;
-      padding: 7px 15px;
-      border-radius: 30px;
-      background: #dcefe3;
-      color: #21633d;
-      font-size: 14px;
-      font-weight: 700;
-      margin-bottom: 18px;
+    .hero-inner {
+      max-width:1000px;
+      margin:0 auto;
+      text-align:center;
+    }
+
+    .hero-tag {
+      display:inline-block;
+      padding:8px 15px;
+      margin-bottom:20px;
+      background:#dcfce7;
+      color:#15803d;
+      border-radius:30px;
+      font-size:14px;
+      font-weight:800;
     }
 
     .hero h1 {
-      font-size: 40px;
-      line-height: 1.35;
-      margin-bottom: 18px;
-      letter-spacing: -1px;
+      font-size:46px;
+      line-height:1.3;
+      letter-spacing:-2px;
+      margin-bottom:22px;
     }
 
-    .hero p {
-      max-width: 720px;
-      margin: 0 auto;
-      color: #666;
-      font-size: 17px;
-    }
+    .hero h1 span { color:#16a34a; }
 
-    .container {
-      max-width: 850px;
-      margin: 45px auto;
-      padding: 0 20px;
-    }
-
-    .text-box {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 32px;
-      margin: 30px 0;
-      box-shadow: 0 5px 20px rgba(0,0,0,.04);
-    }
-
-    .text-box h2 {
-      font-size: 27px;
-      margin-bottom: 16px;
-      line-height: 1.4;
-    }
-
-    .text-box p {
-      color: #555;
-      font-size: 16px;
-    }
-
-    .text-box p + p {
-      margin-top: 14px;
-    }
-
-    .content-image {
-      margin: 30px 0;
-    }
-
-    .content-image img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 18px;
-      box-shadow: 0 5px 22px rgba(0,0,0,.08);
-    }
-
-    .cta-box {
-      margin: 45px 0;
-      background: #1f6840;
-      color: #ffffff;
-      border-radius: 22px;
-      padding: 40px 25px;
-      text-align: center;
-    }
-
-    .cta-box h2 {
-      font-size: 28px;
-      margin-bottom: 12px;
-    }
-
-    .cta-box p {
-      color: #e4f2e9;
-      margin-bottom: 24px;
-      font-size: 16px;
+    .hero-desc {
+      max-width:720px;
+      margin:0 auto 30px;
+      color:#64748b;
+      font-size:18px;
+      line-height:1.9;
     }
 
     .cta-button {
-      display: inline-block;
-      background: #ffffff;
-      color: #1f6840;
-      padding: 16px 36px;
-      border-radius: 50px;
-      font-weight: 800;
-      font-size: 17px;
+      display:inline-block;
+      padding:18px 34px;
+      background:#16a34a;
+      color:#ffffff;
+      border-radius:13px;
+      font-size:17px;
+      font-weight:800;
+      box-shadow:0 10px 25px rgba(22,163,74,0.22);
+      transition:0.2s;
     }
 
-    .notice {
-      margin: 35px 0;
-      padding: 22px;
-      background: #f1f3f2;
-      border-radius: 15px;
-      font-size: 14px;
-      color: #666;
+    .cta-button:hover {
+      transform:translateY(-3px);
+      background:#15803d;
+    }
+
+    .cta-section {
+      margin:45px 0;
+      padding:38px 30px;
+      background:linear-gradient(135deg,#ecfdf5,#f0fdf4);
+      border:1px solid #bbf7d0;
+      border-radius:22px;
+      text-align:center;
+    }
+
+    .cta-section h3 {
+      margin:0 0 10px;
+      font-size:25px;
+      color:#14532d;
+    }
+
+    .cta-section p {
+      margin:0 0 23px;
+      color:#475569;
+      font-size:15px;
+    }
+
+    .cta-small {
+      display:block;
+      margin-top:13px;
+      color:#64748b;
+      font-size:12px;
+    }
+
+    .toc-wrap {
+      max-width:900px;
+      margin:-30px auto 70px;
+      padding:0 20px;
+      position:relative;
+    }
+
+    .toc {
+      padding:30px;
+      background:#ffffff;
+      border-radius:20px;
+      box-shadow:0 15px 50px rgba(15,23,42,0.08);
+    }
+
+    .toc strong {
+      display:block;
+      margin-bottom:18px;
+      font-size:18px;
+    }
+
+    .toc-grid {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:12px;
+    }
+
+    .toc a {
+      padding:13px 15px;
+      background:#f8fafc;
+      border-radius:10px;
+      color:#475569;
+      font-size:14px;
+    }
+
+    .toc a:hover {
+      background:#ecfdf5;
+      color:#15803d;
+    }
+
+    .article {
+      max-width:820px;
+      margin:0 auto;
+      padding:0 20px;
+    }
+
+    .intro {
+      margin-bottom:70px;
+      font-size:18px;
+      line-height:2;
+      color:#374151;
+    }
+
+    .section {
+      margin-bottom:90px;
+      scroll-margin-top:100px;
+    }
+
+    .section-number {
+      display:inline-flex;
+      width:42px;
+      height:42px;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:17px;
+      background:#16a34a;
+      color:#ffffff;
+      border-radius:50%;
+      font-weight:800;
+    }
+
+    .section h2 {
+      margin-bottom:25px;
+      font-size:31px;
+      line-height:1.45;
+      letter-spacing:-1.5px;
+    }
+
+    .section h3 {
+      margin-top:35px;
+      margin-bottom:15px;
+      font-size:22px;
+    }
+
+    .section p {
+      margin-bottom:20px;
+      color:#374151;
+      font-size:16px;
+      line-height:1.95;
+    }
+
+    .image-box {
+      margin:35px 0;
+      padding:18px;
+      background:#f8fafc;
+      border-radius:24px;
+      text-align:center;
+    }
+
+    .image-box img {
+      margin:0 auto;
+      max-height:900px;
+      border-radius:15px;
+      object-fit:contain;
+    }
+
+    .image-caption {
+      margin-top:15px;
+      color:#94a3b8;
+      font-size:13px;
+      line-height:1.6;
+    }
+
+    .info-box {
+      margin:30px 0;
+      padding:28px;
+      background:#f0fdf4;
+      border:1px solid #bbf7d0;
+      border-radius:18px;
+    }
+
+    .info-box strong {
+      display:block;
+      margin-bottom:10px;
+      color:#15803d;
+      font-size:17px;
+    }
+
+    .info-box p { margin:0; font-size:15px; }
+
+    .notice-box {
+      margin:35px 0;
+      padding:28px;
+      background:#fff7ed;
+      border-left:4px solid #f97316;
+      border-radius:12px;
+    }
+
+    .notice-box strong {
+      display:block;
+      margin-bottom:10px;
+      color:#c2410c;
+    }
+
+    .notice-box p { margin:0; font-size:15px; }
+
+    .feature-grid {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:18px;
+      margin:35px 0;
+    }
+
+    .feature-card {
+      padding:28px;
+      background:#f8fafc;
+      border-radius:18px;
+      border:1px solid #e5e7eb;
+    }
+
+    .feature-icon {
+      margin-bottom:12px;
+      font-size:28px;
+    }
+
+    .feature-card h3 {
+      margin:0 0 10px;
+      font-size:18px;
+    }
+
+    .feature-card p {
+      margin:0;
+      font-size:14px;
+      color:#64748b;
+      line-height:1.7;
+    }
+
+    .check-list {
+      margin:30px 0;
+      padding:30px;
+      background:#f8fafc;
+      border-radius:18px;
+    }
+
+    .check-item {
+      display:flex;
+      gap:13px;
+      margin-bottom:16px;
+      color:#374151;
+    }
+
+    .check-item:last-child { margin-bottom:0; }
+
+    .check {
+      color:#16a34a;
+      font-weight:900;
+    }
+
+    .review-notice {
+      margin:25px 0 35px;
+      padding:22px 25px;
+      background:#eff6ff;
+      border-radius:14px;
+      color:#475569;
+      font-size:14px;
+      line-height:1.8;
+    }
+
+    .faq-section {
+      max-width:820px;
+      margin:100px auto 0;
+      padding:0 20px;
+    }
+
+    .faq-label {
+      color:#16a34a;
+      font-size:14px;
+      font-weight:800;
+      margin-bottom:8px;
+    }
+
+    .faq-section h2 {
+      margin-bottom:30px;
+      font-size:31px;
+    }
+
+    .faq-item {
+      padding:28px 0;
+      border-bottom:1px solid #e5e7eb;
+    }
+
+    .faq-item h3 {
+      margin-bottom:12px;
+      font-size:18px;
+    }
+
+    .faq-item p {
+      color:#64748b;
+      font-size:15px;
+      line-height:1.8;
+    }
+
+    .related {
+      max-width:820px;
+      margin:90px auto;
+      padding:0 20px;
+    }
+
+    .related-box {
+      padding:35px;
+      background:#f8fafc;
+      border-radius:22px;
+    }
+
+    .related-box h2 {
+      margin-bottom:20px;
+      font-size:25px;
+    }
+
+    .related-links {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:12px;
+    }
+
+    .related-links a {
+      padding:16px;
+      background:#ffffff;
+      border:1px solid #e5e7eb;
+      border-radius:12px;
+      font-weight:700;
+      font-size:14px;
     }
 
     footer {
-      background: #222;
-      color: #aaa;
-      text-align: center;
-      padding: 35px 20px;
-      font-size: 14px;
+      margin-top:100px;
+      background:#111827;
+      color:#9ca3af;
     }
 
-    @media (max-width: 600px) {
-      .hero {
-        padding: 48px 20px;
+    .footer-inner {
+      max-width:1100px;
+      margin:0 auto;
+      padding:55px 20px;
+    }
+
+    .footer-logo {
+      margin-bottom:15px;
+      color:#ffffff;
+      font-size:22px;
+      font-weight:800;
+    }
+
+    .footer-inner p {
+      max-width:700px;
+      font-size:13px;
+      line-height:1.9;
+    }
+
+    @media (max-width:900px) {
+      .nav { display:none; }
+      .hero h1 { font-size:36px; }
+
+      .feature-grid,
+      .related-links {
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width:600px) {
+      .header-button {
+        font-size:12px;
+        padding:9px 12px;
       }
 
-      .hero h1 {
-        font-size: 30px;
-      }
+      .hero { padding-top:45px; }
+      .hero h1 { font-size:30px; }
+      .hero-desc { font-size:16px; }
+      .toc-grid { grid-template-columns:1fr; }
+      .section h2 { font-size:25px; }
+      .image-box { padding:10px; }
 
-      .text-box {
-        padding: 24px;
-      }
-
-      .text-box h2 {
-        font-size: 23px;
-      }
-
-      .cta-box h2 {
-        font-size: 23px;
+      .cta-button {
+        width:100%;
+        padding:17px 15px;
       }
     }
   </style>
@@ -203,189 +516,485 @@
 
 <body>
 
-<header>
+<header class="header">
   <div class="header-inner">
-    <a href="index.html" class="logo">라이프가이드</a>
-    <a href="health.html" class="home-link">건강정보 돌아가기</a>
+
+    <a href="index.html" class="logo">
+      라이프<span>가이드</span>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html">홈</a>
+      <a href="health.html" class="active">건강</a>
+      <a href="index.html#insurance">보험</a>
+      <a href="index.html#wedding">웨딩</a>
+      <a href="index.html#finance">금융</a>
+      <a href="index.html#law">법률</a>
+      <a href="index.html#car">자동차</a>
+      <a href="index.html#travel">여행</a>
+      <a href="index.html#life">생활정보</a>
+    </nav>
+
+    <a href="https://replyalba.com/pt/RXMClkcMX0"
+       class="header-button"
+       target="_blank"
+       rel="noopener sponsored">
+      무료상담 신청
+    </a>
+
   </div>
 </header>
 
+
+<div class="breadcrumb">
+  <a href="index.html">홈</a>
+  &nbsp;›&nbsp;
+  <a href="health.html">건강정보</a>
+  &nbsp;›&nbsp;
+  더루트 알지쓰리
+</div>
+
+
 <section class="hero">
-  <span class="category">건강정보</span>
+  <div class="hero-inner">
 
-  <h1>
-    더루트 알지쓰리<br>
-    제품 정보 알아보기
-  </h1>
+    <span class="hero-tag">건강제품 정보</span>
 
-  <p>
-    더루트 알지쓰리에 대해 궁금하셨다면
-    제품을 선택하기 전에 관련 특징과 구성 정보를 꼼꼼하게 확인해보세요.
-  </p>
+    <h1>
+      <span>더루트 알지쓰리</span><br>
+      어떤 제품인지 알아볼까요?
+    </h1>
+
+    <p class="hero-desc">
+      더루트 알지쓰리의 소개 내용과 특징,
+      제공된 제품 자료를 살펴보고 관련 정보를 알아봅니다.
+    </p>
+
+    <a href="https://replyalba.com/pt/RXMClkcMX0"
+       class="cta-button"
+       target="_blank"
+       rel="noopener sponsored">
+      더루트 알지쓰리 무료상담 신청하기
+    </a>
+
+    <span class="cta-small">
+      상담 신청 페이지로 이동합니다.
+    </span>
+
+  </div>
 </section>
 
-<main class="container">
 
-  <section class="text-box">
-    <h2>1. 더루트 알지쓰리란?</h2>
+<div class="toc-wrap">
+  <div class="toc">
+
+    <strong>이 페이지에서 확인할 내용</strong>
+
+    <div class="toc-grid">
+      <a href="#section1">1. 더루트 알지쓰리란?</a>
+      <a href="#section2">2. 제품 특징 살펴보기</a>
+      <a href="#section3">3. 제품 정보 확인하기</a>
+      <a href="#section4">4. 제공 자료 살펴보기</a>
+      <a href="#section5">5. 선택 전 확인할 점</a>
+      <a href="#faq">자주 묻는 질문</a>
+    </div>
+
+  </div>
+</div>
+
+
+<main class="article">
+
+  <p class="intro">
+    건강 관련 제품을 알아보다 보면 다양한 원료와 특징을 내세운 제품을 접하게 됩니다.
+    그중 더루트 알지쓰리에 관심을 가지고 제품 정보를 찾아보는 분들도 있습니다.
+    제품을 선택하기 전 어떤 내용이 소개되고 있는지 하나씩 살펴보겠습니다.
+  </p>
+
+
+  <section class="section" id="section1">
+
+    <span class="section-number">1</span>
+
+    <h2>더루트 알지쓰리란 무엇일까요?</h2>
 
     <p>
-      건강 관련 제품을 살펴볼 때는 이름이나 광고 문구만 보고 선택하기보다
-      어떤 특징을 가진 제품인지, 어떤 방식으로 소개되고 있는지를 충분히 확인하는 것이 중요합니다.
+      더루트 알지쓰리를 알아보고 있다면 제품의 이름이나 광고 문구만 확인하기보다
+      실제 제공되는 제품 자료와 상세 안내를 함께 살펴보는 것이 좋습니다.
     </p>
 
     <p>
-      더루트 알지쓰리에 관심이 있다면 제품 관련 자료를 살펴보면서
-      본인의 생활 습관과 필요에 맞는지 비교해보는 것이 좋습니다.
-      특히 건강 관련 제품은 개인마다 기대하는 부분이 다를 수 있기 때문에
-      여러 정보를 종합적으로 확인하는 과정이 필요합니다.
+      건강 관련 제품은 개인의 생활습관과 건강 상태, 제품을 찾는 목적에 따라
+      선택 기준이 달라질 수 있습니다. 따라서 본인에게 필요한 제품인지
+      여러 정보를 비교하면서 확인하는 과정이 중요합니다.
     </p>
+
+    <div class="image-box">
+      <img src="assets/the-root-rg3-01.png" alt="더루트 알지쓰리 제품 소개 이미지">
+
+      <div class="image-caption">
+        더루트 알지쓰리 관련 제공 자료입니다.
+        제품에 대한 자세한 내용은 실제 안내 사항을 함께 확인하세요.
+      </div>
+    </div>
+
+
+    <div class="cta-section">
+
+      <h3>더루트 알지쓰리가 궁금하신가요?</h3>
+
+      <p>
+        제품에 대한 자세한 내용과 상담 정보를 확인해보세요.
+      </p>
+
+      <a href="https://replyalba.com/pt/RXMClkcMX0"
+         class="cta-button"
+         target="_blank"
+         rel="noopener sponsored">
+        무료상담 신청하기
+      </a>
+
+    </div>
+
   </section>
 
-  <div class="content-image">
-    <img
-      src="assets/the-root-rg3-01.png"
-      alt="더루트 알지쓰리 제품 정보 이미지 1"
-    >
-  </div>
 
-  <section class="text-box">
-    <h2>2. 제품 정보를 꼼꼼하게 확인해야 하는 이유</h2>
+  <section class="section" id="section2">
+
+    <span class="section-number">2</span>
+
+    <h2>더루트 알지쓰리의 제품 특징을 살펴보세요</h2>
 
     <p>
-      같은 건강 관련 제품이라도 제품마다 구성과 특징, 섭취 또는 이용 방법이 다를 수 있습니다.
-      따라서 구매나 상담을 결정하기 전에는 제품 소개 자료를 충분히 확인하는 것이 좋습니다.
+      건강 관련 제품을 선택할 때는 어떤 특징을 중심으로 소개되고 있는지
+      살펴보는 것이 좋습니다. 제품의 구성과 이용 방법 등도 함께 확인해야 합니다.
     </p>
 
-    <p>
-      특히 본인이 현재 어떤 부분에 관심을 가지고 있는지 먼저 생각해보고,
-      제품이 제공하는 정보와 자신의 목적이 잘 맞는지 비교하면 보다 합리적으로 선택할 수 있습니다.
-    </p>
+    <div class="image-box">
+      <img src="assets/the-root-rg3-02.png" alt="더루트 알지쓰리 특징 소개 자료">
+
+      <div class="image-caption">
+        제품 관련 제공 자료입니다.
+        실제 제품 구성과 상세 내용은 공식 안내를 확인하세요.
+      </div>
+    </div>
+
+
+    <div class="feature-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon">🌿</div>
+        <h3>제품 구성 확인</h3>
+        <p>제품에 어떤 원료와 구성이 안내되어 있는지 확인해보세요.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🔎</div>
+        <h3>상세 정보 확인</h3>
+        <p>제품 이용 전 상세한 제품 정보와 안내 사항을 확인하는 것이 좋습니다.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📋</div>
+        <h3>이용 방법 확인</h3>
+        <p>제품에 안내된 이용 방법과 권장 사항을 꼼꼼하게 살펴보세요.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">💬</div>
+        <h3>상담 내용 확인</h3>
+        <p>궁금한 부분이 있다면 상담을 통해 자세한 내용을 확인할 수 있습니다.</p>
+      </div>
+
+    </div>
+
   </section>
 
-  <div class="content-image">
-    <img
-      src="assets/the-root-rg3-02.png"
-      alt="더루트 알지쓰리 제품 정보 이미지 2"
-    >
-  </div>
 
-  <section class="cta-box">
-    <h2>더루트 알지쓰리 자세히 알아보기</h2>
+  <section class="section" id="section3">
+
+    <span class="section-number">3</span>
+
+    <h2>제품 정보를 꼼꼼하게 확인해보세요</h2>
 
     <p>
-      제품에 대한 자세한 내용과 상담 정보를 확인해보세요.
+      제품을 선택할 때는 홍보 내용만 확인하기보다 실제 제품에 표시된 정보와
+      상세 안내를 함께 살펴보는 것이 중요합니다.
     </p>
 
-    <a
-      href="https://replyalba.com/pt/RXMClkcMX0"
-      class="cta-button"
-      target="_blank"
-      rel="nofollow sponsored noopener"
-    >
-      자세히 알아보기
-    </a>
+    <div class="image-box">
+      <img src="assets/the-root-rg3-03.png" alt="더루트 알지쓰리 제품 정보 자료">
+
+      <div class="image-caption">
+        더루트 알지쓰리 관련 제공 자료입니다.
+        정확한 제품 정보는 실제 제품 표시사항을 확인하세요.
+      </div>
+    </div>
+
+
+    <div class="check-list">
+
+      <div class="check-item">
+        <span class="check">✓</span>
+        <span>제품에 표시된 원료와 구성 정보를 확인하세요.</span>
+      </div>
+
+      <div class="check-item">
+        <span class="check">✓</span>
+        <span>제품의 이용 방법과 안내사항을 확인하세요.</span>
+      </div>
+
+      <div class="check-item">
+        <span class="check">✓</span>
+        <span>알레르기가 있다면 관련 원료를 확인하세요.</span>
+      </div>
+
+      <div class="check-item">
+        <span class="check">✓</span>
+        <span>질환이 있거나 약을 복용 중이라면 전문가와 상담하세요.</span>
+      </div>
+
+    </div>
+
+
+    <div class="notice-box">
+
+      <strong>건강 상태에 따라 확인이 필요합니다</strong>
+
+      <p>
+        임신·수유 중이거나 질환 치료 및 약물을 복용하고 있다면
+        제품 이용 전에 의료진 또는 전문가와 상담하는 것이 좋습니다.
+      </p>
+
+    </div>
+
   </section>
 
-  <section class="text-box">
-    <h2>3. 제품 선택 전 확인하면 좋은 부분</h2>
+
+  <section class="section" id="section4">
+
+    <span class="section-number">4</span>
+
+    <h2>더루트 알지쓰리 제공 자료 살펴보기</h2>
 
     <p>
-      건강 관련 제품을 알아볼 때는 제품명뿐만 아니라
-      소개 자료에 나와 있는 구성과 특징, 이용 방법 등을 함께 확인하는 것이 좋습니다.
+      제품을 알아볼 때 제공되는 이미지와 소개 자료를 함께 살펴보면
+      제품의 특징과 관련 정보를 이해하는 데 도움이 될 수 있습니다.
     </p>
 
-    <p>
-      또한 개인의 연령이나 생활 습관, 현재 건강 상태에 따라
-      제품을 바라보는 기준이 달라질 수 있으므로
-      본인에게 필요한 정보인지 차분하게 살펴보는 것이 중요합니다.
-    </p>
+    <div class="review-notice">
+      아래 이미지는 제공된 제품 및 홍보 자료입니다.
+      이미지에 포함된 내용은 실제 제품의 상세 안내와 함께 확인하는 것이 좋습니다.
+    </div>
+
+
+    <div class="image-box">
+      <img src="assets/the-root-rg3-04.png" alt="더루트 알지쓰리 제공 자료 이미지 4">
+
+      <div class="image-caption">
+        더루트 알지쓰리 관련 제공 자료입니다.
+      </div>
+    </div>
+
+
+    <div class="image-box">
+      <img src="assets/the-root-rg3-05.png" alt="더루트 알지쓰리 제공 자료 이미지 5">
+
+      <div class="image-caption">
+        제품과 관련된 제공 자료이며 자세한 내용은 실제 안내를 확인하세요.
+      </div>
+    </div>
+
+
+    <div class="cta-section">
+
+      <h3>더루트 알지쓰리에 대해 더 알아보고 싶다면?</h3>
+
+      <p>
+        상담을 통해 제품의 자세한 내용을 확인해보세요.
+      </p>
+
+      <a href="https://replyalba.com/pt/RXMClkcMX0"
+         class="cta-button"
+         target="_blank"
+         rel="noopener sponsored">
+        더루트 알지쓰리 무료상담 신청
+      </a>
+
+    </div>
+
   </section>
 
-  <div class="content-image">
-    <img
-      src="assets/the-root-rg3-03.png"
-      alt="더루트 알지쓰리 제품 정보 이미지 3"
-    >
-  </div>
 
-  <section class="text-box">
-    <h2>4. 관련 자료를 비교해서 살펴보세요</h2>
+  <section class="section" id="section5">
+
+    <span class="section-number">5</span>
+
+    <h2>제품 선택 전 함께 확인하면 좋은 것들</h2>
 
     <p>
-      하나의 정보만 보고 바로 판단하기보다
-      제품 소개 내용과 공식 안내, 상담 내용을 함께 비교해보면
-      제품에 대해 더 정확하게 이해하는 데 도움이 됩니다.
+      건강 관련 제품을 선택할 때는 특정 정보 하나에만 의존하기보다
+      자신의 상황과 제품의 상세 정보를 함께 살펴보는 것이 좋습니다.
     </p>
 
-    <p>
-      더루트 알지쓰리에 대해 궁금한 부분이 있다면
-      아래 자료를 계속 확인하면서 자신이 궁금했던 내용이 포함되어 있는지 살펴보세요.
-    </p>
+
+    <div class="image-box">
+      <img src="assets/the-root-rg3-06.png" alt="더루트 알지쓰리 제품 상세 자료 이미지 6">
+
+      <div class="image-caption">
+        더루트 알지쓰리 관련 제공 자료입니다.
+        제품 선택 전 상세 안내를 충분히 확인하세요.
+      </div>
+    </div>
+
+
+    <div class="check-list">
+
+      <div class="check-item">
+        <span class="check">✓</span>
+        <span>제품의 실제 구성과 상세 정보를 확인해보세요.</span>
+      </div>
+
+      <div class="check-item">
+        <span class="check">✓</span>
+        <span>본인의 생활습관과 필요를 함께 고려해보세요.</span>
+      </div>
+
+      <div class="check-item">
+        <span class="check">✓</span>
+        <span>이용 방법과 주의사항을 꼼꼼하게 확인하세요.</span>
+      </div>
+
+      <div class="check-item">
+        <span class="check">✓</span>
+        <span>궁금한 내용은 상담을 통해 자세히 확인해보세요.</span>
+      </div>
+
+    </div>
+
+
+    <div class="info-box">
+
+      <strong>개인에게 맞는 제품인지 확인하세요</strong>
+
+      <p>
+        건강 관련 제품을 선택할 때는 자신의 건강 상태와 생활 패턴,
+        제품의 상세 정보를 함께 고려하는 것이 중요합니다.
+      </p>
+
+    </div>
+
   </section>
-
-  <div class="content-image">
-    <img
-      src="assets/the-root-rg3-04.png"
-      alt="더루트 알지쓰리 제품 정보 이미지 4"
-    >
-  </div>
-
-  <section class="text-box">
-    <h2>5. 이용 전 세부 내용을 확인하세요</h2>
-
-    <p>
-      건강과 관련된 제품은 모든 사람에게 동일하게 적용되는 것이 아니기 때문에
-      제품을 이용하기 전에는 상세한 안내 내용을 확인하는 과정이 필요합니다.
-    </p>
-
-    <p>
-      제품에 대한 궁금한 점이 있다면 상담을 통해 추가 정보를 확인하고,
-      필요한 경우 전문가의 의견도 함께 참고하는 것이 좋습니다.
-    </p>
-  </section>
-
-  <div class="content-image">
-    <img
-      src="assets/the-root-rg3-05.png"
-      alt="더루트 알지쓰리 제품 정보 이미지 5"
-    >
-  </div>
-
-  <div class="content-image">
-    <img
-      src="assets/the-root-rg3-06.png"
-      alt="더루트 알지쓰리 제품 정보 이미지 6"
-    >
-  </div>
-
-  <section class="cta-box">
-    <h2>더루트 알지쓰리 정보 확인하기</h2>
-
-    <p>
-      제품 관련 궁금한 내용과 자세한 정보를 확인해보세요.
-    </p>
-
-    <a
-      href="https://replyalba.com/pt/RXMClkcMX0"
-      class="cta-button"
-      target="_blank"
-      rel="nofollow sponsored noopener"
-    >
-      무료 상담 및 정보 확인
-    </a>
-  </section>
-
-  <div class="notice">
-    본 페이지는 제품 및 건강 관련 일반적인 정보 제공을 목적으로 작성되었습니다.
-    개인별 상황에 따라 필요한 정보가 다를 수 있으므로 제품 선택 또는 이용 전
-    제품의 상세 안내와 주의사항을 충분히 확인하시기 바랍니다.
-  </div>
 
 </main>
 
+
+<section class="faq-section" id="faq">
+
+  <p class="faq-label">자주 묻는 질문</p>
+
+  <h2>더루트 알지쓰리 FAQ</h2>
+
+
+  <div class="faq-item">
+
+    <h3>더루트 알지쓰리는 어떻게 알아보면 되나요?</h3>
+
+    <p>
+      제품 소개 자료와 실제 제품의 상세 정보를 함께 확인하는 것이 좋습니다.
+      궁금한 내용은 상담을 통해 현재 안내되는 내용을 확인할 수 있습니다.
+    </p>
+
+  </div>
+
+
+  <div class="faq-item">
+
+    <h3>제품의 자세한 내용은 어디에서 확인할 수 있나요?</h3>
+
+    <p>
+      상담 신청을 통해 현재 안내되는 제품 구성과 이용 방법 등
+      자세한 내용을 확인할 수 있습니다.
+    </p>
+
+  </div>
+
+
+  <div class="faq-item">
+
+    <h3>기존에 복용하는 약이 있다면 어떻게 해야 하나요?</h3>
+
+    <p>
+      복용 중인 약이나 치료 중인 질환이 있다면
+      건강 관련 제품을 이용하기 전에 의료진이나 전문가에게 확인하는 것이 좋습니다.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="related">
+
+  <div class="cta-section">
+
+    <h3>더루트 알지쓰리 상담을 원하시나요?</h3>
+
+    <p>
+      아래 버튼을 통해 무료상담을 신청하고 자세한 내용을 확인해보세요.
+    </p>
+
+    <a href="https://replyalba.com/pt/RXMClkcMX0"
+       class="cta-button"
+       target="_blank"
+       rel="noopener sponsored">
+      무료상담 신청하기
+    </a>
+
+  </div>
+
+
+  <div class="related-box">
+
+    <h2>함께 보면 좋은 건강정보</h2>
+
+    <div class="related-links">
+
+      <a href="health.html">
+        건강정보 전체보기 →
+      </a>
+
+      <a href="health-checkup.html">
+        건강검진 준비사항 →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
 <footer>
-  © Life Guide. All Rights Reserved.
+
+  <div class="footer-inner">
+
+    <div class="footer-logo">
+      라이프가이드
+    </div>
+
+    <p>
+      라이프가이드는 건강, 보험, 금융, 법률, 자동차 등
+      생활에 필요한 다양한 정보를 제공합니다.
+    </p>
+
+    <p style="margin-top:18px;">
+      본 페이지는 일반적인 정보 제공을 목적으로 하며,
+      제품 관련 정보는 실제 제품의 상세 안내와 함께 확인하시기 바랍니다.
+    </p>
+
+  </div>
+
 </footer>
 
 </body>
