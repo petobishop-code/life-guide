@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>리피어라 정보 | 제품 특징과 정보 알아보기 - 라이프가이드</title>
-  <meta name="description" content="리피어라에 대한 제품 정보와 특징을 확인해보세요. 리피어라 관련 정보를 한눈에 확인할 수 있도록 정리했습니다.">
+  <title>리피어라 정보 | 제품 특징과 구성 알아보기 - 라이프가이드</title>
+  <meta
+    name="description"
+    content="리피어라 제품 특징과 구성, 관련 정보를 확인해보세요. 제품을 선택하기 전 알아두면 좋은 내용을 정리했습니다."
+  >
 
   <style>
     * {
@@ -18,7 +21,7 @@
       font-family: Arial, "Noto Sans KR", sans-serif;
       background: #f7f8f7;
       color: #222;
-      line-height: 1.7;
+      line-height: 1.8;
     }
 
     a {
@@ -27,7 +30,7 @@
     }
 
     header {
-      background: #fff;
+      background: #ffffff;
       border-bottom: 1px solid #e5e5e5;
       position: sticky;
       top: 0;
@@ -36,7 +39,7 @@
 
     .header-inner {
       max-width: 1100px;
-      margin: auto;
+      margin: 0 auto;
       padding: 18px 20px;
       display: flex;
       justify-content: space-between;
@@ -46,7 +49,7 @@
     .logo {
       font-size: 23px;
       font-weight: 800;
-      color: #21633d;
+      color: #a94466;
     }
 
     .home-link {
@@ -57,7 +60,7 @@
 
     .hero {
       background: linear-gradient(135deg, #fff1f5, #ffffff);
-      padding: 65px 20px;
+      padding: 70px 20px;
       text-align: center;
     }
 
@@ -73,14 +76,15 @@
     }
 
     .hero h1 {
-      font-size: 38px;
+      font-size: 40px;
       line-height: 1.35;
       margin-bottom: 18px;
+      letter-spacing: -1px;
     }
 
     .hero p {
-      max-width: 700px;
-      margin: auto;
+      max-width: 720px;
+      margin: 0 auto;
       color: #666;
       font-size: 17px;
     }
@@ -91,25 +95,31 @@
       padding: 0 20px;
     }
 
-    .intro {
-      background: #fff;
+    .text-box {
+      background: #ffffff;
       border-radius: 18px;
-      padding: 30px;
-      margin-bottom: 35px;
+      padding: 32px;
+      margin: 30px 0;
       box-shadow: 0 5px 20px rgba(0,0,0,.04);
     }
 
-    .intro h2 {
-      font-size: 26px;
-      margin-bottom: 15px;
+    .text-box h2 {
+      font-size: 27px;
+      margin-bottom: 16px;
+      line-height: 1.4;
     }
 
-    .intro p {
+    .text-box p {
       color: #555;
+      font-size: 16px;
+    }
+
+    .text-box p + p {
+      margin-top: 14px;
     }
 
     .content-image {
-      margin: 28px 0;
+      margin: 30px 0;
     }
 
     .content-image img {
@@ -123,27 +133,28 @@
     .cta-box {
       margin: 45px 0;
       background: #a94466;
-      color: #fff;
+      color: #ffffff;
       border-radius: 22px;
-      padding: 38px 25px;
+      padding: 40px 25px;
       text-align: center;
     }
 
     .cta-box h2 {
-      font-size: 27px;
-      margin-bottom: 10px;
+      font-size: 28px;
+      margin-bottom: 12px;
     }
 
     .cta-box p {
       color: #fbeaf0;
       margin-bottom: 24px;
+      font-size: 16px;
     }
 
     .cta-button {
       display: inline-block;
-      background: #fff;
+      background: #ffffff;
       color: #a94466;
-      padding: 16px 35px;
+      padding: 16px 36px;
       border-radius: 50px;
       font-weight: 800;
       font-size: 17px;
@@ -168,15 +179,19 @@
 
     @media (max-width: 600px) {
       .hero {
-        padding: 45px 20px;
+        padding: 48px 20px;
       }
 
       .hero h1 {
-        font-size: 29px;
+        font-size: 30px;
       }
 
-      .intro {
-        padding: 23px;
+      .text-box {
+        padding: 24px;
+      }
+
+      .text-box h2 {
+        font-size: 23px;
       }
 
       .cta-box h2 {
@@ -204,36 +219,62 @@
   </h1>
 
   <p>
-    리피어라 관련 정보를 찾고 계셨다면
-    제품의 특징과 관련 내용을 확인하고 꼼꼼하게 비교해보세요.
+    리피어라에 대해 궁금하셨다면 제품을 선택하기 전에
+    관련 특징과 구성 정보를 꼼꼼하게 확인해보세요.
   </p>
 </section>
 
 <main class="container">
 
-  <section class="intro">
-    <h2>1. 리피어라 알아보기</h2>
+  <section class="text-box">
+    <h2>1. 리피어라란?</h2>
 
     <p>
-      건강 관련 제품을 선택할 때는 제품의 특징과 구성,
-      이용 방법 등을 충분히 확인하는 과정이 중요합니다.
-      아래 내용을 통해 리피어라 관련 정보를 살펴보세요.
+      건강 관련 제품을 알아볼 때는 단순히 제품명이나 광고 내용만 확인하기보다
+      제품이 어떤 특징을 가지고 있는지 여러 정보를 함께 살펴보는 것이 중요합니다.
+    </p>
+
+    <p>
+      리피어라에 관심이 있다면 제품 관련 소개 자료와 구성 정보를 확인하면서
+      현재 자신이 찾고 있는 제품인지 비교해보는 것이 좋습니다.
+      개인마다 제품을 선택하는 기준이 다르기 때문에 충분한 정보를 확인한 뒤 결정하는 과정이 필요합니다.
     </p>
   </section>
 
   <div class="content-image">
-    <img src="assets/repiera-01.png" alt="리피어라 정보 이미지 1">
+    <img
+      src="assets/repiera-01.png"
+      alt="리피어라 제품 정보 이미지 1"
+    >
   </div>
 
+  <section class="text-box">
+    <h2>2. 제품 특징을 먼저 살펴보세요</h2>
+
+    <p>
+      건강 관련 제품은 각각 소개되는 특징과 구성에 차이가 있을 수 있습니다.
+      따라서 제품을 선택하기 전에는 어떤 목적으로 소개되고 있는지,
+      제품 관련 자료에는 어떤 내용이 담겨 있는지를 확인하는 것이 좋습니다.
+    </p>
+
+    <p>
+      리피어라 역시 제품의 기본적인 특징부터 상세한 안내 내용까지
+      차근차근 살펴보면서 본인이 원하는 부분과 잘 맞는지 확인해보세요.
+    </p>
+  </section>
+
   <div class="content-image">
-    <img src="assets/repiera-02.png" alt="리피어라 정보 이미지 2">
+    <img
+      src="assets/repiera-02.png"
+      alt="리피어라 제품 정보 이미지 2"
+    >
   </div>
 
   <section class="cta-box">
     <h2>리피어라 자세히 알아보기</h2>
 
     <p>
-      리피어라에 대한 자세한 내용과 상담 정보를 확인해보세요.
+      제품에 대한 자세한 내용과 상담 정보를 확인해보세요.
     </p>
 
     <a
@@ -246,23 +287,77 @@
     </a>
   </section>
 
-  <div class="content-image">
-    <img src="assets/repiera-03.png" alt="리피어라 정보 이미지 3">
-  </div>
+  <section class="text-box">
+    <h2>3. 제품 선택 전 확인하면 좋은 부분</h2>
+
+    <p>
+      제품을 알아볼 때는 본인이 어떤 정보를 필요로 하는지 먼저 생각해보는 것이 좋습니다.
+      제품의 특징과 자신의 관심 분야를 비교하면 선택 과정에서 필요한 내용을 보다 쉽게 정리할 수 있습니다.
+    </p>
+
+    <p>
+      또한 제품의 이용 방법이나 상세 안내사항도 함께 확인해야 합니다.
+      개인의 생활 습관이나 상황에 따라 제품을 바라보는 기준이 달라질 수 있기 때문에
+      자신에게 필요한 제품인지 충분히 살펴보는 것이 중요합니다.
+    </p>
+  </section>
 
   <div class="content-image">
-    <img src="assets/repiera-04.png" alt="리피어라 정보 이미지 4">
+    <img
+      src="assets/repiera-03.png"
+      alt="리피어라 제품 정보 이미지 3"
+    >
   </div>
 
+  <section class="text-box">
+    <h2>4. 여러 정보를 함께 비교해보세요</h2>
+
+    <p>
+      하나의 정보만 보고 제품을 결정하기보다는
+      제품 소개 자료와 상세 안내 내용을 함께 비교해보는 것이 좋습니다.
+      여러 정보를 확인하면 제품의 특징을 보다 정확하게 이해하는 데 도움이 될 수 있습니다.
+    </p>
+
+    <p>
+      리피어라와 관련해 궁금한 내용이 있다면 제품 소개 내용을 충분히 살펴보고,
+      추가로 확인하고 싶은 부분은 상담을 통해 알아보는 것도 방법입니다.
+    </p>
+  </section>
+
   <div class="content-image">
-    <img src="assets/repiera-05.png" alt="리피어라 정보 이미지 5">
+    <img
+      src="assets/repiera-04.png"
+      alt="리피어라 제품 정보 이미지 4"
+    >
+  </div>
+
+  <section class="text-box">
+    <h2>5. 상세 내용을 확인한 뒤 결정하세요</h2>
+
+    <p>
+      건강과 관련된 제품은 개인마다 필요한 부분과 선택 기준이 다를 수 있습니다.
+      따라서 다른 사람의 선택만 참고하기보다는 본인의 상황을 기준으로 제품 정보를 확인하는 것이 좋습니다.
+    </p>
+
+    <p>
+      리피어라에 관심이 있다면 아래 제품 자료까지 확인한 뒤
+      궁금한 부분과 상세한 안내 내용을 충분히 살펴보세요.
+      제품 이용 전에는 관련 주의사항과 안내 내용을 확인하는 것도 중요합니다.
+    </p>
+  </section>
+
+  <div class="content-image">
+    <img
+      src="assets/repiera-05.png"
+      alt="리피어라 제품 정보 이미지 5"
+    >
   </div>
 
   <section class="cta-box">
     <h2>리피어라 정보 확인하기</h2>
 
     <p>
-      제품 관련 궁금한 내용을 자세히 확인해보세요.
+      제품 관련 궁금한 내용과 자세한 정보를 확인해보세요.
     </p>
 
     <a
@@ -276,8 +371,9 @@
   </section>
 
   <div class="notice">
-    본 페이지의 내용은 일반적인 제품 및 건강 정보 제공을 목적으로 합니다.
-    개인별 상황에 따라 차이가 있을 수 있으므로 제품의 공식 안내 및 상세 내용을 함께 확인하시기 바랍니다.
+    본 페이지는 제품 및 건강 관련 일반적인 정보 제공을 목적으로 작성되었습니다.
+    개인별 상황에 따라 필요한 정보가 다를 수 있으므로 제품 선택 또는 이용 전
+    제품의 상세 안내와 주의사항을 충분히 확인하시기 바랍니다.
   </div>
 
 </main>
