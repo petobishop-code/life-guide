@@ -1,12 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>법률정보 | 개인회생·개인파산·신용회복 가이드 | 라이프가이드</title>
 
-  <meta name="description" content="라이프가이드 법률정보. 개인회생, 개인파산, 신용회복, 채무탕감, 개인회생절차, 비용, 신청자격 등 주요 법률정보를 한눈에 확인하세요.">
+  <meta
+    name="description"
+    content="개인회생, 개인회생신청자격, 개인파산, 개인파산신청자격, 파산신청, 신용회복, 개인회생기간단축, 개인회생파산, 개인회생절차, 개인회생비용, 개인회생개시결정, 개인회생인가결정, 개인회생재신청, 개인회생신용회복, 개인회생변호사, 개인파산면책, 개인파산신고, 채무탕감, 빚갚는방법 등 다양한 법률정보를 확인하세요."
+  >
 
   <meta name="robots" content="index,follow">
 
@@ -18,344 +21,330 @@
   <meta property="og:url" content="https://www.life-guide.co.kr/law.html">
 
   <style>
-    *{
-      box-sizing:border-box
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    html{
-      scroll-behavior:smooth
+    body {
+      font-family: Arial, "Noto Sans KR", sans-serif;
+      color: #111827;
+      background: #f8fafc;
     }
 
-    body{
-      margin:0;
-      font-family:Arial,'Noto Sans KR',sans-serif;
-      color:#182234;
-      background:#fff;
-      line-height:1.7
+    a {
+      text-decoration: none;
+      color: inherit;
     }
 
-    a{
-      text-decoration:none;
-      color:inherit
+    .header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
-    .container{
-      width:min(1120px,calc(100% - 36px));
-      margin:auto
+    .header-inner {
+      max-width: 1200px;
+      height: 70px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    .site-header{
-      position:sticky;
-      top:0;
-      z-index:50;
-      background:rgba(255,255,255,.96);
-      border-bottom:1px solid #e8edf4;
-      backdrop-filter:blur(10px)
+    .logo {
+      font-size: 23px;
+      font-weight: 800;
+      color: #2563eb;
+      white-space: nowrap;
     }
 
-    .header-inner{
-      min-height:74px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:24px
+    .logo span {
+      color: #111827;
     }
 
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      font-size:23px;
-      font-weight:900
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-left: 30px;
+      margin-right: auto;
     }
 
-    .brand-mark{
-      width:38px;
-      height:38px;
-      border-radius:11px;
-      background:linear-gradient(135deg,#3b82f6,#7dd3fc);
-      color:#fff;
-      display:grid;
-      place-items:center
+    .nav a {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1f2937;
+      transition: 0.2s;
     }
 
-    .brand strong span{
-      color:#2563eb
+    .nav a:hover,
+    .nav a.active {
+      color: #2563eb;
     }
 
-    .nav{
-      display:flex;
-      gap:24px;
-      font-weight:700;
-      font-size:14px
+    .search-box {
+      width: 210px;
+      height: 42px;
+      border: 1px solid #d1d5db;
+      border-radius: 9px;
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      color: #6b7280;
     }
 
-    .nav a:hover{
-      color:#2563eb
+    .hero {
+      background: linear-gradient(120deg, #e8f2ff, #f5f9ff);
+      padding: 75px 20px;
     }
 
-    .hero{
-      background:
-        radial-gradient(circle at 85% 20%,rgba(80,140,255,.16),transparent 32%),
-        linear-gradient(135deg,#edf5ff,#f8fbff);
-      padding:82px 0 72px
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
-    .hero-grid{
-      display:grid;
-      grid-template-columns:1.1fr .9fr;
-      align-items:center;
-      gap:42px
+    .hero-label {
+      color: #2563eb;
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 15px;
     }
 
-    .eyebrow{
-      color:#2563eb;
-      font-weight:900;
-      margin:0 0 12px
+    .hero h1 {
+      font-size: 44px;
+      line-height: 1.3;
+      letter-spacing: -2px;
+      margin-bottom: 20px;
     }
 
-    .hero h1{
-      font-size:48px;
-      line-height:1.25;
-      margin:0 0 20px;
-      color:#111827
+    .hero h1 span {
+      color: #2563eb;
     }
 
-    .hero h1 span{
-      color:#2563eb
+    .hero p {
+      color: #64748b;
+      font-size: 17px;
+      line-height: 1.8;
     }
 
-    .hero p{
-      font-size:19px;
-      color:#58657a;
-      max-width:700px
+    .category-section {
+      max-width: 1200px;
+      margin: -30px auto 0;
+      padding: 0 20px;
+      position: relative;
     }
 
-    .hero-box{
-      background:#fff;
-      border:1px solid #dfe7f1;
-      border-radius:24px;
-      padding:30px;
-      box-shadow:0 18px 40px rgba(31,52,83,.08)
+    .category-box {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
     }
 
-    .hero-box h2{
-      margin-top:0;
-      font-size:23px
+    .category-card {
+      padding: 25px 20px;
+      border-radius: 16px;
+      text-align: center;
+      transition: 0.25s;
+      border: 1px solid transparent;
     }
 
-    .hero-box ul{
-      padding-left:20px;
-      margin-bottom:0
+    .category-card:hover {
+      transform: translateY(-5px);
+      border-color: #dbeafe;
+      background: #f8fbff;
     }
 
-    .hero-box li{
-      margin:8px 0;
-      color:#536176
+    .category-icon {
+      width: 58px;
+      height: 58px;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      background: #eff6ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
     }
 
-    .section{
-      padding:72px 0
+    .category-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
     }
 
-    .soft{
-      background:#f8fbff
+    .category-card p {
+      color: #6b7280;
+      font-size: 14px;
+      line-height: 1.6;
     }
 
-    .section-heading{
-      text-align:center;
-      margin-bottom:38px
+    .content-section {
+      max-width: 1200px;
+      margin: 70px auto;
+      padding: 0 20px;
     }
 
-    .section-heading p{
-      color:#2563eb;
-      font-weight:900;
-      margin:0
+    .section-label {
+      color: #2563eb;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 10px;
     }
 
-    .section-heading h2{
-      font-size:34px;
-      margin:6px 0 10px
+    .section-title {
+      font-size: 32px;
+      letter-spacing: -1px;
+      margin-bottom: 30px;
     }
 
-    .section-heading .desc{
-      color:#68758a;
-      max-width:700px;
-      margin:0 auto
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
     }
 
-    .category-grid{
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:18px
+    .article-card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: 0.25s;
     }
 
-    .category-card{
-      background:#fff;
-      border:1px solid #e1e8f0;
-      border-radius:18px;
-      padding:25px;
-      transition:.2s;
-      box-shadow:0 8px 24px rgba(31,52,83,.04)
+    .article-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
     }
 
-    .category-card:hover{
-      transform:translateY(-4px);
-      box-shadow:0 14px 32px rgba(31,52,83,.10)
+    .article-image {
+      height: 180px;
+      background: linear-gradient(135deg, #eff6ff, #f8fbff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 55px;
     }
 
-    .category-card span{
-      display:grid;
-      place-items:center;
-      width:48px;
-      height:48px;
-      border-radius:14px;
-      background:#edf4ff;
-      color:#2563eb;
-      font-size:24px;
-      margin-bottom:16px
+    .article-content {
+      padding: 22px;
     }
 
-    .category-card h3{
-      margin:0 0 8px;
-      font-size:21px
+    .article-tag {
+      display: inline-block;
+      padding: 5px 9px;
+      border-radius: 15px;
+      background: #eff6ff;
+      color: #2563eb;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 12px;
     }
 
-    .category-card p{
-      color:#667388;
-      font-size:14px;
-      margin:0
+    .article-card h3 {
+      font-size: 19px;
+      line-height: 1.5;
+      margin-bottom: 10px;
     }
 
-    .keyword-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:14px
+    .article-card p {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.7;
     }
 
-    .keyword-link{
-      display:block;
-      padding:20px;
-      border:1px solid #e1e7ef;
-      border-radius:15px;
-      background:#fff;
-      transition:.2s
+    .notice-section {
+      max-width: 1200px;
+      margin: 0 auto 80px;
+      padding: 0 20px;
     }
 
-    .keyword-link:hover{
-      border-color:#2563eb;
-      box-shadow:0 10px 24px rgba(37,99,235,.10)
+    .notice-box {
+      padding: 24px 26px;
+      background: #fff8df;
+      border-left: 4px solid #eab308;
+      border-radius: 12px;
+      color: #5f5533;
+      font-size: 14px;
+      line-height: 1.8;
     }
 
-    .keyword-link strong{
-      display:block;
-      font-size:18px;
-      margin-bottom:5px;
-      color:#1d2b40
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      margin-top: 80px;
     }
 
-    .keyword-link span{
-      font-size:13px;
-      color:#778397
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 45px 20px;
     }
 
-    .featured{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:22px
+    .footer-logo {
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 15px;
     }
 
-    .featured-card{
-      padding:30px;
-      border-radius:20px;
-      color:#fff
+    .footer-inner p {
+      font-size: 13px;
+      line-height: 1.8;
     }
 
-    .featured-card:first-child{
-      background:linear-gradient(135deg,#1f58bd,#3478ed)
-    }
-
-    .featured-card:last-child{
-      background:linear-gradient(135deg,#3f4f67,#26364e)
-    }
-
-    .featured-card h3{
-      font-size:28px;
-      margin:0 0 10px
-    }
-
-    .featured-card p{
-      color:rgba(255,255,255,.86)
-    }
-
-    .featured-card a{
-      display:inline-block;
-      margin-top:10px;
-      background:#fff;
-      color:#245fc9;
-      padding:12px 18px;
-      border-radius:10px;
-      font-weight:900
-    }
-
-    .featured-card:last-child a{
-      color:#26364e
-    }
-
-    .notice{
-      background:#fff8df;
-      border-left:5px solid #e7b632;
-      border-radius:12px;
-      padding:20px;
-      color:#5f5533
-    }
-
-    footer{
-      background:#172234;
-      color:#dbe5f4;
-      padding:34px 16px;
-      text-align:center
-    }
-
-    @media(max-width:900px){
-      .nav{
-        display:none
+    @media (max-width: 900px) {
+      .nav,
+      .search-box {
+        display: none;
       }
 
-      .hero-grid{
-        grid-template-columns:1fr
+      .hero h1 {
+        font-size: 34px;
       }
 
-      .category-grid{
-        grid-template-columns:repeat(2,1fr)
+      .category-box {
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      .keyword-grid{
-        grid-template-columns:repeat(2,1fr)
+      .article-grid {
+        grid-template-columns: 1fr;
       }
     }
 
-    @media(max-width:600px){
-      .hero{
-        padding:58px 0
+    @media (max-width: 500px) {
+      .hero {
+        padding: 55px 20px;
       }
 
-      .hero h1{
-        font-size:35px
+      .hero h1 {
+        font-size: 29px;
       }
 
-      .section{
-        padding:55px 0
+      .category-box {
+        grid-template-columns: 1fr 1fr;
+        padding: 15px;
+        gap: 5px;
       }
 
-      .section-heading h2{
-        font-size:28px
+      .category-card {
+        padding: 20px 10px;
       }
 
-      .category-grid,
-      .keyword-grid,
-      .featured{
-        grid-template-columns:1fr
+      .category-card p {
+        display: none;
+      }
+
+      .section-title {
+        font-size: 27px;
       }
     }
   </style>
@@ -363,12 +352,11 @@
 
 <body>
 
-<header class="site-header">
-  <div class="container header-inner">
+<header class="header">
+  <div class="header-inner">
 
-    <a class="brand" href="index.html">
-      <span class="brand-mark">L</span>
-      <strong><span>라이프</span>가이드</strong>
+    <a href="index.html" class="logo">
+      라이프<span>가이드</span>
     </a>
 
     <nav class="nav">
@@ -377,356 +365,308 @@
       <a href="index.html#insurance">보험</a>
       <a href="index.html#wedding">웨딩</a>
       <a href="index.html#finance">금융</a>
-      <a href="law.html">법률</a>
+      <a href="law.html" class="active">법률</a>
+      <a href="index.html#car">자동차</a>
+      <a href="index.html#travel">여행</a>
+      <a href="index.html#life">생활정보</a>
     </nav>
+
+    <div class="search-box">
+      검색어를 입력하세요 🔍
+    </div>
 
   </div>
 </header>
 
 
-<main>
-
 <section class="hero">
-  <div class="container hero-grid">
+  <div class="hero-inner">
 
-    <div>
-      <p class="eyebrow">
-        라이프가이드 법률정보
-      </p>
-
-      <h1>
-        복잡한 법률정보를<br>
-        <span>쉽고 정확하게</span> 확인하세요
-      </h1>
-
-      <p>
-        개인회생, 개인파산, 신용회복, 채무조정 등 생활 속에서 자주 접하는 법률정보를 이해하기 쉽게 정리했습니다.
-      </p>
+    <div class="hero-label">
+      라이프가이드 법률정보
     </div>
 
-    <div class="hero-box">
-      <h2>주요 법률정보</h2>
+    <h1>
+      생활 속 복잡한 법률문제를 위한<br>
+      <span>꼭 필요한 법률정보</span>
+    </h1>
 
-      <ul>
-        <li>개인회생 신청자격과 절차</li>
-        <li>개인파산과 면책제도</li>
-        <li>신용회복과 채무조정</li>
-        <li>개인회생 비용과 기간</li>
-        <li>개인회생 변호사 선택 기준</li>
-      </ul>
-    </div>
+    <p>
+      개인회생부터 개인파산, 신용회복과 채무조정까지<br>
+      알아두면 도움이 되는 다양한 법률정보를 확인하세요.
+    </p>
 
   </div>
 </section>
 
 
-<section class="section">
+<section class="category-section">
+  <div class="category-box">
 
-  <div class="container">
+    <a href="personal-rehabilitation.html" class="category-card">
+      <div class="category-icon">⚖️</div>
+      <h3>개인회생</h3>
+      <p>신청자격부터 절차, 비용과 인가결정까지 확인하세요.</p>
+    </a>
 
-    <div class="section-heading">
-      <p>분야별 법률정보</p>
+    <a href="personal-bankruptcy.html" class="category-card">
+      <div class="category-icon">📄</div>
+      <h3>개인파산</h3>
+      <p>개인파산 신청과 면책 절차, 준비사항을 확인하세요.</p>
+    </a>
 
-      <h2>
-        어떤 정보를 찾고 계신가요?
-      </h2>
+    <a href="credit-recovery.html" class="category-card">
+      <div class="category-icon">📈</div>
+      <h3>신용회복</h3>
+      <p>채무조정과 신용회복 관련 정보를 확인하세요.</p>
+    </a>
 
-      <p class="desc">
-        현재 상황에 가까운 주제를 선택하면 관련 내용을 자세하게 확인할 수 있습니다.
-      </p>
-    </div>
-
-
-    <div class="category-grid">
-
-      <a class="category-card" href="personal-rehabilitation.html">
-        <span>⚖</span>
-        <h3>개인회생</h3>
-        <p>
-          개인회생 신청자격, 절차, 비용과 인가결정까지 확인합니다.
-        </p>
-      </a>
-
-
-      <a class="category-card" href="personal-bankruptcy.html">
-        <span>▤</span>
-        <h3>개인파산</h3>
-        <p>
-          개인파산 신청과 면책 절차, 준비사항을 알아봅니다.
-        </p>
-      </a>
-
-
-      <a class="category-card" href="credit-recovery.html">
-        <span>↗</span>
-        <h3>신용회복</h3>
-        <p>
-          채무조정과 신용회복 방법을 상황별로 확인합니다.
-        </p>
-      </a>
-
-
-      <a class="category-card" href="debt-relief.html">
-        <span>₩</span>
-        <h3>채무탕감</h3>
-        <p>
-          개인회생, 파산 등 채무 부담을 줄이는 제도를 비교합니다.
-        </p>
-      </a>
-
-    </div>
+    <a href="debt-relief.html" class="category-card">
+      <div class="category-icon">₩</div>
+      <h3>채무탕감</h3>
+      <p>채무 부담을 줄일 수 있는 다양한 제도를 알아보세요.</p>
+    </a>
 
   </div>
-
 </section>
 
 
-<section class="section soft">
+<section class="content-section">
 
-  <div class="container">
-
-    <div class="section-heading">
-
-      <p>
-        많이 찾는 법률정보
-      </p>
-
-      <h2>
-        개인회생 핵심 가이드
-      </h2>
-
-      <p class="desc">
-        개인회생을 준비할 때 자주 검색하는 핵심 주제를 한곳에 모았습니다.
-      </p>
-
-    </div>
-
-
-    <div class="keyword-grid">
-
-
-      <a class="keyword-link" href="personal-rehabilitation.html">
-        <strong>개인회생</strong>
-        <span>개인회생 제도 기본 안내</span>
-      </a>
-
-
-      <a class="keyword-link" href="personal-rehabilitation-eligibility.html">
-        <strong>개인회생신청자격</strong>
-        <span>소득·채무·재산 기준 확인</span>
-      </a>
-
-
-      <a class="keyword-link" href="rehabilitation-process.html">
-        <strong>개인회생절차</strong>
-        <span>신청부터 인가까지 단계별 안내</span>
-      </a>
-
-
-      <a class="keyword-link" href="rehabilitation-cost.html">
-        <strong>개인회생비용</strong>
-        <span>법원 비용과 진행 비용 확인</span>
-      </a>
-
-
-      <a class="keyword-link" href="rehabilitation-period-reduction.html">
-        <strong>개인회생기간단축</strong>
-        <span>변제기간 단축 가능성 확인</span>
-      </a>
-
-
-      <a class="keyword-link" href="rehabilitation-commencement.html">
-        <strong>개인회생개시결정</strong>
-        <span>개시결정 의미와 이후 절차</span>
-      </a>
-
-
-      <a class="keyword-link" href="rehabilitation-approval.html">
-        <strong>개인회생인가결정</strong>
-        <span>인가결정 이후 확인사항</span>
-      </a>
-
-
-      <a class="keyword-link" href="rehabilitation-reapplication.html">
-        <strong>개인회생재신청</strong>
-        <span>재신청 가능성과 준비사항</span>
-      </a>
-
-
-      <a class="keyword-link" href="rehabilitation-credit-recovery.html">
-        <strong>개인회생신용회복</strong>
-        <span>개인회생 이후 신용관리</span>
-      </a>
-
-
-      <a class="keyword-link" href="rehabilitation-lawyer.html">
-        <strong>개인회생변호사</strong>
-        <span>상담과 선택 기준 확인</span>
-      </a>
-
-
-      <a class="keyword-link" href="rehabilitation-bankruptcy.html">
-        <strong>개인회생파산</strong>
-        <span>개인회생과 파산 비교</span>
-      </a>
-
-
-      <a class="keyword-link" href="debt-repayment-methods.html">
-        <strong>빚갚는방법</strong>
-        <span>채무 상황별 해결 방법</span>
-      </a>
-
-
-    </div>
-
+  <div class="section-label">
+    법률정보 추천
   </div>
 
-</section>
+  <h2 class="section-title">
+    많이 찾는 법률 콘텐츠
+  </h2>
+
+  <div class="article-grid">
 
 
-<section class="section">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <p>
-        파산·면책 정보
-      </p>
-
-      <h2>
-        개인파산 관련 정보
-      </h2>
-
-    </div>
-
-
-    <div class="keyword-grid">
-
-
-      <a class="keyword-link" href="personal-bankruptcy.html">
-        <strong>개인파산</strong>
-        <span>개인파산 제도 기본 안내</span>
-      </a>
-
-
-      <a class="keyword-link" href="personal-bankruptcy-eligibility.html">
-        <strong>개인파산신청자격</strong>
-        <span>신청 가능 조건 확인</span>
-      </a>
-
-
-      <a class="keyword-link" href="bankruptcy-application.html">
-        <strong>파산신청</strong>
-        <span>신청 전 준비사항과 절차</span>
-      </a>
-
-
-      <a class="keyword-link" href="bankruptcy-discharge.html">
-        <strong>개인파산면책</strong>
-        <span>파산과 면책의 차이 확인</span>
-      </a>
-
-
-      <a class="keyword-link" href="bankruptcy-filing.html">
-        <strong>개인파산신고</strong>
-        <span>파산 신청 준비 방법</span>
-      </a>
-
-
-      <a class="keyword-link" href="credit-recovery.html">
-        <strong>신용회복</strong>
-        <span>채무조정과 회복 방법</span>
-      </a>
-
-
-      <a class="keyword-link" href="debt-relief.html">
-        <strong>채무탕감</strong>
-        <span>채무조정 제도 비교</span>
-      </a>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section class="section soft">
-
-  <div class="container">
-
-    <div class="featured">
-
-      <div class="featured-card">
-
-        <h3>
-          개인회생이 궁금하다면
-        </h3>
-
-        <p>
-          신청자격부터 절차, 비용, 개시결정과 인가결정까지 순서대로 확인해보세요.
-        </p>
-
-        <a href="personal-rehabilitation.html">
-          개인회생 알아보기 →
-        </a>
-
+    <a href="personal-rehabilitation.html" class="article-card">
+      <div class="article-image">⚖️</div>
+      <div class="article-content">
+        <span class="article-tag">개인회생</span>
+        <h3>개인회생 제도와 기본 내용 알아보기</h3>
+        <p>개인회생의 기본 개념과 신청 전 알아둘 내용을 확인하세요.</p>
       </div>
+    </a>
 
 
-      <div class="featured-card">
-
-        <h3>
-          개인파산을 알아보고 있다면
-        </h3>
-
-        <p>
-          신청자격과 면책 절차, 준비해야 할 내용을 먼저 확인하는 것이 중요합니다.
-        </p>
-
-        <a href="personal-bankruptcy.html">
-          개인파산 알아보기 →
-        </a>
-
+    <a href="personal-rehabilitation-eligibility.html" class="article-card">
+      <div class="article-image">📋</div>
+      <div class="article-content">
+        <span class="article-tag">개인회생</span>
+        <h3>개인회생신청자격 어떤 조건이 필요할까요?</h3>
+        <p>소득과 채무, 재산 등 신청자격과 관련된 기준을 확인하세요.</p>
       </div>
+    </a>
 
-    </div>
+
+    <a href="personal-bankruptcy.html" class="article-card">
+      <div class="article-image">📄</div>
+      <div class="article-content">
+        <span class="article-tag">개인파산</span>
+        <h3>개인파산 제도와 신청 전 확인사항</h3>
+        <p>개인파산의 기본 개념과 면책 절차 관련 정보를 확인하세요.</p>
+      </div>
+    </a>
+
+
+    <a href="personal-bankruptcy-eligibility.html" class="article-card">
+      <div class="article-image">🔎</div>
+      <div class="article-content">
+        <span class="article-tag">개인파산</span>
+        <h3>개인파산신청자격 어떤 조건을 확인해야 할까요?</h3>
+        <p>개인파산 신청 가능성과 관련해 확인할 기준을 알아보세요.</p>
+      </div>
+    </a>
+
+
+    <a href="bankruptcy-application.html" class="article-card">
+      <div class="article-image">📝</div>
+      <div class="article-content">
+        <span class="article-tag">개인파산</span>
+        <h3>파산신청 준비사항과 진행 과정 알아보기</h3>
+        <p>파산신청 전 준비할 내용과 기본 진행 절차를 확인하세요.</p>
+      </div>
+    </a>
+
+
+    <a href="credit-recovery.html" class="article-card">
+      <div class="article-image">📈</div>
+      <div class="article-content">
+        <span class="article-tag">신용회복</span>
+        <h3>신용회복과 채무조정 방법 알아보기</h3>
+        <p>채무 상황에 따라 살펴볼 수 있는 신용회복 방법을 확인하세요.</p>
+      </div>
+    </a>
+
+
+    <a href="rehabilitation-period-reduction.html" class="article-card">
+      <div class="article-image">⏱️</div>
+      <div class="article-content">
+        <span class="article-tag">개인회생</span>
+        <h3>개인회생기간단축 가능한 경우 알아보기</h3>
+        <p>변제기간과 기간 단축 관련해 확인할 내용을 살펴보세요.</p>
+      </div>
+    </a>
+
+
+    <a href="rehabilitation-bankruptcy.html" class="article-card">
+      <div class="article-image">⚖️</div>
+      <div class="article-content">
+        <span class="article-tag">채무조정</span>
+        <h3>개인회생파산 차이와 선택 기준 알아보기</h3>
+        <p>개인회생과 개인파산의 차이를 비교해보세요.</p>
+      </div>
+    </a>
+
+
+    <a href="rehabilitation-process.html" class="article-card">
+      <div class="article-image">➡️</div>
+      <div class="article-content">
+        <span class="article-tag">개인회생</span>
+        <h3>개인회생절차 신청부터 인가까지 알아보기</h3>
+        <p>개인회생 진행 과정을 단계별로 확인하세요.</p>
+      </div>
+    </a>
+
+
+    <a href="rehabilitation-cost.html" class="article-card">
+      <div class="article-image">₩</div>
+      <div class="article-content">
+        <span class="article-tag">개인회생</span>
+        <h3>개인회생비용 어떤 항목을 확인해야 할까요?</h3>
+        <p>진행 과정에서 확인할 수 있는 비용 관련 정보를 살펴보세요.</p>
+      </div>
+    </a>
+
+
+    <a href="rehabilitation-commencement.html" class="article-card">
+      <div class="article-image">✅</div>
+      <div class="article-content">
+        <span class="article-tag">개인회생</span>
+        <h3>개인회생개시결정 의미와 이후 절차</h3>
+        <p>개시결정 이후 진행되는 주요 절차를 확인하세요.</p>
+      </div>
+    </a>
+
+
+    <a href="rehabilitation-approval.html" class="article-card">
+      <div class="article-image">📌</div>
+      <div class="article-content">
+        <span class="article-tag">개인회생</span>
+        <h3>개인회생인가결정 이후 확인할 내용</h3>
+        <p>인가결정의 의미와 이후 관리해야 할 내용을 알아보세요.</p>
+      </div>
+    </a>
+
+
+    <a href="rehabilitation-reapplication.html" class="article-card">
+      <div class="article-image">🔄</div>
+      <div class="article-content">
+        <span class="article-tag">개인회생</span>
+        <h3>개인회생재신청 가능성과 준비사항</h3>
+        <p>재신청을 고려할 때 확인해야 할 내용을 살펴보세요.</p>
+      </div>
+    </a>
+
+
+    <a href="rehabilitation-credit-recovery.html" class="article-card">
+      <div class="article-image">📊</div>
+      <div class="article-content">
+        <span class="article-tag">신용회복</span>
+        <h3>개인회생신용회복 이후 관리 방법</h3>
+        <p>개인회생 이후 신용관리와 관련된 정보를 확인하세요.</p>
+      </div>
+    </a>
+
+
+    <a href="rehabilitation-lawyer.html" class="article-card">
+      <div class="article-image">👨‍⚖️</div>
+      <div class="article-content">
+        <span class="article-tag">법률상담</span>
+        <h3>개인회생변호사 선택 전 확인할 기준</h3>
+        <p>상담과 법률전문가 선택 시 확인할 내용을 알아보세요.</p>
+      </div>
+    </a>
+
+
+    <a href="bankruptcy-discharge.html" class="article-card">
+      <div class="article-image">📄</div>
+      <div class="article-content">
+        <span class="article-tag">개인파산</span>
+        <h3>개인파산면책 절차와 확인사항</h3>
+        <p>파산과 면책의 차이 및 관련 절차를 확인하세요.</p>
+      </div>
+    </a>
+
+
+    <a href="bankruptcy-filing.html" class="article-card">
+      <div class="article-image">🗂️</div>
+      <div class="article-content">
+        <span class="article-tag">개인파산</span>
+        <h3>개인파산신고 준비 방법 알아보기</h3>
+        <p>신청 전 준비할 서류와 기본 내용을 확인하세요.</p>
+      </div>
+    </a>
+
+
+    <a href="debt-relief.html" class="article-card">
+      <div class="article-image">💰</div>
+      <div class="article-content">
+        <span class="article-tag">채무조정</span>
+        <h3>채무탕감 가능한 제도와 방법 알아보기</h3>
+        <p>채무 부담을 줄이기 위해 살펴볼 수 있는 제도를 확인하세요.</p>
+      </div>
+    </a>
+
+
+    <a href="debt-repayment-methods.html" class="article-card">
+      <div class="article-image">💳</div>
+      <div class="article-content">
+        <span class="article-tag">채무관리</span>
+        <h3>빚갚는방법 상황별로 알아보기</h3>
+        <p>현재 채무 상황에 따라 살펴볼 수 있는 해결 방법을 확인하세요.</p>
+      </div>
+    </a>
+
 
   </div>
 
 </section>
 
 
-<section class="section">
+<section class="notice-section">
 
-  <div class="container">
-
-    <div class="notice">
-
-      <strong>법률정보 이용 안내</strong><br>
-
-      라이프가이드의 법률 콘텐츠는 일반적인 정보 제공을 목적으로 합니다.
-      실제 적용 여부와 결과는 개인의 상황, 제출 자료, 최신 법령 및 법원의 판단 등에 따라 달라질 수 있습니다.
-      구체적인 사건 판단이 필요한 경우 자격 있는 법률전문가의 상담을 받아보는 것이 좋습니다.
-
-    </div>
-
+  <div class="notice-box">
+    <strong>법률정보 이용 안내</strong><br>
+    라이프가이드의 법률 콘텐츠는 일반적인 정보 제공을 목적으로 합니다.
+    실제 적용 여부와 결과는 개인의 상황, 제출 자료, 최신 법령 및 법원의 판단 등에 따라 달라질 수 있습니다.
+    구체적인 사건 판단이 필요한 경우 자격 있는 법률전문가의 상담을 받아보는 것이 좋습니다.
   </div>
 
 </section>
-
-
-</main>
 
 
 <footer>
 
-  라이프가이드 | 건강 · 보험 · 웨딩 · 금융 · 법률 등 생활에 필요한 정보를 제공합니다.
+  <div class="footer-inner">
+
+    <div class="footer-logo">
+      라이프가이드
+    </div>
+
+    <p>
+      라이프가이드는 건강, 보험, 금융, 법률, 자동차 등<br>
+      생활에 필요한 다양한 정보를 제공합니다.
+    </p>
+
+  </div>
 
 </footer>
-
 
 </body>
 </html>
