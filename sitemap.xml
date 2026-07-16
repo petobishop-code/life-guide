@@ -85,4 +85,22 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.life-guide.co.kr/deobokryeok.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.life-guide.co.kr/talgen-plus.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.life-guide.co.kr/baekse-cheongyun.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
