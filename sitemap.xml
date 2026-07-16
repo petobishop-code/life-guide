@@ -121,4 +121,28 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.life-guide.co.kr/myeonyeokbogam-premium.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.life-guide.co.kr/corosolin.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.life-guide.co.kr/painq.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.life-guide.co.kr/returnq.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
