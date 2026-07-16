@@ -103,4 +103,22 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.life-guide.co.kr/eye-health-solution.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.life-guide.co.kr/baro-quaebyeon-premium.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.life-guide.co.kr/jinjamwon.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
