@@ -4,19 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>웨딩정보 | 전국 웨딩박람회·결혼준비 정보 | 라이프가이드</title>
-
-  <meta name="description" content="전국 웨딩박람회와 결혼 준비 정보를 확인해보세요. 서울, 경기, 부산, 대구, 대전, 울산, 인천, 원주, 천안 등 지역별 웨딩박람회 정보를 제공합니다.">
-
-  <meta name="keywords" content="웨딩박람회, 결혼박람회, 전국웨딩박람회, 웨딩홀, 스드메, 결혼준비, 예물, 혼수">
-
+  <title>전국 웨딩박람회 일정 및 결혼준비 정보 | 라이프가이드</title>
+  <meta name="description" content="전국 웨딩박람회 정보를 한눈에 확인하세요. 서울, 부산, 대구, 대전, 인천, 광주, 울산 등 지역별 웨딩박람회와 결혼준비 정보를 확인할 수 있습니다.">
+  <meta name="keywords" content="웨딩박람회, 전국웨딩박람회, 결혼박람회, 웨딩페어, 결혼준비">
   <meta name="robots" content="index,follow">
 
   <link rel="canonical" href="https://www.life-guide.co.kr/wedding.html">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="웨딩정보 | 전국 웨딩박람회 | 라이프가이드">
-  <meta property="og:description" content="전국 지역별 웨딩박람회와 결혼 준비 정보를 확인해보세요.">
+  <meta property="og:title" content="전국 웨딩박람회 일정 및 결혼준비 정보">
+  <meta property="og:description" content="지역별 웨딩박람회와 결혼준비 정보를 확인해보세요.">
   <meta property="og:url" content="https://www.life-guide.co.kr/wedding.html">
 
   <style>
@@ -26,13 +23,9 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       font-family: Arial, "Noto Sans KR", sans-serif;
-      background: #f8f9fb;
+      background: #fffafa;
       color: #292524;
       line-height: 1.7;
       word-break: keep-all;
@@ -52,7 +45,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(255,255,255,0.97);
+      background: rgba(255,255,255,0.96);
       border-bottom: 1px solid #f1e7e3;
       backdrop-filter: blur(10px);
     }
@@ -97,36 +90,19 @@
       color: #e8798f;
     }
 
-    .header-button {
-      padding: 11px 18px;
-      border-radius: 10px;
-      background: #e8798f;
-      color: #fff;
-      font-size: 13px;
-      font-weight: 800;
-    }
-
     .hero {
-      padding: 85px 20px 90px;
-      background:
-        radial-gradient(circle at 10% 20%, #ffe4e9 0, transparent 25%),
-        radial-gradient(circle at 90% 20%, #fff0f3 0, transparent 25%),
-        linear-gradient(135deg, #fff7f8, #ffffff);
+      padding: 85px 20px 100px;
+      background: linear-gradient(135deg,#fff1f4 0%,#fff8f7 55%,#ffffff 100%);
       text-align: center;
     }
 
-    .hero-inner {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .hero-tag {
+    .hero-label {
       display: inline-block;
       margin-bottom: 20px;
-      padding: 8px 17px;
-      border-radius: 30px;
+      padding: 8px 16px;
       background: #ffe4e9;
       color: #be4964;
+      border-radius: 30px;
       font-size: 14px;
       font-weight: 800;
     }
@@ -143,77 +119,74 @@
     }
 
     .hero p {
-      max-width: 700px;
+      max-width: 720px;
       margin: 0 auto;
       color: #78716c;
       font-size: 18px;
       line-height: 1.9;
     }
 
-    .intro {
-      max-width: 1180px;
+    .section {
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 70px 20px 35px;
+      padding: 85px 20px 100px;
     }
 
-    .section-label {
-      margin-bottom: 8px;
+    .section-title {
+      margin-bottom: 45px;
+      text-align: center;
+    }
+
+    .section-title span {
       color: #e8798f;
       font-size: 14px;
       font-weight: 800;
     }
 
-    .intro h2 {
-      margin-bottom: 16px;
-      font-size: 34px;
+    .section-title h2 {
+      margin-top: 8px;
+      font-size: 35px;
       letter-spacing: -1.5px;
     }
 
-    .intro-desc {
-      max-width: 750px;
+    .section-title p {
+      margin-top: 12px;
       color: #78716c;
-      font-size: 16px;
-      line-height: 1.9;
-    }
-
-    .fair-section {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 15px 20px 100px;
+      font-size: 15px;
     }
 
     .fair-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3,1fr);
       gap: 25px;
     }
 
     .fair-card {
       overflow: hidden;
       background: #ffffff;
-      border: 1px solid #f0e8e6;
+      border: 1px solid #f1e7e3;
       border-radius: 20px;
-      box-shadow: 0 10px 35px rgba(41,37,36,0.06);
-      transition: transform 0.25s, box-shadow 0.25s;
+      box-shadow: 0 8px 30px rgba(41,37,36,0.06);
+      transition: 0.25s;
     }
 
     .fair-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 18px 45px rgba(41,37,36,0.11);
+      box-shadow: 0 16px 40px rgba(41,37,36,0.11);
     }
 
     .fair-image {
       position: relative;
       height: 230px;
       overflow: hidden;
-      background: #fff1f4;
+      background: #f5f5f4;
     }
 
     .fair-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.35s;
+      transition: 0.35s;
     }
 
     .fair-card:hover .fair-image img {
@@ -224,13 +197,12 @@
       position: absolute;
       top: 15px;
       left: 15px;
-      padding: 6px 12px;
-      border-radius: 20px;
+      padding: 7px 12px;
       background: rgba(255,255,255,0.94);
       color: #be4964;
+      border-radius: 20px;
       font-size: 12px;
       font-weight: 800;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     }
 
     .fair-content {
@@ -238,15 +210,14 @@
     }
 
     .fair-content h3 {
-      min-height: 58px;
-      margin-bottom: 11px;
+      margin-bottom: 12px;
       font-size: 20px;
-      line-height: 1.45;
-      letter-spacing: -0.7px;
+      line-height: 1.5;
+      letter-spacing: -0.5px;
     }
 
     .fair-content p {
-      min-height: 52px;
+      min-height: 72px;
       margin-bottom: 20px;
       color: #78716c;
       font-size: 14px;
@@ -254,78 +225,51 @@
     }
 
     .fair-button {
-      display: flex;
-      width: 100%;
-      height: 48px;
-      align-items: center;
-      justify-content: center;
-      border-radius: 11px;
-      background: #fff1f4;
-      color: #c9506a;
-      font-size: 14px;
-      font-weight: 800;
-      transition: 0.2s;
-    }
-
-    .fair-card:hover .fair-button {
-      background: #e8798f;
-      color: #ffffff;
-    }
-
-    .guide-section {
-      padding: 90px 20px;
-      background: #ffffff;
-    }
-
-    .guide-inner {
-      max-width: 1180px;
-      margin: 0 auto;
-    }
-
-    .guide-title {
-      margin-bottom: 40px;
-      text-align: center;
-    }
-
-    .guide-title p {
+      display: inline-block;
       color: #e8798f;
       font-size: 14px;
       font-weight: 800;
     }
 
-    .guide-title h2 {
-      margin-top: 8px;
+    .guide {
+      background: #ffffff;
+      border-top: 1px solid #f5e8e6;
+    }
+
+    .guide-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 90px 20px;
+      text-align: center;
+    }
+
+    .guide-inner h2 {
+      margin-bottom: 20px;
       font-size: 32px;
-      letter-spacing: -1px;
+    }
+
+    .guide-inner > p {
+      max-width: 750px;
+      margin: 0 auto 45px;
+      color: #78716c;
+      line-height: 1.9;
     }
 
     .guide-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3,1fr);
       gap: 20px;
+      text-align: left;
     }
 
     .guide-card {
-      padding: 30px 25px;
+      padding: 28px;
       background: #fff8f7;
       border-radius: 18px;
     }
 
-    .guide-number {
-      display: flex;
-      width: 38px;
-      height: 38px;
-      margin-bottom: 17px;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      background: #e8798f;
-      color: #ffffff;
-      font-size: 14px;
-      font-weight: 800;
-    }
-
-    .guide-card h3 {
+    .guide-card strong {
+      display: block;
       margin-bottom: 10px;
       font-size: 18px;
     }
@@ -333,32 +277,15 @@
     .guide-card p {
       color: #78716c;
       font-size: 14px;
-      line-height: 1.8;
-    }
-
-    .notice {
-      max-width: 1180px;
-      margin: 70px auto 0;
-      padding: 0 20px;
-    }
-
-    .notice-box {
-      padding: 25px 28px;
-      border-radius: 15px;
-      background: #fff1f4;
-      color: #78716c;
-      font-size: 14px;
-      line-height: 1.9;
     }
 
     footer {
-      margin-top: 100px;
       background: #292524;
       color: #a8a29e;
     }
 
     .footer-inner {
-      max-width: 1180px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 55px 20px;
     }
@@ -375,56 +302,44 @@
       line-height: 1.9;
     }
 
-    @media (max-width: 1000px) {
-      .fair-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .guide-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
+    @media (max-width: 950px) {
       .nav {
         display: none;
+      }
+
+      .fair-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .hero h1 {
+        font-size: 38px;
       }
     }
 
     @media (max-width: 650px) {
-      .header-button {
-        display: none;
-      }
-
       .hero {
-        padding: 65px 20px 70px;
+        padding: 65px 20px 75px;
       }
 
       .hero h1 {
-        font-size: 34px;
+        font-size: 31px;
       }
 
       .hero p {
         font-size: 16px;
       }
 
-      .intro h2 {
-        font-size: 28px;
-      }
-
-      .fair-grid {
+      .fair-grid,
+      .guide-grid {
         grid-template-columns: 1fr;
       }
 
       .fair-image {
-        height: 240px;
+        height: 220px;
       }
 
-      .fair-content h3,
       .fair-content p {
         min-height: auto;
-      }
-
-      .guide-grid {
-        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -451,47 +366,33 @@
       <a href="index.html#life">생활정보</a>
     </nav>
 
-    <a href="#wedding-fairs" class="header-button">
-      웨딩박람회 보기
-    </a>
-
   </div>
 </header>
 
 <section class="hero">
-  <div class="hero-inner">
 
-    <span class="hero-tag">WEDDING GUIDE</span>
+  <span class="hero-label">WEDDING GUIDE</span>
 
-    <h1>
-      결혼 준비의 시작,<br>
-      <span>전국 웨딩박람회</span> 알아보기
-    </h1>
+  <h1>
+    전국 <span>웨딩박람회</span><br>
+    결혼준비 정보를 확인하세요
+  </h1>
 
-    <p>
-      서울부터 부산, 대구, 대전, 인천, 울산, 원주, 천안까지
-      지역별 웨딩박람회 정보를 한곳에서 확인해보세요.
-      웨딩홀과 스드메, 예물, 예복, 혼수 등 결혼 준비에 필요한
-      다양한 정보를 비교해볼 수 있습니다.
-    </p>
-
-  </div>
-</section>
-
-<section class="intro" id="wedding-fairs">
-
-  <p class="section-label">전국 웨딩박람회</p>
-
-  <h2>지역별 웨딩박람회 정보</h2>
-
-  <p class="intro-desc">
-    관심 있는 웨딩박람회를 선택하면 행사 관련 정보와
-    결혼 준비 전 확인하면 좋은 내용, 사전신청 정보를 확인할 수 있습니다.
+  <p>
+    지역별 웨딩박람회 정보를 한눈에 살펴보세요.
+    웨딩홀부터 스드메, 예물, 예복, 혼수까지
+    결혼 준비에 필요한 다양한 정보를 확인할 수 있습니다.
   </p>
 
 </section>
 
-<section class="fair-section">
+<section class="section">
+
+  <div class="section-title">
+    <span>WEDDING FAIR</span>
+    <h2>지역별 웨딩박람회</h2>
+    <p>관심 있는 웨딩박람회를 선택해 자세한 정보를 확인해보세요.</p>
+  </div>
 
   <div class="fair-grid">
 
@@ -504,7 +405,7 @@
         </div>
         <div class="fair-content">
           <h3>대구 엑스코 인터불고 웨딩박람회</h3>
-          <p>대구 지역 웨딩박람회와 결혼 준비 관련 정보를 확인해보세요.</p>
+          <p>대구 지역 웨딩박람회와 결혼 준비에 필요한 정보를 확인해보세요.</p>
           <span class="fair-button">자세히 알아보기 →</span>
         </div>
       </a>
@@ -515,11 +416,11 @@
       <a href="direct-wedding-preparation-fair.html">
         <div class="fair-image">
           <img src="assets/direct-wedding-preparation-fair-01.png" alt="다이렉트 결혼준비 웨딩박람회">
-          <span class="fair-region">전국</span>
+          <span class="fair-region">서울</span>
         </div>
         <div class="fair-content">
           <h3>다이렉트 결혼준비 웨딩박람회</h3>
-          <p>웨딩홀과 스드메 등 결혼 준비에 필요한 정보를 확인해보세요.</p>
+          <p>결혼 준비에 필요한 웨딩 관련 정보와 다양한 준비 항목을 확인해보세요.</p>
           <span class="fair-button">자세히 알아보기 →</span>
         </div>
       </a>
@@ -534,7 +435,7 @@
         </div>
         <div class="fair-content">
           <h3>부산 W웨딩시티 웨딩박람회</h3>
-          <p>부산 지역 웨딩홀과 스드메 등 결혼 준비 정보를 알아보세요.</p>
+          <p>부산 지역 웨딩박람회와 웨딩홀, 스드메 등 결혼 준비 정보를 확인해보세요.</p>
           <span class="fair-button">자세히 알아보기 →</span>
         </div>
       </a>
@@ -549,7 +450,7 @@
         </div>
         <div class="fair-content">
           <h3>대전 컨벤션센터 웨딩박람회</h3>
-          <p>대전에서 결혼을 준비한다면 웨딩박람회 정보를 확인해보세요.</p>
+          <p>대전 지역에서 결혼을 준비하는 예비부부를 위한 정보를 확인해보세요.</p>
           <span class="fair-button">자세히 알아보기 →</span>
         </div>
       </a>
@@ -564,7 +465,7 @@
         </div>
         <div class="fair-content">
           <h3>일산 킨텍스 웨딩박람회</h3>
-          <p>일산과 경기 지역의 결혼 준비 정보를 비교해보세요.</p>
+          <p>일산과 경기 서북부 지역의 웨딩박람회 및 결혼 준비 정보를 확인해보세요.</p>
           <span class="fair-button">자세히 알아보기 →</span>
         </div>
       </a>
@@ -579,7 +480,7 @@
         </div>
         <div class="fair-content">
           <h3>용산 아이파크 웨딩박람회</h3>
-          <p>서울 용산 지역 웨딩박람회와 결혼 준비 정보를 확인해보세요.</p>
+          <p>서울 용산 지역 웨딩박람회와 다양한 결혼 준비 정보를 확인해보세요.</p>
           <span class="fair-button">자세히 알아보기 →</span>
         </div>
       </a>
@@ -594,7 +495,7 @@
         </div>
         <div class="fair-content">
           <h3>수원 메쎄 웨딩박람회</h3>
-          <p>수원과 경기 지역의 웨딩박람회 정보를 확인해보세요.</p>
+          <p>수원과 경기 남부 지역의 웨딩박람회 및 결혼 준비 정보를 확인해보세요.</p>
           <span class="fair-button">자세히 알아보기 →</span>
         </div>
       </a>
@@ -609,7 +510,7 @@
         </div>
         <div class="fair-content">
           <h3>롯데백화점 부산본점 웨딩박람회</h3>
-          <p>부산에서 결혼을 준비한다면 웨딩박람회 정보를 확인해보세요.</p>
+          <p>부산 지역 예비부부를 위한 웨딩박람회와 결혼 준비 정보를 확인해보세요.</p>
           <span class="fair-button">자세히 알아보기 →</span>
         </div>
       </a>
@@ -624,7 +525,7 @@
         </div>
         <div class="fair-content">
           <h3>KNN 부산 웨딩박람회</h3>
-          <p>부산 지역 웨딩박람회와 다양한 결혼 준비 정보를 알아보세요.</p>
+          <p>부산 웨딩박람회와 웨딩홀, 스드메 등 다양한 결혼 준비 정보를 확인해보세요.</p>
           <span class="fair-button">자세히 알아보기 →</span>
         </div>
       </a>
@@ -639,7 +540,7 @@
         </div>
         <div class="fair-content">
           <h3>강남 웨덱스 웨딩박람회</h3>
-          <p>강남 지역에서 진행되는 웨딩박람회 관련 정보를 확인해보세요.</p>
+          <p>서울 강남 지역 웨딩박람회와 결혼 준비 관련 정보를 확인해보세요.</p>
           <span class="fair-button">자세히 알아보기 →</span>
         </div>
       </a>
@@ -654,7 +555,7 @@
         </div>
         <div class="fair-content">
           <h3>울산 롯데백화점 웨딩박람회</h3>
-          <p>울산 지역 웨딩박람회와 결혼 준비에 필요한 정보를 확인해보세요.</p>
+          <p>울산 지역에서 결혼을 준비하는 예비부부를 위한 정보를 확인해보세요.</p>
           <span class="fair-button">자세히 알아보기 →</span>
         </div>
       </a>
@@ -669,7 +570,7 @@
         </div>
         <div class="fair-content">
           <h3>인천 송도컨벤시아 웨딩박람회</h3>
-          <p>인천과 송도 지역의 웨딩박람회 및 결혼 준비 정보를 확인해보세요.</p>
+          <p>인천과 송도 지역 웨딩박람회 및 다양한 결혼 준비 정보를 확인해보세요.</p>
           <span class="fair-button">자세히 알아보기 →</span>
         </div>
       </a>
@@ -684,7 +585,7 @@
         </div>
         <div class="fair-content">
           <h3>원주 AK플라자 웨딩박람회</h3>
-          <p>원주 지역 웨딩박람회와 결혼 준비 관련 정보를 확인해보세요.</p>
+          <p>원주와 강원 지역 예비부부를 위한 웨딩박람회 정보를 확인해보세요.</p>
           <span class="fair-button">자세히 알아보기 →</span>
         </div>
       </a>
@@ -699,7 +600,7 @@
         </div>
         <div class="fair-content">
           <h3>IWC 천안 웨딩박람회</h3>
-          <p>천안 지역 웨딩박람회와 결혼 준비에 필요한 정보를 확인해보세요.</p>
+          <p>천안과 충남 지역 웨딩박람회 및 결혼 준비에 필요한 정보를 확인해보세요.</p>
           <span class="fair-button">자세히 알아보기 →</span>
         </div>
       </a>
@@ -714,7 +615,7 @@
         </div>
         <div class="fair-content">
           <h3>서울 세텍 웨딩박람회</h3>
-          <p>서울에서 결혼을 준비한다면 세텍 웨딩박람회 정보를 확인해보세요.</p>
+          <p>서울 지역 웨딩박람회와 웨딩홀, 스드메 등 결혼 준비 정보를 확인해보세요.</p>
           <span class="fair-button">자세히 알아보기 →</span>
         </div>
       </a>
@@ -729,7 +630,52 @@
         </div>
         <div class="fair-content">
           <h3>광명 AK 대형웨딩박람회</h3>
-          <p>광명과 경기 지역의 웨딩박람회 및 결혼 준비 정보를 확인해보세요.</p>
+          <p>광명과 경기 지역의 웨딩박람회 및 결혼 준비 관련 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- 17. 광주 컨벤션 -->
+    <article class="fair-card">
+      <a href="gwangju-convention-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/gwangju-convention-wedding-fair-01.png" alt="광주 컨벤션 웨딩박람회">
+          <span class="fair-region">광주</span>
+        </div>
+        <div class="fair-content">
+          <h3>광주 컨벤션 웨딩박람회</h3>
+          <p>광주 지역 웨딩박람회와 결혼 준비에 필요한 다양한 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- 18. 김해 -->
+    <article class="fair-card">
+      <a href="gimhae-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/gimhae-wedding-fair-01.png" alt="김해 웨딩박람회">
+          <span class="fair-region">김해</span>
+        </div>
+        <div class="fair-content">
+          <h3>김해 웨딩박람회</h3>
+          <p>김해와 경남 지역의 웨딩박람회 및 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- 19. 의정부 신세계 -->
+    <article class="fair-card">
+      <a href="uijeongbu-shinsegae-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/uijeongbu-shinsegae-wedding-fair-01.png" alt="의정부 신세계 웨딩박람회">
+          <span class="fair-region">의정부</span>
+        </div>
+        <div class="fair-content">
+          <h3>의정부 신세계 웨딩박람회</h3>
+          <p>의정부와 경기 북부 지역의 웨딩박람회 및 결혼 준비 정보를 확인해보세요.</p>
           <span class="fair-button">자세히 알아보기 →</span>
         </div>
       </a>
@@ -739,76 +685,45 @@
 
 </section>
 
-<section class="guide-section">
+<section class="guide">
 
   <div class="guide-inner">
 
-    <div class="guide-title">
-      <p>WEDDING FAIR GUIDE</p>
-      <h2>웨딩박람회 방문 전 체크하세요</h2>
-    </div>
+    <h2>웨딩박람회 방문 전 체크하세요</h2>
+
+    <p>
+      결혼 준비는 여러 항목을 동시에 비교해야 하는 만큼
+      방문 전에 원하는 조건과 예산을 미리 정리해두면
+      필요한 정보를 더욱 효율적으로 확인할 수 있습니다.
+    </p>
 
     <div class="guide-grid">
 
       <div class="guide-card">
-        <span class="guide-number">1</span>
-        <h3>예식 일정 정하기</h3>
-        <p>
-          희망하는 결혼 시기와 지역을 미리 정리하면
-          웨딩홀 상담을 받을 때 조건을 비교하기 편리합니다.
-        </p>
+        <strong>💒 예식 일정</strong>
+        <p>희망하는 결혼 시기와 지역, 예상 하객 수를 미리 정리해보세요.</p>
       </div>
 
       <div class="guide-card">
-        <span class="guide-number">2</span>
-        <h3>예산 범위 정리하기</h3>
-        <p>
-          웨딩홀과 스드메, 예물, 혼수 등 전체적인
-          결혼 준비 예산 범위를 미리 생각해보세요.
-        </p>
+        <strong>💰 예상 예산</strong>
+        <p>웨딩홀과 스드메, 예물, 혼수 등 항목별 예상 예산을 정리해보세요.</p>
       </div>
 
       <div class="guide-card">
-        <span class="guide-number">3</span>
-        <h3>포함 항목 비교하기</h3>
-        <p>
-          단순 가격뿐 아니라 실제 상품에 포함되는 서비스와
-          추가 옵션 및 비용을 함께 확인하는 것이 좋습니다.
-        </p>
-      </div>
-
-      <div class="guide-card">
-        <span class="guide-number">4</span>
-        <h3>계약 조건 확인하기</h3>
-        <p>
-          계약 전 일정 변경과 취소 조건 등을 확인하고
-          충분히 비교한 뒤 결정하는 것이 좋습니다.
-        </p>
+        <strong>✓ 계약 조건</strong>
+        <p>계약 전 포함 항목과 추가 비용, 변경 및 취소 조건을 확인하세요.</p>
       </div>
 
     </div>
 
-  </div>
-
-</section>
-
-<section class="notice">
-
-  <div class="notice-box">
-    웨딩박람회의 행사 일정, 장소, 참여 업체 및 제공되는 혜택은
-    행사 상황에 따라 변경될 수 있습니다. 방문 또는 사전신청 전
-    각 상세페이지에서 연결되는 신청 페이지의 최신 안내 내용을 확인하시기 바랍니다.
   </div>
 
 </section>
 
 <footer>
-
   <div class="footer-inner">
 
-    <div class="footer-logo">
-      라이프가이드
-    </div>
+    <div class="footer-logo">라이프가이드</div>
 
     <p>
       라이프가이드는 건강, 보험, 금융, 법률, 웨딩 등
@@ -816,12 +731,11 @@
     </p>
 
     <p style="margin-top:18px;">
-      본 페이지는 웨딩박람회 관련 정보 제공을 목적으로 하며,
-      실제 행사 내용은 주최 측 사정에 따라 변경될 수 있습니다.
+      각 웨딩박람회의 일정, 장소, 참여 업체 및 혜택은 변경될 수 있으므로
+      방문 및 신청 전 해당 페이지에서 최신 정보를 확인하시기 바랍니다.
     </p>
 
   </div>
-
 </footer>
 
 </body>
