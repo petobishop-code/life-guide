@@ -518,4 +518,39 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- 부천 위드유 웨딩박람회 -->
+  <url>
+    <loc>https://www.life-guide.co.kr/bucheon-withyou-wedding-fair.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 수원 AK플라자 웨딩박람회 -->
+  <url>
+    <loc>https://www.life-guide.co.kr/suwon-ak-plaza-wedding-fair.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 수원 갤러리아 웨딩박람회 -->
+  <url>
+    <loc>https://www.life-guide.co.kr/suwon-galleria-wedding-fair.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 고양 스타필드 웨딩박람회 -->
+  <url>
+    <loc>https://www.life-guide.co.kr/goyang-starfield-wedding-fair.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 안산 롯데백화점 웨딩박람회 -->
+  <url>
+    <loc>https://www.life-guide.co.kr/ansan-lotte-department-store-wedding-fair.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
