@@ -476,4 +476,25 @@
     <priority>0.8</priority>
   </url>
 
+    <!-- 광주 컨벤션 웨딩박람회 -->
+  <url>
+    <loc>https://www.life-guide.co.kr/gwangju-convention-wedding-fair.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 김해 웨딩박람회 -->
+  <url>
+    <loc>https://www.life-guide.co.kr/gimhae-wedding-fair.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 의정부 신세계 웨딩박람회 -->
+  <url>
+    <loc>https://www.life-guide.co.kr/uijeongbu-shinsegae-wedding-fair.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
