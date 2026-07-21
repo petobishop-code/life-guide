@@ -235,143 +235,191 @@
     <priority>0.8</priority>
   </url>
 
+
   <!-- 법률정보 메인 -->
+
   <url>
     <loc>https://www.life-guide.co.kr/law.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- 개인회생 -->
   <url>
     <loc>https://www.life-guide.co.kr/personal-rehabilitation.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 개인회생신청자격 -->
   <url>
     <loc>https://www.life-guide.co.kr/personal-rehabilitation-eligibility.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 개인파산 -->
   <url>
     <loc>https://www.life-guide.co.kr/personal-bankruptcy.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 개인파산신청자격 -->
   <url>
     <loc>https://www.life-guide.co.kr/personal-bankruptcy-eligibility.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 파산신청 -->
   <url>
     <loc>https://www.life-guide.co.kr/bankruptcy-application.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 신용회복 -->
   <url>
     <loc>https://www.life-guide.co.kr/credit-recovery.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 개인회생기간단축 -->
   <url>
     <loc>https://www.life-guide.co.kr/rehabilitation-period-reduction.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 개인회생파산 -->
   <url>
     <loc>https://www.life-guide.co.kr/rehabilitation-bankruptcy.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 개인회생절차 -->
   <url>
     <loc>https://www.life-guide.co.kr/rehabilitation-process.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 개인회생비용 -->
   <url>
     <loc>https://www.life-guide.co.kr/rehabilitation-cost.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 개인파산면책 -->
   <url>
     <loc>https://www.life-guide.co.kr/bankruptcy-discharge.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 개인회생개시결정 -->
   <url>
     <loc>https://www.life-guide.co.kr/rehabilitation-commencement.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 개인회생인가결정 -->
   <url>
     <loc>https://www.life-guide.co.kr/rehabilitation-approval.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 개인파산신고 -->
   <url>
     <loc>https://www.life-guide.co.kr/bankruptcy-filing.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 개인회생재신청 -->
   <url>
     <loc>https://www.life-guide.co.kr/rehabilitation-reapplication.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 개인회생신용회복 -->
   <url>
     <loc>https://www.life-guide.co.kr/rehabilitation-credit-recovery.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 빚갚는방법 -->
   <url>
     <loc>https://www.life-guide.co.kr/debt-repayment-methods.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 채무탕감 -->
   <url>
     <loc>https://www.life-guide.co.kr/debt-relief.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 개인회생변호사 -->
   <url>
     <loc>https://www.life-guide.co.kr/rehabilitation-lawyer.html</loc>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+  <!-- 웨딩정보 메인 -->
+
+  <url>
+    <loc>https://www.life-guide.co.kr/wedding.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 대구 엑스코 인터불고 웨딩박람회 -->
+
+  <url>
+    <loc>https://www.life-guide.co.kr/daegu-exco-interburgo-wedding-fair.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 다이렉트 결혼준비 웨딩박람회 -->
+
+  <url>
+    <loc>https://www.life-guide.co.kr/direct-wedding-preparation-fair.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 부산 W웨딩시티 웨딩박람회 -->
+
+  <url>
+    <loc>https://www.life-guide.co.kr/busan-w-wedding-city-fair.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 대전 컨벤션센터 웨딩박람회 -->
+
+  <url>
+    <loc>https://www.life-guide.co.kr/daejeon-convention-center-wedding-fair.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 일산 킨텍스 웨딩박람회 -->
+
+  <url>
+    <loc>https://www.life-guide.co.kr/ilsan-kintex-wedding-fair.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 용산 아이파크 웨딩박람회 -->
+
+  <url>
+    <loc>https://www.life-guide.co.kr/yongsan-ipark-wedding-fair.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 수원 메쎄 웨딩박람회 -->
+
+  <url>
+    <loc>https://www.life-guide.co.kr/suwon-messe-wedding-fair.html</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
