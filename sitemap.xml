@@ -497,4 +497,25 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- 동탄 롯데백화점 웨딩박람회 -->
+  <url>
+    <loc>https://www.life-guide.co.kr/dongtan-lotte-department-store-wedding-fair.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 부산 라모르 웨딩박람회 -->
+  <url>
+    <loc>https://www.life-guide.co.kr/busan-lamour-wedding-fair.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 부산 찰스 웨딩박람회 -->
+  <url>
+    <loc>https://www.life-guide.co.kr/busan-charles-wedding-fair.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
