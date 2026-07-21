@@ -235,7 +235,9 @@
     <priority>0.8</priority>
   </url>
 
+
   <!-- 법률정보 메인 -->
+
   <url>
     <loc>https://www.life-guide.co.kr/law.html</loc>
     <changefreq>weekly</changefreq>
@@ -356,7 +358,9 @@
     <priority>0.8</priority>
   </url>
 
+
   <!-- 웨딩정보 메인 -->
+
   <url>
     <loc>https://www.life-guide.co.kr/wedding.html</loc>
     <changefreq>weekly</changefreq>
@@ -419,6 +423,24 @@
 
   <url>
     <loc>https://www.life-guide.co.kr/gangnam-weddex-wedding-fair.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.life-guide.co.kr/ulsan-lotte-department-store-wedding-fair.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.life-guide.co.kr/incheon-songdo-convensia-wedding-fair.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.life-guide.co.kr/wonju-ak-plaza-wedding-fair.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
