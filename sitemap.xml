@@ -639,5 +639,55 @@
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
+
+
+<!-- 보험 카테고리 -->
+<url>
+  <loc>https://www.life-guide.co.kr/insurance.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://www.life-guide.co.kr/taeaboheom.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.life-guide.co.kr/hyundai-taeaboheom.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.life-guide.co.kr/taeaboheom-join-time.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.life-guide.co.kr/taeaboheom-comparison-site-ranking.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.life-guide.co.kr/taeaboheom-ranking-comparison.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.life-guide.co.kr/hyundai-taeaboheom-gift.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.life-guide.co.kr/taeaboheom-gift.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
   
 </urlset>
