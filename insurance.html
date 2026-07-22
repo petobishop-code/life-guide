@@ -1,1 +1,833 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>보험정보 | 태아보험·보험 비교 가이드 | 라이프가이드</title>
+  <meta name="description" content="라이프가이드 보험정보 페이지입니다. 태아보험을 비롯해 실손보험, 자동차보험, 연금보험 등 다양한 보험 정보를 확인해보세요.">
+  <meta name="keywords" content="보험정보, 태아보험, 보험비교, 보험가이드, 실손보험, 자동차보험, 연금보험">
+  <meta name="robots" content="index,follow">
+
+  <link rel="canonical" href="https://www.life-guide.co.kr/insurance.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="보험정보 | 라이프가이드">
+  <meta property="og:description" content="태아보험부터 다양한 보험 정보를 한곳에서 확인해보세요.">
+  <meta property="og:url" content="https://www.life-guide.co.kr/insurance.html">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans KR", sans-serif;
+      background: #ffffff;
+      color: #292524;
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    /* HEADER */
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid #f1e7e3;
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      height: 70px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: 800;
+      color: #ec8f9e;
+      white-space: nowrap;
+    }
+
+    .logo span {
+      color: #292524;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-left: 35px;
+    }
+
+    .nav a {
+      color: #57534e;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: #ec8f9e;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 80px 20px 100px;
+      background:
+        radial-gradient(
+          circle at 85% 20%,
+          rgba(236,143,158,0.16),
+          transparent 30%
+        ),
+        linear-gradient(
+          135deg,
+          #fff1f4 0%,
+          #fff8f7 55%,
+          #ffffff 100%
+        );
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 8px 16px;
+      background: #ffe4e9;
+      color: #be4964;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      margin-bottom: 24px;
+      font-size: 48px;
+      line-height: 1.3;
+      letter-spacing: -2px;
+    }
+
+    .hero h1 span {
+      color: #ec8f9e;
+    }
+
+    .hero-description {
+      max-width: 720px;
+      color: #78716c;
+      font-size: 18px;
+      line-height: 1.9;
+    }
+
+    /* CATEGORY */
+
+    .category-wrap {
+      max-width: 1100px;
+      margin: -45px auto 80px;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    .category-box {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      background: #ffffff;
+      border: 1px solid #eee7e5;
+      border-radius: 20px;
+      box-shadow: 0 15px 45px rgba(41,37,36,0.08);
+      overflow: hidden;
+    }
+
+    .category-item {
+      padding: 28px 20px;
+      text-align: center;
+      border-right: 1px solid #eee7e5;
+    }
+
+    .category-item:last-child {
+      border-right: 0;
+    }
+
+    .category-icon {
+      display: flex;
+      width: 52px;
+      height: 52px;
+      margin: 0 auto 13px;
+      align-items: center;
+      justify-content: center;
+      background: #fff1f4;
+      border-radius: 15px;
+      font-size: 24px;
+    }
+
+    .category-item strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+
+    .category-item span {
+      color: #a8a29e;
+      font-size: 12px;
+    }
+
+    /* MAIN */
+
+    .insurance-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px 100px;
+    }
+
+    .section-header {
+      margin-bottom: 35px;
+    }
+
+    .section-label {
+      display: block;
+      margin-bottom: 8px;
+      color: #ec8f9e;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .section-header h2 {
+      margin-bottom: 12px;
+      font-size: 34px;
+      letter-spacing: -1.5px;
+    }
+
+    .section-header p {
+      color: #78716c;
+      font-size: 16px;
+    }
+
+    /* CARD GRID */
+
+    .insurance-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 25px;
+    }
+
+    .insurance-card {
+      background: #ffffff;
+      border: 1px solid #eee7e5;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.25s;
+    }
+
+    .insurance-card:hover {
+      transform: translateY(-6px);
+      border-color: #fecdd6;
+      box-shadow: 0 18px 40px rgba(41,37,36,0.10);
+    }
+
+    .insurance-card a {
+      display: block;
+      height: 100%;
+    }
+
+    .insurance-image {
+      position: relative;
+      height: 230px;
+      overflow: hidden;
+      background: #fff8f7;
+    }
+
+    .insurance-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.4s;
+    }
+
+    .insurance-card:hover .insurance-image img {
+      transform: scale(1.04);
+    }
+
+    .insurance-category {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      padding: 7px 12px;
+      background: rgba(255,255,255,0.94);
+      color: #be4964;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 800;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .insurance-content {
+      padding: 25px;
+    }
+
+    .insurance-content h3 {
+      margin-bottom: 12px;
+      font-size: 21px;
+      line-height: 1.45;
+      letter-spacing: -0.7px;
+    }
+
+    .insurance-content p {
+      min-height: 78px;
+      margin-bottom: 20px;
+      color: #78716c;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .insurance-button {
+      color: #ec8f9e;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    /* GUIDE */
+
+    .guide {
+      padding: 90px 20px;
+      background: #fffafa;
+    }
+
+    .guide-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .guide-header {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .guide-header span {
+      color: #ec8f9e;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .guide-header h2 {
+      margin-top: 8px;
+      font-size: 32px;
+      letter-spacing: -1.3px;
+    }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+    }
+
+    .guide-card {
+      padding: 30px;
+      background: #ffffff;
+      border: 1px solid #eee7e5;
+      border-radius: 18px;
+    }
+
+    .guide-number {
+      display: flex;
+      width: 42px;
+      height: 42px;
+      margin-bottom: 18px;
+      align-items: center;
+      justify-content: center;
+      background: #ec8f9e;
+      color: #ffffff;
+      border-radius: 50%;
+      font-weight: 800;
+    }
+
+    .guide-card h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .guide-card p {
+      color: #78716c;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* NOTICE */
+
+    .notice-section {
+      max-width: 1100px;
+      margin: 80px auto 0;
+      padding: 0 20px;
+    }
+
+    .notice-box {
+      padding: 28px 30px;
+      background: #f5f5f4;
+      border-left: 4px solid #ec8f9e;
+      border-radius: 14px;
+    }
+
+    .notice-box strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .notice-box p {
+      color: #78716c;
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    /* FOOTER */
+
+    footer {
+      margin-top: 100px;
+      background: #292524;
+      color: #a8a29e;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 20px;
+    }
+
+    .footer-logo {
+      margin-bottom: 15px;
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .footer-menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .footer-menu a {
+      font-size: 13px;
+    }
+
+    .footer-menu a:hover {
+      color: #ffffff;
+    }
+
+    .footer-inner p {
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width:900px) {
+      .nav {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .insurance-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .category-box {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .category-item:nth-child(2) {
+        border-right: 0;
+      }
+
+      .category-item:nth-child(-n+2) {
+        border-bottom: 1px solid #eee7e5;
+      }
+
+      .guide-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width:600px) {
+      .hero {
+        padding-top: 55px;
+      }
+
+      .hero h1 {
+        font-size: 31px;
+      }
+
+      .hero-description {
+        font-size: 16px;
+      }
+
+      .insurance-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .insurance-image {
+        height: 220px;
+      }
+
+      .section-header h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-inner">
+
+    <a href="index.html" class="logo">
+      라이프<span>가이드</span>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html">홈</a>
+      <a href="health.html">건강</a>
+      <a href="insurance.html" class="active">보험</a>
+      <a href="wedding.html">웨딩</a>
+      <a href="finance.html">금융</a>
+      <a href="law.html">법률</a>
+      <a href="car.html">자동차</a>
+      <a href="travel.html">여행</a>
+      <a href="education.html">교육</a>
+      <a href="life.html">생활정보</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<section class="hero">
+  <div class="hero-inner">
+
+    <span class="hero-badge">
+      LIFE GUIDE · INSURANCE
+    </span>
+
+    <h1>
+      나와 가족에게 필요한<br>
+      <span>보험정보를 한눈에</span>
+    </h1>
+
+    <p class="hero-description">
+      태아보험부터 실손보험, 자동차보험, 연금보험까지
+      가입 전 알아두면 좋은 보험 정보를 쉽게 정리해드립니다.
+      보장내용과 보험료를 충분히 비교하고 자신에게 필요한 조건을 확인해보세요.
+    </p>
+
+  </div>
+</section>
+
+
+<div class="category-wrap">
+
+  <div class="category-box">
+
+    <div class="category-item">
+      <div class="category-icon">👶</div>
+      <strong>태아·어린이보험</strong>
+      <span>출산과 성장기 보장 정보</span>
+    </div>
+
+    <div class="category-item">
+      <div class="category-icon">🏥</div>
+      <strong>건강·실손보험</strong>
+      <span>의료비와 건강 보장 정보</span>
+    </div>
+
+    <div class="category-item">
+      <div class="category-icon">🚗</div>
+      <strong>자동차보험</strong>
+      <span>운전자와 자동차 보장 정보</span>
+    </div>
+
+    <div class="category-item">
+      <div class="category-icon">📋</div>
+      <strong>보험 가이드</strong>
+      <span>가입 전 확인사항</span>
+    </div>
+
+  </div>
+
+</div>
+
+
+<main class="insurance-section">
+
+  <div class="section-header">
+
+    <span class="section-label">
+      INSURANCE INFORMATION
+    </span>
+
+    <h2>보험정보</h2>
+
+    <p>
+      나와 가족의 상황에 맞는 다양한 보험 관련 정보를 확인해보세요.
+    </p>
+
+  </div>
+
+
+  <div class="insurance-grid">
+
+
+    <!-- 태아보험 -->
+
+    <article class="insurance-card">
+
+      <a href="taeaboheom.html">
+
+        <div class="insurance-image">
+
+          <img
+            src="assets/taeaboheom-01.png"
+            alt="태아보험"
+          >
+
+          <span class="insurance-category">
+            태아·어린이보험
+          </span>
+
+        </div>
+
+
+        <div class="insurance-content">
+
+          <h3>
+            태아보험
+          </h3>
+
+          <p>
+            태아보험 가입시기와 주요 보장내용,
+            보험료와 견적비교 등 가입 전
+            확인해야 할 핵심 정보를 살펴보세요.
+          </p>
+
+          <span class="insurance-button">
+            자세히 알아보기 →
+          </span>
+
+        </div>
+
+      </a>
+
+    </article>
+
+
+    <!--
+      앞으로 새로운 보험 상세페이지를 추가할 때
+      이 아래에 insurance-card를 계속 추가하면 됩니다.
+    -->
+
+
+  </div>
+
+</main>
+
+
+<section class="guide">
+
+  <div class="guide-inner">
+
+    <div class="guide-header">
+
+      <span>
+        INSURANCE GUIDE
+      </span>
+
+      <h2>
+        보험 가입 전 체크하세요
+      </h2>
+
+    </div>
+
+
+    <div class="guide-grid">
+
+      <div class="guide-card">
+
+        <span class="guide-number">
+          1
+        </span>
+
+        <h3>
+          필요한 보장 확인하기
+        </h3>
+
+        <p>
+          보장 항목이 많다고 무조건 좋은 것은 아닙니다.
+          자신의 상황과 가입 목적에 맞는 보장이 무엇인지 먼저 확인해보세요.
+        </p>
+
+      </div>
+
+
+      <div class="guide-card">
+
+        <span class="guide-number">
+          2
+        </span>
+
+        <h3>
+          보험료와 조건 비교하기
+        </h3>
+
+        <p>
+          여러 상품을 비교할 때는 보험료뿐 아니라
+          보장금액, 지급 조건과 보험기간 등을 같은 기준으로 비교하는 것이 좋습니다.
+        </p>
+
+      </div>
+
+
+      <div class="guide-card">
+
+        <span class="guide-number">
+          3
+        </span>
+
+        <h3>
+          약관과 상품설명 확인하기
+        </h3>
+
+        <p>
+          가입 전에는 보험상품의 약관과 상품설명서를 확인하고
+          면책사항과 감액 조건, 갱신 여부 등을 충분히 살펴보세요.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="notice-section">
+
+  <div class="notice-box">
+
+    <strong>
+      보험정보 이용 안내
+    </strong>
+
+    <p>
+      라이프가이드는 보험 관련 일반적인 정보를 제공합니다.
+      실제 보험상품의 가입 가능 여부와 보험료, 보장내용은 보험사 및 가입자의 상황에 따라 달라질 수 있습니다.
+      보험 가입 전에는 해당 보험사의 상품설명서와 약관을 확인하고
+      자신에게 필요한 보장인지 충분히 비교한 뒤 결정하시기 바랍니다.
+    </p>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <div class="footer-inner">
+
+    <div class="footer-logo">
+      라이프가이드
+    </div>
+
+    <div class="footer-menu">
+
+      <a href="index.html">
+        홈
+      </a>
+
+      <a href="health.html">
+        건강
+      </a>
+
+      <a href="insurance.html">
+        보험
+      </a>
+
+      <a href="wedding.html">
+        웨딩
+      </a>
+
+      <a href="finance.html">
+        금융
+      </a>
+
+      <a href="law.html">
+        법률
+      </a>
+
+      <a href="car.html">
+        자동차
+      </a>
+
+      <a href="travel.html">
+        여행
+      </a>
+
+      <a href="education.html">
+        교육
+      </a>
+
+      <a href="life.html">
+        생활정보
+      </a>
+
+    </div>
+
+    <p>
+      라이프가이드는 건강, 보험, 웨딩, 금융, 법률 등
+      생활에 필요한 다양한 정보를 제공합니다.
+    </p>
+
+    <p style="margin-top:18px;">
+      보험 관련 정보는 일반적인 정보 제공을 목적으로 하며,
+      실제 가입 조건과 보장 결과는 개인의 상황과
+      해당 보험상품 및 보험사의 기준에 따라 달라질 수 있습니다.
+    </p>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
