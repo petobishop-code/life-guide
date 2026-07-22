@@ -603,4 +603,41 @@
     <priority>0.9</priority>
   </url>
 
+
+  <url>
+  <loc>https://www.life-guide.co.kr/histock-loan.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.life-guide.co.kr/yahostock-loan.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.life-guide.co.kr/alltime-stock-loan.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.life-guide.co.kr/leaders-financial-planning-center.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.life-guide.co.kr/debt-consolidation-support-center.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.life-guide.co.kr/goodstock-loan.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+  
 </urlset>
