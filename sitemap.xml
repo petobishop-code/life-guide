@@ -546,12 +546,12 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 안산 롯데백화점 웨딩박람회 -->
-  <url>
-    <loc>https://www.life-guide.co.kr/ansan-lotte-department-store-wedding-fair.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <!-- 안산 웨딩박람회 -->
+ <url>
+  <loc>https://www.life-guide.co.kr/ansan-wedding-fair.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
 
   <url>
   <loc>https://www.life-guide.co.kr/jamsil-lotte-department-store-wedding-fair.html</loc>
