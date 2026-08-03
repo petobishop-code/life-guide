@@ -92,11 +92,64 @@
       height: 42px;
       border: 1px solid #d1d5db;
       border-radius: 9px;
-      padding: 0 15px;
+      padding: 0 10px 0 14px;
       display: flex;
       align-items: center;
+      background: #ffffff;
+      transition: 0.2s;
+    }
+
+    .search-box:focus-within {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+    }
+
+    .search-box input {
+      width: 100%;
+      min-width: 0;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: #111827;
       font-size: 13px;
+      font-family: inherit;
+    }
+
+    .search-box input::placeholder {
       color: #6b7280;
+    }
+
+    .search-box button {
+      flex: 0 0 auto;
+      border: 0;
+      background: transparent;
+      padding: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    .search-result-info {
+      display: none;
+      margin: -15px 0 25px;
+      padding: 13px 16px;
+      border-radius: 10px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .no-search-results {
+      display: none;
+      grid-column: 1 / -1;
+      padding: 50px 20px;
+      border: 1px solid #e5e7eb;
+      border-radius: 15px;
+      background: #ffffff;
+      color: #6b7280;
+      text-align: center;
+      line-height: 1.8;
     }
 
     .hero {
@@ -371,9 +424,16 @@
       <a href="index.html#life">생활정보</a>
     </nav>
 
-    <div class="search-box">
-      검색어를 입력하세요 🔍
-    </div>
+    <form class="search-box" id="law-search-form" role="search">
+      <input
+        type="search"
+        id="law-search-input"
+        placeholder="검색어를 입력하세요"
+        aria-label="법률정보 검색"
+        autocomplete="off"
+      >
+      <button type="submit" aria-label="검색">🔍</button>
+    </form>
 
   </div>
 </header>
@@ -441,7 +501,14 @@
     많이 찾는 법률 콘텐츠
   </h2>
 
-  <div class="article-grid">
+  <div class="search-result-info" id="search-result-info" aria-live="polite"></div>
+
+  <div class="article-grid" id="law-article-grid">
+
+    <div class="no-search-results" id="no-search-results">
+      검색 결과가 없습니다.<br>
+      다른 검색어로 다시 입력해 주세요.
+    </div>
 
 
     <a href="personal-rehabilitation.html" class="article-card">
@@ -667,6 +734,77 @@
   </div>
 
 </footer>
+
+
+<script>
+  const searchForm = document.getElementById("law-search-form");
+  const searchInput = document.getElementById("law-search-input");
+  const articleCards = Array.from(document.querySelectorAll(".article-card"));
+  const resultInfo = document.getElementById("search-result-info");
+  const noResults = document.getElementById("no-search-results");
+  const contentSection = document.querySelector(".content-section");
+
+  function normalizeText(text) {
+    return text
+      .toLowerCase()
+      .replace(/\s+/g, "")
+      .trim();
+  }
+
+  function resetSearch() {
+    articleCards.forEach((card) => {
+      card.style.display = "";
+    });
+
+    resultInfo.style.display = "none";
+    resultInfo.textContent = "";
+    noResults.style.display = "none";
+  }
+
+  function runSearch(keyword) {
+    const normalizedKeyword = normalizeText(keyword);
+
+    if (!normalizedKeyword) {
+      resetSearch();
+      return;
+    }
+
+    let visibleCount = 0;
+
+    articleCards.forEach((card) => {
+      const cardText = normalizeText(card.textContent || "");
+      const isMatch = cardText.includes(normalizedKeyword);
+
+      card.style.display = isMatch ? "" : "none";
+
+      if (isMatch) {
+        visibleCount += 1;
+      }
+    });
+
+    resultInfo.style.display = "block";
+    resultInfo.textContent =
+      '"' + keyword + '" 검색 결과 ' + visibleCount + '개';
+
+    noResults.style.display = visibleCount === 0 ? "block" : "none";
+
+    contentSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+
+  searchForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    runSearch(searchInput.value.trim());
+  });
+
+  searchInput.addEventListener("input", function () {
+    if (!searchInput.value.trim()) {
+      resetSearch();
+    }
+  });
+</script>
 
 </body>
 </html>
