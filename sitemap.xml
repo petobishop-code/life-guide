@@ -707,5 +707,23 @@
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
+
+<url>
+  <loc>https://www.life-guide.co.kr/bankruptcy-filing-documents.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://www.life-guide.co.kr/rehabilitation-period-reduction-conditions.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://www.life-guide.co.kr/personal-rehabilitation-application-process.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
   
 </urlset>
