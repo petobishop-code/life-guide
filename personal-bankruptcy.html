@@ -1,964 +1,548 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>개인파산 알아보기 | 신청조건·면책·절차 | 라이프가이드</title>
-
-  <meta name="description" content="개인파산 제도와 신청조건, 면책 절차, 준비사항을 알아봅니다. 개인파산을 준비할 때 확인해야 할 주요 정보를 살펴보세요.">
-
-  <meta name="keywords" content="개인파산, 개인파산신청, 개인파산신청자격, 개인파산면책, 파산신청, 개인파산상담">
-
-  <meta name="robots" content="index,follow">
-
-  <link rel="canonical" href="https://www.life-guide.co.kr/personal-bankruptcy.html">
-
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="개인파산 알아보기 | 라이프가이드">
-  <meta property="og:description" content="개인파산 신청조건과 면책 절차, 준비사항을 확인하세요.">
-  <meta property="og:url" content="https://www.life-guide.co.kr/personal-bankruptcy.html">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, "Noto Sans KR", sans-serif;
-      background: #ffffff;
-      color: #111827;
-      line-height: 1.8;
-      word-break: keep-all;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    .header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255,255,255,0.96);
-      border-bottom: 1px solid #e5e7eb;
-      backdrop-filter: blur(10px);
-    }
-
-    .header-inner {
-      max-width: 1200px;
-      height: 70px;
-      margin: 0 auto;
-      padding: 0 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      font-size: 23px;
-      font-weight: 800;
-      color: #2563eb;
-      white-space: nowrap;
-    }
-
-    .logo span {
-      color: #111827;
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      margin-left: 35px;
-      margin-right: auto;
-    }
-
-    .nav a {
-      font-size: 14px;
-      font-weight: 600;
-      color: #1f2937;
-    }
-
-    .nav a:hover,
-    .nav a.active {
-      color: #2563eb;
-    }
-
-    .header-button {
-      padding: 11px 18px;
-      border-radius: 10px;
-      background: #2563eb;
-      color: #ffffff;
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    .breadcrumb {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 30px 20px 0;
-      font-size: 14px;
-      color: #64748b;
-    }
-
-    .breadcrumb a {
-      color: #2563eb;
-      font-weight: 600;
-    }
-
-    .hero {
-      padding: 60px 20px 70px;
-      background: linear-gradient(135deg,#eff6ff 0%,#f8fbff 45%,#ffffff 100%);
-    }
-
-    .hero-inner {
-      max-width: 1000px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .hero-tag {
-      display: inline-block;
-      padding: 8px 15px;
-      margin-bottom: 20px;
-      background: #dbeafe;
-      color: #1d4ed8;
-      border-radius: 30px;
-      font-size: 14px;
-      font-weight: 800;
-    }
-
-    .hero h1 {
-      font-size: 46px;
-      line-height: 1.3;
-      letter-spacing: -2px;
-      margin-bottom: 22px;
-    }
-
-    .hero h1 span {
-      color: #2563eb;
-    }
-
-    .hero-desc {
-      max-width: 760px;
-      margin: 0 auto 30px;
-      color: #64748b;
-      font-size: 18px;
-      line-height: 1.9;
-    }
-
-    .cta-button {
-      display: inline-block;
-      padding: 18px 34px;
-      background: #2563eb;
-      color: #ffffff;
-      border-radius: 13px;
-      font-size: 17px;
-      font-weight: 800;
-      box-shadow: 0 10px 25px rgba(37,99,235,0.22);
-      transition: 0.2s;
-    }
-
-    .cta-button:hover {
-      transform: translateY(-3px);
-      background: #1d4ed8;
-    }
-
-    .cta-small {
-      display: block;
-      margin-top: 13px;
-      color: #64748b;
-      font-size: 12px;
-    }
-
-    .cta-section {
-      margin: 45px 0;
-      padding: 38px 30px;
-      background: linear-gradient(135deg,#eff6ff,#f8fbff);
-      border: 1px solid #bfdbfe;
-      border-radius: 22px;
-      text-align: center;
-    }
-
-    .cta-section h3 {
-      margin-bottom: 10px;
-      font-size: 25px;
-      color: #1e3a8a;
-    }
-
-    .cta-section p {
-      margin-bottom: 23px;
-      color: #475569;
-      font-size: 15px;
-    }
-
-    .toc-wrap {
-      max-width: 900px;
-      margin: -30px auto 70px;
-      padding: 0 20px;
-      position: relative;
-    }
-
-    .toc {
-      padding: 30px;
-      background: #ffffff;
-      border-radius: 20px;
-      box-shadow: 0 15px 50px rgba(15,23,42,0.08);
-    }
-
-    .toc strong {
-      display: block;
-      margin-bottom: 18px;
-      font-size: 18px;
-    }
-
-    .toc-grid {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 12px;
-    }
-
-    .toc a {
-      padding: 13px 15px;
-      background: #f8fafc;
-      border-radius: 10px;
-      color: #475569;
-      font-size: 14px;
-    }
-
-    .toc a:hover {
-      background: #eff6ff;
-      color: #2563eb;
-    }
-
-    .article {
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .intro {
-      margin-bottom: 70px;
-      font-size: 18px;
-      line-height: 2;
-      color: #374151;
-    }
-
-    .section {
-      margin-bottom: 90px;
-      scroll-margin-top: 100px;
-    }
-
-    .section-number {
-      display: inline-flex;
-      width: 42px;
-      height: 42px;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 17px;
-      background: #2563eb;
-      color: #ffffff;
-      border-radius: 50%;
-      font-weight: 800;
-    }
-
-    .section h2 {
-      margin-bottom: 25px;
-      font-size: 31px;
-      line-height: 1.45;
-      letter-spacing: -1.5px;
-    }
-
-    .section p {
-      margin-bottom: 20px;
-      color: #374151;
-      font-size: 16px;
-      line-height: 1.95;
-    }
-
-    .image-box {
-      margin: 35px 0;
-      padding: 18px;
-      background: #f8fafc;
-      border-radius: 24px;
-      text-align: center;
-    }
-
-    .image-box img {
-      margin: 0 auto;
-      max-height: 900px;
-      border-radius: 15px;
-      object-fit: contain;
-    }
-
-    .image-caption {
-      margin-top: 15px;
-      color: #94a3b8;
-      font-size: 13px;
-      line-height: 1.6;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 18px;
-      margin: 35px 0;
-    }
-
-    .feature-card {
-      padding: 28px;
-      background: #f8fafc;
-      border-radius: 18px;
-      border: 1px solid #e5e7eb;
-    }
-
-    .feature-card h3 {
-      margin-bottom: 10px;
-      font-size: 18px;
-    }
-
-    .feature-card p {
-      margin: 0;
-      font-size: 14px;
-      color: #64748b;
-    }
-
-    .check-list {
-      margin: 30px 0;
-      padding: 30px;
-      background: #f8fafc;
-      border-radius: 18px;
-    }
-
-    .check-item {
-      display: flex;
-      gap: 13px;
-      margin-bottom: 16px;
-      color: #374151;
-    }
-
-    .check-item:last-child {
-      margin-bottom: 0;
-    }
-
-    .check {
-      color: #2563eb;
-      font-weight: 900;
-    }
-
-    .notice-box {
-      margin: 35px 0;
-      padding: 28px;
-      background: #fff8df;
-      border-left: 4px solid #eab308;
-      border-radius: 12px;
-    }
-
-    .notice-box strong {
-      display: block;
-      margin-bottom: 10px;
-      color: #92400e;
-    }
-
-    .notice-box p {
-      margin: 0;
-      font-size: 15px;
-    }
-
-    .info-notice {
-      margin: 25px 0 35px;
-      padding: 22px 25px;
-      background: #eff6ff;
-      border-radius: 14px;
-      color: #475569;
-      font-size: 14px;
-      line-height: 1.8;
-    }
-
-    .faq-section {
-      max-width: 820px;
-      margin: 100px auto 0;
-      padding: 0 20px;
-    }
-
-    .faq-label {
-      color: #2563eb;
-      font-size: 14px;
-      font-weight: 800;
-    }
-
-    .faq-section h2 {
-      margin: 8px 0 30px;
-      font-size: 31px;
-    }
-
-    .faq-item {
-      padding: 28px 0;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .faq-item h3 {
-      margin-bottom: 12px;
-      font-size: 18px;
-    }
-
-    .faq-item p {
-      color: #64748b;
-      font-size: 15px;
-      line-height: 1.8;
-    }
-
-    .related {
-      max-width: 820px;
-      margin: 90px auto;
-      padding: 0 20px;
-    }
-
-    footer {
-      margin-top: 100px;
-      background: #111827;
-      color: #9ca3af;
-    }
-
-    .footer-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 55px 20px;
-    }
-
-    .footer-logo {
-      margin-bottom: 15px;
-      color: #ffffff;
-      font-size: 22px;
-      font-weight: 800;
-    }
-
-    .footer-inner p {
-      font-size: 13px;
-      line-height: 1.9;
-    }
-
-    @media (max-width:900px) {
-      .nav {
-        display: none;
-      }
-
-      .hero h1 {
-        font-size: 36px;
-      }
-
-      .feature-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width:600px) {
-      .hero h1 {
-        font-size: 30px;
-      }
-
-      .toc-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .section h2 {
-        font-size: 25px;
-      }
-
-      .cta-button {
-        width: 100%;
-      }
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>개인파산 총정리 | 신청조건·절차·면책·준비서류 | 라이프가이드</title>
+<meta content="개인파산을 검토할 때 필요한 지급불능 판단, 소득과 재산, 채무 발생 경위, 파산선고와 면책 차이, 신청 절차, 준비서류와 주의사항을 자세히 정리했습니다." name="description"/>
+<meta content="개인파산, 개인파산신청, 개인파산신청자격, 개인파산면책, 파산선고, 면책절차, 개인파산준비서류, 개인회생개인파산차이" name="keywords"/>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<link href="https://www.life-guide.co.kr/personal-bankruptcy.html" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="개인파산 총정리 | 신청조건·절차·면책 | 라이프가이드" property="og:title"/>
+<meta content="개인파산 신청 전 확인할 조건부터 파산선고와 면책, 준비자료와 진행 흐름까지 자세히 살펴보세요." property="og:description"/>
+<meta content="https://www.life-guide.co.kr/personal-bankruptcy.html" property="og:url"/>
+<meta content="라이프가이드" property="og:site_name"/>
+<style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Arial,"Noto Sans KR",sans-serif;
+      color:#172033;
+      background:#fff;
+      line-height:1.85;
+      word-break:keep-all;
+    }
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+
+    .header{
+      position:sticky;top:0;z-index:1000;
+      background:rgba(255,255,255,.96);
+      border-bottom:1px solid #e7e9f2;
+      backdrop-filter:blur(10px);
+    }
+    .header-inner{
+      max-width:1200px;height:70px;margin:auto;padding:0 20px;
+      display:flex;align-items:center;justify-content:space-between;
+    }
+    .logo{font-size:23px;font-weight:900;color:#6d28d9;white-space:nowrap}
+    .logo span{color:#172033}
+    .nav{display:flex;gap:24px;margin-left:35px;margin-right:auto}
+    .nav a{font-size:14px;font-weight:700;color:#374151}
+    .nav a:hover,.nav a.active{color:#6d28d9}
+    .header-button{
+      padding:11px 18px;border-radius:10px;background:#6d28d9;
+      color:#fff;font-size:13px;font-weight:800;
+    }
+
+    .breadcrumb{max-width:1040px;margin:auto;padding:28px 20px 0;font-size:14px;color:#7c8497}
+    .breadcrumb a{color:#6d28d9;font-weight:700}
+
+    .hero{
+      margin-top:20px;padding:78px 20px 92px;
+      background:
+        radial-gradient(circle at 12% 20%,rgba(124,58,237,.13),transparent 26%),
+        radial-gradient(circle at 88% 35%,rgba(14,165,233,.10),transparent 25%),
+        linear-gradient(145deg,#f7f3ff,#fbfdff 52%,#fff);
+    }
+    .hero-inner{max-width:1000px;margin:auto;text-align:center}
+    .hero-tag{
+      display:inline-block;margin-bottom:20px;padding:8px 16px;
+      border:1px solid #ddd6fe;border-radius:999px;background:#f5f3ff;
+      color:#6d28d9;font-size:14px;font-weight:900;
+    }
+    .hero h1{font-size:48px;line-height:1.25;letter-spacing:-2.2px;margin-bottom:24px}
+    .hero h1 span{color:#6d28d9}
+    .hero-desc{
+      max-width:790px;margin:0 auto 32px;color:#626b7e;
+      font-size:18px;line-height:1.95;
+    }
+    .cta-button{
+      display:inline-block;padding:17px 32px;border-radius:13px;
+      background:#6d28d9;color:#fff;font-size:17px;font-weight:900;
+      box-shadow:0 12px 28px rgba(109,40,217,.2);transition:.2s;
+    }
+    .cta-button:hover{transform:translateY(-2px);background:#5b21b6}
+    .cta-small{display:block;margin-top:12px;color:#8b93a5;font-size:12px}
+
+    .summary-wrap{max-width:980px;margin:-38px auto 75px;padding:0 20px;position:relative}
+    .summary-box{
+      padding:30px;background:#fff;border:1px solid #ececf4;border-radius:22px;
+      box-shadow:0 18px 55px rgba(31,41,55,.09);
+    }
+    .summary-title{font-size:18px;font-weight:900;margin-bottom:18px}
+    .summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+    .summary-grid a{
+      padding:16px 15px;border-radius:13px;background:#faf9ff;
+      border:1px solid #ede9fe;color:#4b5563;font-size:14px;font-weight:700;
+    }
+    .summary-grid a:hover{background:#f3e8ff;color:#6d28d9}
+
+    .article{max-width:850px;margin:auto;padding:0 20px}
+    .lead{
+      margin-bottom:78px;padding:30px 32px;border-left:5px solid #7c3aed;
+      background:#faf9ff;border-radius:0 18px 18px 0;
+      color:#374151;font-size:18px;line-height:2;
+    }
+    .section{margin-bottom:95px;scroll-margin-top:100px}
+    .eyebrow{display:block;margin-bottom:10px;color:#7c3aed;font-size:14px;font-weight:900}
+    .section h2{margin-bottom:25px;font-size:32px;line-height:1.42;letter-spacing:-1.5px}
+    .section h3{margin:35px 0 15px;font-size:22px;line-height:1.5}
+    .section p{margin-bottom:20px;color:#374151;font-size:16px;line-height:2}
+
+    .text-link{color:#6d28d9;font-weight:900;border-bottom:1px solid #c4b5fd}
+    .text-link:hover{color:#4c1d95}
+
+    .image-box{
+      margin:34px 0;padding:18px;background:#f8fafc;border-radius:24px;
+      border:1px solid #eef0f4;text-align:center;
+    }
+    .image-box img{margin:auto;max-height:900px;border-radius:16px;object-fit:contain}
+    .image-caption{margin-top:14px;color:#9299a8;font-size:13px;line-height:1.65}
+
+    .point-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:32px 0}
+    .point-card{
+      padding:27px;border:1px solid #e9e7f2;border-radius:18px;background:#fff;
+      box-shadow:0 8px 22px rgba(31,41,55,.04);
+    }
+    .point-card strong{display:block;margin-bottom:10px;color:#3b1d75;font-size:18px}
+    .point-card p{margin:0;color:#667085;font-size:14px;line-height:1.8}
+
+    .step-list{margin:30px 0;counter-reset:step}
+    .step{
+      position:relative;margin-bottom:16px;padding:23px 24px 23px 72px;
+      border:1px solid #e7e5f0;border-radius:16px;background:#fff;
+    }
+    .step:before{
+      counter-increment:step;content:counter(step);
+      position:absolute;left:22px;top:21px;width:34px;height:34px;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      background:#ede9fe;color:#6d28d9;font-weight:900;
+    }
+    .step strong{display:block;margin-bottom:6px;font-size:17px}
+    .step p{margin:0;color:#667085;font-size:14px;line-height:1.8}
+
+    .compare-wrap{margin:34px 0;overflow-x:auto;border:1px solid #e5e7eb;border-radius:18px}
+    table{width:100%;border-collapse:collapse;min-width:650px}
+    th,td{padding:18px 16px;border-bottom:1px solid #e5e7eb;text-align:left;vertical-align:top}
+    th{background:#f7f5ff;color:#4c1d95;font-size:14px}
+    td{color:#4b5563;font-size:14px;line-height:1.75}
+    tr:last-child td{border-bottom:0}
+
+    .check-box{margin:30px 0;padding:30px;border-radius:20px;background:#f8fafc}
+    .check-item{display:flex;gap:12px;margin-bottom:15px;color:#374151}
+    .check-item:last-child{margin-bottom:0}
+    .check{color:#7c3aed;font-weight:900}
+
+    .notice{
+      margin:34px 0;padding:27px 28px;border-radius:16px;
+      background:#fff7ed;border-left:5px solid #f59e0b;
+    }
+    .notice strong{display:block;margin-bottom:10px;color:#9a5209}
+    .notice p{margin:0;font-size:15px;color:#6b4b2c}
+
+    .inline-guide{
+      margin:35px 0;padding:29px;border:1px solid #ddd6fe;border-radius:18px;
+      background:linear-gradient(135deg,#faf5ff,#f8fbff);
+    }
+    .inline-guide strong{display:block;margin-bottom:11px;color:#4c1d95;font-size:19px}
+    .inline-guide p{margin:0;color:#596275;font-size:15px}
+
+    .cta-section{
+      margin:42px 0;padding:38px 30px;border-radius:22px;text-align:center;
+      background:linear-gradient(135deg,#f5f3ff,#f8fbff);
+      border:1px solid #ddd6fe;
+    }
+    .cta-section h3{margin:0 0 10px;color:#4c1d95;font-size:25px}
+    .cta-section p{margin:0 0 22px;color:#667085;font-size:15px}
+
+    .faq-section{max-width:850px;margin:95px auto 0;padding:0 20px}
+    .faq-label{color:#7c3aed;font-size:14px;font-weight:900}
+    .faq-section h2{margin:8px 0 28px;font-size:32px}
+    .faq-item{padding:27px 0;border-bottom:1px solid #e5e7eb}
+    .faq-item h3{margin-bottom:11px;font-size:18px}
+    .faq-item p{color:#667085;font-size:15px;line-height:1.85}
+
+    .related{max-width:1000px;margin:95px auto;padding:0 20px}
+    .related-head{text-align:center;margin-bottom:28px}
+    .related-head span{color:#7c3aed;font-size:14px;font-weight:900}
+    .related-head h2{margin-top:7px;font-size:31px}
+    .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .related-card{
+      padding:25px;border:1px solid #e8e7ef;border-radius:18px;background:#fff;
+      transition:.2s;
+    }
+    .related-card:hover{transform:translateY(-3px);border-color:#c4b5fd;box-shadow:0 12px 30px rgba(31,41,55,.07)}
+    .related-card small{color:#7c3aed;font-weight:900}
+    .related-card h3{margin:9px 0 10px;font-size:19px}
+    .related-card p{color:#727b8d;font-size:14px;line-height:1.75}
+
+    footer{margin-top:100px;background:#171425;color:#a7adbb}
+    .footer-inner{max-width:1100px;margin:auto;padding:55px 20px}
+    .footer-logo{margin-bottom:14px;color:#fff;font-size:22px;font-weight:900}
+    .footer-inner p{font-size:13px;line-height:1.9}
+
+    @media(max-width:900px){
+      .nav{display:none}
+      .hero h1{font-size:38px}
+      .summary-grid{grid-template-columns:repeat(2,1fr)}
+      .related-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:620px){
+      .hero{padding-top:60px}
+      .hero h1{font-size:30px}
+      .hero-desc{font-size:16px}
+      .summary-grid,.point-grid{grid-template-columns:1fr}
+      .section h2,.faq-section h2,.related-head h2{font-size:26px}
+      .cta-button{width:100%}
+      .lead{padding:24px 22px;font-size:16px}
     }
   </style>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "개인파산 총정리: 신청조건·절차·면책·준비서류",
+  "description": "개인파산의 판단 기준, 파산선고와 면책의 차이, 준비자료와 진행 흐름을 정리한 안내 글입니다.",
+  "mainEntityOfPage": "https://www.life-guide.co.kr/personal-bankruptcy.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "라이프가이드"
+  }
+}
+  </script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "개인파산을 신청하면 채무가 바로 없어지나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "아닙니다. 파산선고와 면책은 구분되는 절차입니다. 파산선고는 채무자의 재산과 채무관계를 법원의 절차 안에서 정리하는 단계이고, 남은 채무에 대한 책임이 면제되는지는 별도의 면책 판단을 거쳐야 합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "소득이 조금 있어도 개인파산을 검토할 수 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "소득이 있다는 사실 하나만으로 신청 가능 여부가 정해지는 것은 아닙니다. 실제 월소득에서 주거비, 의료비, 부양비 등 필요한 생활비를 제외했을 때 지속적인 변제가 가능한지, 앞으로 소득이 회복될 가능성이 있는지 등을 함께 살펴볼 수 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "재산이 있으면 개인파산 신청이 불가능한가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "재산의 존재만으로 일률적으로 판단하기 어렵습니다. 부동산과 차량의 시세, 담보채무, 임대차보증금, 보험 해약환급금처럼 실제 환가 가능한 가치가 어느 정도인지 확인해야 하며 최근 처분하거나 이전한 재산도 함께 정리할 필요가 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "개인파산과 개인회생 중 무엇을 선택해야 하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "계속적이거나 반복적인 소득으로 일정 금액을 변제할 수 있다면 개인회생을 함께 검토할 수 있고, 생계비를 고려했을 때 계속적인 변제가 사실상 어려운 상황이라면 개인파산 검토 비중이 커질 수 있습니다. 다만 재산, 부양가족, 채무 발생 경위까지 함께 비교해야 합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "파산선고를 받으면 면책도 반드시 허가되나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "반드시 그렇지는 않습니다. 법원은 신청서와 첨부자료, 재산 변동, 채무가 늘어난 과정, 최근 금융거래와 진술의 일치 여부 등을 살펴 면책 여부를 판단할 수 있습니다. 따라서 파산선고와 면책결정을 같은 의미로 이해하지 않는 것이 중요합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "개인파산 준비 시 어떤 자료를 먼저 모아야 하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "채권자와 채무 목록, 급여·사업·연금 등 소득자료, 예금·보험·차량·부동산·보증금 등 재산자료, 가족관계와 주거자료, 최근 계좌와 카드 거래내역을 항목별로 나누어 준비하면 현재 상황을 파악하기 쉽습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "최근에 받은 대출이 있어도 신청할 수 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "최근 대출이 있다는 이유만으로 결과를 단정하기는 어렵지만 대출 시점과 사용처, 당시 상환 가능성에 대한 설명이 중요할 수 있습니다. 기존 채무를 돌려막았는지, 생활비나 의료비로 사용했는지 등을 거래내역과 함께 사실대로 정리해야 합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "가족에게 송금한 내역도 확인해야 하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "최근 가족이나 지인에게 큰 금액을 송금했거나 재산 명의를 이전했다면 시기와 이유, 자금의 성격을 확인해두는 것이 좋습니다. 단순 생활비인지, 기존 차용금 상환인지, 재산 처분대금인지에 따라 설명에 필요한 자료가 달라질 수 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "개인파산과 면책은 얼마나 걸리나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "법원 공식 안내에서는 파산 및 면책 동시신청의 경우 신청부터 면책 여부 결정까지 약 6~8개월이 걸릴 수 있다고 설명하지만, 사건량, 심문 여부, 보정과 추가자료 제출, 재판부 상황에 따라 실제 기간은 달라질 수 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "면책 후에는 모든 문제가 바로 끝나나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "면책결정이 확정되더라도 신용정보 정리와 금융거래 회복에는 시간이 필요할 수 있습니다. 또한 모든 채무가 동일하게 면책되는 것은 아니므로 결정문과 채무별 처리 내용을 확인하고 이후 생활비 관리와 재무계획을 다시 세우는 과정이 필요합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "개인파산 신청 비용은 모두 동일한가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "인지대와 송달료, 사건에 따라 발생할 수 있는 파산관재인 관련 비용 등은 신청 형태와 법원, 사건 내용에 따라 달라질 수 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "독촉이나 압류가 진행 중이면 개인파산을 신청할 수 없나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "독촉이나 집행이 진행 중이라는 이유만으로 신청이 불가능하다고 단정할 수는 없지만, 현재 진행 단계와 대응기한을 별도로 확인해야 합니다."
+      }
+    }
+  ]
+}</script>
 </head>
-
 <body>
-
 <header class="header">
-  <div class="header-inner">
-
-    <a href="index.html" class="logo">
-      라이프<span>가이드</span>
-    </a>
-
-    <nav class="nav">
-      <a href="index.html">홈</a>
-      <a href="health.html">건강</a>
-      <a href="index.html#insurance">보험</a>
-      <a href="index.html#wedding">웨딩</a>
-      <a href="index.html#finance">금융</a>
-      <a href="law.html" class="active">법률</a>
-      <a href="index.html#car">자동차</a>
-      <a href="index.html#travel">여행</a>
-      <a href="index.html#life">생활정보</a>
-    </nav>
-
-    <a href="https://replyalba.com/pt/HEEa2EBAsi"
-       class="header-button"
-       target="_blank"
-       rel="noopener sponsored">
-      무료상담 신청
-    </a>
-
-  </div>
+<div class="header-inner">
+<a class="logo" href="index.html">라이프<span>가이드</span></a>
+<nav class="nav">
+<a href="index.html">홈</a><a href="health.html">건강</a><a href="index.html#insurance">보험</a>
+<a href="index.html#wedding">웨딩</a><a href="index.html#finance">금융</a>
+<a class="active" href="law.html">법률</a><a href="index.html#car">자동차</a>
+<a href="index.html#travel">여행</a><a href="index.html#life">생활정보</a>
+</nav>
+<a class="header-button" href="https://replyalba.com/pt/HEEa2EBAsi" rel="noopener sponsored" target="_blank">무료상담 신청</a>
+</div>
 </header>
-
-
-<div class="breadcrumb">
-  <a href="index.html">홈</a>
-  &nbsp;›&nbsp;
-  <a href="law.html">법률정보</a>
-  &nbsp;›&nbsp;
-  개인파산
-</div>
-
-
+<div class="breadcrumb"><a href="index.html">홈</a>  ›  <a href="law.html">법률정보</a>  ›  개인파산</div>
 <section class="hero">
-  <div class="hero-inner">
-
-    <span class="hero-tag">개인파산 정보</span>
-
-    <h1>
-      <span>개인파산</span><br>
-      신청 전 무엇을 확인해야 할까요?
-    </h1>
-
-    <p class="hero-desc">
-      개인파산 제도의 기본 내용과 신청조건,
-      면책 절차와 준비사항을 확인하고 자신의 상황에 맞는 정보를 알아봅니다.
-    </p>
-
-    <a href="https://replyalba.com/pt/HEEa2EBAsi"
-       class="cta-button"
-       target="_blank"
-       rel="noopener sponsored">
-      개인파산 무료상담 신청하기
-    </a>
-
-    <span class="cta-small">
-      상담 신청 페이지로 이동합니다.
-    </span>
-
-  </div>
-</section>
-
-
-<div class="toc-wrap">
-  <div class="toc">
-
-    <strong>이 페이지에서 확인할 내용</strong>
-
-    <div class="toc-grid">
-      <a href="#section1">1. 개인파산이란?</a>
-      <a href="#section2">2. 신청조건 확인하기</a>
-      <a href="#section3">3. 면책 절차 알아보기</a>
-      <a href="#section4">4. 신청 전 준비사항</a>
-      <a href="#section5">5. 상담 전 확인할 점</a>
-      <a href="#faq">자주 묻는 질문</a>
-    </div>
-
-  </div>
+<div class="hero-inner">
+<span class="hero-tag">파산선고부터 면책까지 한 번에 확인</span>
+<h1><span>개인파산</span><br/>신청 전에 무엇부터 정리해야 할까요?</h1>
+<p class="hero-desc">개인파산은 단순히 빚이 많다는 이유만으로 판단되는 절차가 아닙니다. 현재 소득과 생활비, 재산의 실제 가치, 채무가 늘어난 과정, 최근 금융거래와 면책 관련 사항을 순서대로 확인해야 합니다.</p>
+<a class="cta-button" href="https://replyalba.com/pt/HEEa2EBAsi" rel="noopener sponsored" target="_blank">개인파산 무료상담 신청하기</a>
+<span class="cta-small">상담 신청 페이지로 이동합니다.</span>
 </div>
-
-
+</section>
+<div class="summary-wrap">
+<div class="summary-box">
+<div class="summary-title">이 글에서 확인할 핵심 내용</div>
+<div class="summary-grid">
+<a href="#section1">1. 파산과 면책 차이</a><a href="#section2">2. 지급불능 판단</a>
+<a href="#section3">3. 재산 확인</a><a href="#section4">4. 채무 발생 경위</a>
+<a href="#section5">5. 전체 진행 절차</a><a href="#section6">6. 준비서류</a>
+<a href="#section7">7. 개인회생 비교</a><a href="#section8">8. 면책 주의사항</a>
+<a href="#section9">9. 신청 전 점검</a><a href="#faq">자주 묻는 질문</a>
+<a href="#section10">10. 직업별 준비</a><a href="#section11">11. 독촉·압류 확인</a></div>
+</div>
+</div>
 <main class="article">
-
-  <p class="intro">
-    채무를 정상적으로 상환하기 어려운 상황이라면
-    개인파산과 면책 제도를 알아보는 경우가 있습니다.
-    개인파산은 개인의 소득과 재산, 채무 상황 등을 종합적으로 검토하는 절차이므로
-    자신의 현재 상황을 정확하게 확인하는 것이 중요합니다.
-  </p>
-
-
-  <section class="section" id="section1">
-
-    <span class="section-number">1</span>
-
-    <h2>개인파산은 어떤 제도일까요?</h2>
-
-    <p>
-      개인파산은 현재의 재산과 소득으로 채무를 정상적으로 변제하기 어려운 경우
-      법원의 절차를 통해 채무자의 재산과 채무 상태를 정리하는 제도입니다.
-    </p>
-
-    <p>
-      파산 선고만으로 모든 채무가 자동으로 없어지는 것은 아니며,
-      별도의 면책 절차와 판단이 이어질 수 있습니다.
-      따라서 개인파산과 면책을 함께 이해하는 것이 중요합니다.
-    </p>
-
-
-    <div class="image-box">
-      <img src="assets/personal-rehabilitation-01.png"
-           alt="개인파산 제도 관련 안내 이미지">
-
-      <div class="image-caption">
-        개인파산 관련 제공 자료입니다.
-        실제 신청 가능 여부와 결과는 개인의 상황 및 법원의 판단에 따라 달라질 수 있습니다.
-      </div>
-    </div>
-
-
-    <div class="cta-section">
-
-      <h3>개인파산 신청 가능 여부가 궁금하신가요?</h3>
-
-      <p>
-        현재 채무와 소득, 재산 상황을 기준으로 상담 정보를 확인해보세요.
-      </p>
-
-      <a href="https://replyalba.com/pt/HEEa2EBAsi"
-         class="cta-button"
-         target="_blank"
-         rel="noopener sponsored">
-        개인파산 무료상담 신청하기
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <section class="section" id="section2">
-
-    <span class="section-number">2</span>
-
-    <h2>개인파산 신청조건은 무엇을 확인할까요?</h2>
-
-    <p>
-      개인파산을 알아볼 때는 현재 소득으로 채무를 감당할 수 있는지,
-      보유하고 있는 재산과 전체 채무 규모는 어떠한지 등을 함께 살펴보게 됩니다.
-    </p>
-
-    <p>
-      단순히 채무 금액만으로 신청 여부가 결정되는 것은 아니며
-      신청자의 전체적인 경제 상황을 종합적으로 확인하게 됩니다.
-    </p>
-
-
-    <div class="image-box">
-      <img src="assets/personal-rehabilitation-02.png"
-           alt="개인파산 신청조건 관련 안내 자료">
-
-      <div class="image-caption">
-        개인파산 신청조건 관련 제공 자료입니다.
-        구체적인 기준은 개별 사건에 따라 달라질 수 있습니다.
-      </div>
-    </div>
-
-
-    <div class="feature-grid">
-
-      <div class="feature-card">
-        <h3>💰 소득 확인</h3>
-        <p>
-          현재 소득과 앞으로의 변제 가능성을 함께 살펴볼 수 있습니다.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <h3>📋 채무 확인</h3>
-        <p>
-          전체 채무 규모와 채권자 내역을 정확하게 정리하는 것이 중요합니다.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <h3>🏠 재산 확인</h3>
-        <p>
-          부동산과 차량, 예금 등 보유 재산을 함께 확인하게 됩니다.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <h3>📑 과거 절차 확인</h3>
-        <p>
-          기존 파산이나 면책, 채무조정 이력 등이 있는지도 확인할 수 있습니다.
-        </p>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <section class="section" id="section3">
-
-    <span class="section-number">3</span>
-
-    <h2>개인파산과 면책 절차는 어떻게 진행될까요?</h2>
-
-    <p>
-      개인파산은 신청서를 제출한 뒤 법원이 신청자의 재산과 채무 상태를 확인하고
-      필요한 심사를 진행하는 방식으로 이루어질 수 있습니다.
-    </p>
-
-    <p>
-      이후 면책 절차가 진행될 수 있으며,
-      면책 여부는 제출 자료와 사건 내용 등을 바탕으로 법원이 판단합니다.
-    </p>
-
-
-    <div class="image-box">
-      <img src="assets/personal-rehabilitation-03.png"
-           alt="개인파산 면책 절차 관련 자료">
-
-      <div class="image-caption">
-        개인파산 및 면책 절차 관련 제공 자료입니다.
-        실제 진행 순서와 기간은 사건별로 달라질 수 있습니다.
-      </div>
-    </div>
-
-
-    <div class="check-list">
-
-      <div class="check-item">
-        <span class="check">✓</span>
-        <span>현재 재산과 채무, 소득 상황을 정리합니다.</span>
-      </div>
-
-      <div class="check-item">
-        <span class="check">✓</span>
-        <span>신청에 필요한 서류와 자료를 준비합니다.</span>
-      </div>
-
-      <div class="check-item">
-        <span class="check">✓</span>
-        <span>법원의 심사와 필요한 절차가 진행될 수 있습니다.</span>
-      </div>
-
-      <div class="check-item">
-        <span class="check">✓</span>
-        <span>파산 선고 이후 면책 여부에 대한 판단이 이어질 수 있습니다.</span>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <section class="section" id="section4">
-
-    <span class="section-number">4</span>
-
-    <h2>개인파산 신청 전 어떤 준비가 필요할까요?</h2>
-
-    <p>
-      개인파산을 준비할 때는 자신의 소득과 채무,
-      재산 상황을 객관적으로 확인할 수 있는 자료를 준비하는 것이 중요합니다.
-    </p>
-
-    <p>
-      개인별 상황에 따라 필요한 자료가 달라질 수 있기 때문에
-      자신의 경제 상황을 사실에 맞게 정리하는 것이 좋습니다.
-    </p>
-
-
-    <div class="image-box">
-      <img src="assets/personal-rehabilitation-04.png"
-           alt="개인파산 신청 준비사항 관련 자료">
-
-      <div class="image-caption">
-        개인파산 신청 준비 관련 제공 자료입니다.
-        필요한 서류는 개인의 상황에 따라 달라질 수 있습니다.
-      </div>
-    </div>
-
-
-    <div class="info-notice">
-      개인파산 신청 시 소득과 채무, 재산 관련 내용을 정확하게 확인하는 것이 중요합니다.
-      누락되거나 사실과 다른 내용이 있다면 절차에 영향을 줄 수 있으므로
-      제출 자료를 꼼꼼하게 준비하는 것이 좋습니다.
-    </div>
-
-
-    <div class="cta-section">
-
-      <h3>개인파산 준비사항을 자세히 확인하고 싶다면?</h3>
-
-      <p>
-        현재 상황을 기준으로 개인파산 관련 상담 정보를 확인해보세요.
-      </p>
-
-      <a href="https://replyalba.com/pt/HEEa2EBAsi"
-         class="cta-button"
-         target="_blank"
-         rel="noopener sponsored">
-        개인파산 무료상담 신청
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <section class="section" id="section5">
-
-    <span class="section-number">5</span>
-
-    <h2>개인파산 상담 전 확인하면 좋은 내용</h2>
-
-    <p>
-      상담 전에 현재 채무와 소득, 재산 등을 가능한 범위에서 정리해두면
-      자신의 상황을 보다 구체적으로 확인하는 데 도움이 될 수 있습니다.
-    </p>
-
-
-    <div class="image-box">
-      <img src="assets/personal-rehabilitation-05.png"
-           alt="개인파산 상담 전 확인사항 관련 자료">
-
-      <div class="image-caption">
-        개인파산 관련 제공 자료입니다.
-        실제 신청 가능 여부와 면책 결과는 개별 상황에 따라 달라질 수 있습니다.
-      </div>
-    </div>
-
-
-    <div class="check-list">
-
-      <div class="check-item">
-        <span class="check">✓</span>
-        <span>현재 전체 채무와 채권자를 정리해보세요.</span>
-      </div>
-
-      <div class="check-item">
-        <span class="check">✓</span>
-        <span>현재 소득과 고정 지출을 확인해보세요.</span>
-      </div>
-
-      <div class="check-item">
-        <span class="check">✓</span>
-        <span>부동산과 차량 등 보유 재산을 확인해보세요.</span>
-      </div>
-
-      <div class="check-item">
-        <span class="check">✓</span>
-        <span>과거 파산이나 면책, 채무조정 이력이 있는지 확인하세요.</span>
-      </div>
-
-    </div>
-
-
-    <div class="notice-box">
-
-      <strong>파산 선고와 면책은 별도로 확인해야 합니다</strong>
-
-      <p>
-        개인파산 절차를 진행한다고 해서 모든 채무가 자동으로 면책되는 것은 아닙니다.
-        실제 면책 여부는 사건 내용과 제출 자료, 법원의 판단에 따라 달라질 수 있습니다.
-      </p>
-
-    </div>
-
-  </section>
-
-</main>
-
-
+<div class="lead">
+    채무 독촉과 연체가 계속되면 가능한 한 빨리 결론을 내리고 싶어질 수 있습니다. 하지만 개인파산은 신청서만 제출하면 끝나는 절차가 아니라, 자신의 경제상황을 자료로 설명하고 파산선고 이후 면책 여부까지 판단받는 과정입니다. 먼저 월소득과 필수생활비를 계산하고, 보유 재산과 최근 거래를 확인한 뒤, 채무가 늘어난 이유를 시간순으로 정리해야 합니다. 개인파산이 맞는지 확신하기 어렵다면 <a class="text-link" href="rehabilitation-bankruptcy.html">개인회생과 개인파산 차이</a>부터 비교해보는 것이 좋습니다.
+  </div>
+<section class="section" id="section1">
+<span class="eyebrow">01 · 제도 이해</span>
+<h2>개인파산과 면책은 같은 절차처럼 보여도 역할이 다릅니다</h2>
+<p>개인파산은 자신의 재산과 수입만으로 전체 채무를 계속 갚기 어려운 상태에서 법원의 절차를 통해 재산과 채무관계를 정리하는 제도입니다. 여기서 중요한 점은 파산선고 자체가 남은 채무를 모두 없애는 결정은 아니라는 것입니다. 파산선고는 채무자의 지급불능 상태와 재산관계를 확인하는 단계이고, 변제되지 않은 채무의 책임을 면제받는지는 면책 절차에서 별도로 판단됩니다.</p>
+<p>따라서 개인파산을 알아볼 때는 “파산 신청이 가능한가”와 “면책을 받을 수 있는가”를 나누어 생각해야 합니다. 신청 당시 재산이 거의 없더라도 최근 재산을 처분하거나 특정 채권자에게만 돈을 갚은 내역이 있다면 설명이 필요할 수 있습니다. 반대로 소득이 조금 있더라도 실제 생활비와 부양상황을 고려하면 지속적인 변제가 어려운 경우가 있을 수 있으므로 소득 존재만으로 결과를 단정하기 어렵습니다.</p>
+<p>법원은 신청서에 기재한 내용만 따로 보지 않고 채권자목록, 재산목록, 수입과 지출, 계좌 거래내역, 보험과 차량, 임대차보증금, 채무 증가 과정 등을 서로 비교할 수 있습니다. 자료마다 설명이 다르거나 누락이 크면 추가자료 제출이 요구되거나 면책 판단에 영향을 줄 수 있으므로 처음부터 일관성 있게 정리하는 것이 중요합니다.</p>
+<div class="image-box"><img alt="개인파산과 면책의 차이를 설명하는 안내 이미지" src="assets/personal-rehabilitation-01.png"/><div class="image-caption">파산선고와 면책결정은 구분됩니다. 실제 결과는 신청자의 재산, 채무 발생 경위와 제출자료에 따라 달라질 수 있습니다.</div></div>
+<div class="inline-guide"><strong>면책 내용을 더 자세히 확인하려면</strong><p>파산선고 이후 어떤 항목을 살펴보는지 궁금하다면 <a class="text-link" href="bankruptcy-discharge.html">파산면책 안내 글</a>을 함께 읽어보세요. 개인파산 신청 여부보다 면책 과정에서 필요한 설명과 자료가 더 중요한 경우도 있습니다.</p></div>
+</section>
+<section class="section" id="section2">
+<span class="eyebrow">02 · 지급불능 판단</span>
+<h2>채무액보다 먼저 현재와 앞으로의 변제 가능성을 계산해야 합니다</h2>
+<p>개인파산을 검토할 때 핵심적으로 확인하는 부분은 현재의 소득과 재산으로 채무를 정상적으로 갚을 수 있는지입니다. 단순히 부채가 많거나 연체가 시작됐다는 사실만으로 판단하기보다는 월평균 소득에서 주거비, 식비, 의료비, 교통비, 교육비, 부양비처럼 계속 필요한 지출을 제외한 뒤 실제로 남는 금액을 살펴봐야 합니다.</p>
+<p>직장인은 급여명세서와 통장 입금내역이 비교적 명확하지만, 자영업자나 프리랜서, 일용직 근로자는 월별 수입 변동이 클 수 있습니다. 이런 경우 최근 몇 달 또는 일정 기간의 매출과 입금내역, 사업비용, 계절적 변동을 함께 정리해야 실제 가용소득을 파악하기 쉽습니다. 연금이나 각종 급여를 받는 경우에도 수령액과 필수 지출을 함께 살펴야 합니다.</p>
+<p>현재 소득이 적더라도 연령, 건강상태, 경력과 근로 가능성에 따라 앞으로 소득이 증가할 가능성이 있는지 검토될 수 있습니다. 반대로 일시적으로 소득이 발생하고 있어도 중증질환, 장기간 치료, 고령, 가족 돌봄 등으로 계속적인 근로가 어렵다면 그 사정을 객관적으로 설명할 자료가 필요할 수 있습니다.</p>
+<div class="point-grid">
+<div class="point-card"><strong>월평균 소득</strong><p>급여, 사업수입, 일용근로, 연금과 정기적으로 들어오는 금액을 구분합니다.</p></div>
+<div class="point-card"><strong>필수생활비</strong><p>주거비, 의료비, 부양비와 생활에 꼭 필요한 고정지출을 정리합니다.</p></div>
+<div class="point-card"><strong>근로 가능성</strong><p>나이, 건강, 경력, 치료계획과 향후 소득 회복 가능성을 확인합니다.</p></div>
+<div class="point-card"><strong>실제 변제 여력</strong><p>소득에서 필수지출을 제외한 금액으로 채무를 계속 갚을 수 있는지 계산합니다.</p></div>
+</div>
+<p>지급불능 여부를 보다 구체적으로 점검하고 싶다면 <a class="text-link" href="personal-bankruptcy-eligibility.html">개인파산 신청자격 안내</a>에서 소득과 재산별 확인사항을 먼저 살펴볼 수 있습니다. 소득이 일정하게 남는다면 <a class="text-link" href="personal-rehabilitation-eligibility.html">개인회생 신청자격</a>과 비교하는 것도 필요합니다.</p>
+</section>
+<section class="section" id="section3">
+<span class="eyebrow">03 · 재산과 권리</span>
+<h2>명의만 확인하지 말고 실제 가치와 최근 변동까지 살펴야 합니다</h2>
+<p>개인파산에서 말하는 재산은 통장잔액이나 부동산처럼 눈에 잘 보이는 항목에만 한정되지 않습니다. 차량, 보험 해약환급금, 임대차보증금, 퇴직금 예상액, 받을 돈, 사업장 보증금, 상속재산과 공동소유 지분처럼 경제적 가치가 있는 권리도 확인 대상이 될 수 있습니다. 각각의 명칭보다 실제로 처분하거나 회수했을 때 남는 가치가 어느 정도인지 파악하는 것이 중요합니다.</p>
+<p>부동산이나 차량에 담보대출과 할부가 있다면 단순 시세가 아니라 남아 있는 담보채무와 처분비용을 함께 계산해야 합니다. 보험은 납입보험료 총액이 아니라 해약 시 받을 수 있는 환급금이 있는지 확인하고, 임대차보증금은 반환 가능 금액과 관련 권리관계를 살펴볼 필요가 있습니다.</p>
+<p>신청 직전 재산이 없다는 사실만으로 충분하지 않을 수 있습니다. 최근 부동산이나 차량을 매각했는지, 보험을 해지했는지, 보증금을 돌려받았는지, 가족이나 지인에게 큰 금액을 송금했는지 등 일정 기간의 재산 변동도 함께 설명해야 할 수 있습니다. 처분대금을 생활비나 치료비로 사용했다면 사용처를 확인할 수 있는 자료를 남겨두는 것이 좋습니다.</p>
+<div class="image-box"><img alt="개인파산 재산과 권리 확인 안내 이미지" src="assets/personal-rehabilitation-02.png"/><div class="image-caption">재산은 현재 명의뿐 아니라 실제 가치, 담보관계와 최근 처분·이전 내역을 함께 정리하는 것이 중요합니다.</div></div>
+<div class="check-box">
+<div class="check-item"><span class="check">✓</span><span>부동산과 공동소유 지분, 전세권 등 권리관계를 확인합니다.</span></div>
+<div class="check-item"><span class="check">✓</span><span>차량 시세와 남은 할부금·담보금액을 함께 정리합니다.</span></div>
+<div class="check-item"><span class="check">✓</span><span>예금, 적금, 투자자산과 보험 해약환급금을 확인합니다.</span></div>
+<div class="check-item"><span class="check">✓</span><span>임대차보증금, 퇴직금, 받을 돈과 사업상 권리를 살펴봅니다.</span></div>
+<div class="check-item"><span class="check">✓</span><span>최근 재산 매각, 명의 이전과 가족 송금 내역을 시간순으로 정리합니다.</span></div>
+</div>
+</section>
+<section class="section" id="section4">
+<span class="eyebrow">04 · 채무가 늘어난 과정</span>
+<h2>채권자 목록만 만들지 말고 빚이 증가한 이유를 시간순으로 설명해야 합니다</h2>
+<p>개인파산 신청서에는 현재 얼마의 빚이 있는지만 적는 것이 아니라 채무가 발생한 배경을 설명해야 할 수 있습니다. 실직 후 생활비를 마련하기 위해 신용카드를 사용했는지, 사업자금 부족으로 대출이 늘었는지, 질병과 치료비 때문에 상환이 중단됐는지처럼 최초 원인부터 현재까지의 흐름을 정리해야 합니다.</p>
+<p>기존 대출의 이자를 갚기 위해 다른 금융기관에서 다시 대출을 받았다면 돌려막기가 시작된 시점과 금액을 구분하는 것이 좋습니다. 카드론, 현금서비스, 대부업체 대출, 지인 차용금, 보증채무가 섞여 있다면 각각의 사용처와 상환내역을 나누어 확인해야 전체 채무 구조가 명확해집니다.</p>
+<p>최근 고액대출이나 현금 인출, 투자·가상자산·도박성 지출이 있는 경우에는 면책 심사에서 사용처와 당시 상황에 대한 설명이 중요해질 수 있습니다. 불리해 보인다는 이유로 거래를 빼거나 채권자를 누락하면 다른 자료와 맞지 않을 수 있으므로 사실관계부터 정확히 정리하는 편이 안전합니다.</p>
+<div class="step-list">
+<div class="step"><strong>최초 채무 발생</strong><p>실직, 사업 시작, 질병, 가족 부양, 보증 등 처음 빚이 생긴 원인을 기록합니다.</p></div>
+<div class="step"><strong>추가대출과 사용처</strong><p>생활비, 사업비, 치료비, 기존 채무 상환 등 자금이 사용된 목적을 구분합니다.</p></div>
+<div class="step"><strong>연체가 시작된 시점</strong><p>소득 감소, 금리와 이자 부담 증가, 매출 하락 등 상환이 어려워진 계기를 정리합니다.</p></div>
+<div class="step"><strong>최근 거래와 재산 변동</strong><p>고액송금, 현금인출, 특정 채권자 상환과 재산 처분 내역을 확인합니다.</p></div>
+</div>
+<div class="notice"><strong>진술과 금융자료가 서로 맞아야 합니다</strong><p>채무 발생 경위서의 내용과 통장·카드 거래내역, 대출 실행일과 사용처가 다르면 추가 설명이 필요할 수 있습니다. 기억에만 의존하지 말고 금융거래 자료를 기준으로 연표를 작성하는 것이 좋습니다.</p></div>
+</section>
+<section class="section" id="section5">
+<span class="eyebrow">05 · 전체 진행 흐름</span>
+<h2>신청서 제출 이후 파산선고와 면책결정까지 여러 확인 단계가 이어질 수 있습니다</h2>
+<p>개인파산은 보통 파산과 면책을 함께 신청하는 방식으로 진행될 수 있습니다. 신청인은 관할 법원에 신청서와 채권자목록, 재산목록, 소득과 지출자료, 진술서 등을 제출하고 법원은 제출된 내용을 토대로 지급불능 상태와 재산관계를 살펴봅니다. 자료가 부족하거나 서로 맞지 않으면 보정명령이나 추가자료 제출이 이어질 수 있습니다.</p>
+<p>사건의 재산상태와 내용에 따라 파산관재인이 선임되어 재산과 거래내역을 조사할 수 있고, 환가할 재산이 거의 없는 사건은 다른 방식으로 진행될 수 있습니다. 이후 파산선고가 이루어지더라도 면책 여부에 관한 심사와 채권자의 이의기회가 이어질 수 있으므로 결정문을 받을 때까지 각 단계의 요구사항을 확인해야 합니다.</p>
+<p>법원 공식 안내에서는 파산 및 면책 동시신청의 경우 신청부터 면책 여부 결정까지 약 6~8개월이 소요될 수 있다고 설명하지만, 사건량, 심문 여부, 관재인 조사, 보정 횟수와 재판부 상황에 따라 더 짧거나 길어질 수 있습니다. 특정 기간 안에 반드시 끝난다고 예상하기보다 추가자료 요청에 바로 대응할 수 있도록 자료를 미리 정리하는 것이 현실적입니다.</p>
+<div class="step-list">
+<div class="step"><strong>상황 정리와 신청서 작성</strong><p>채무·소득·재산·가족관계와 채무 증가 경위를 자료에 맞춰 작성합니다.</p></div>
+<div class="step"><strong>법원 접수와 보정 대응</strong><p>관할 법원에 제출한 뒤 누락자료나 설명이 필요한 부분을 보완합니다.</p></div>
+<div class="step"><strong>재산과 거래 조사</strong><p>사건에 따라 관재인 조사, 면담, 계좌와 재산 관련 추가확인이 진행될 수 있습니다.</p></div>
+<div class="step"><strong>파산선고</strong><p>법원이 지급불능 상태와 사건내용을 검토하여 파산 여부를 결정합니다.</p></div>
+<div class="step"><strong>이의와 면책 심사</strong><p>채권자 의견과 신청인의 자료를 확인한 뒤 면책 허가 여부가 판단됩니다.</p></div>
+<div class="step"><strong>결정 확정 이후 확인</strong><p>면책 범위와 남아 있는 채무, 신용정보와 향후 금융생활을 점검합니다.</p></div>
+</div>
+</section>
+<section class="section" id="section6">
+<span class="eyebrow">06 · 준비서류와 자료</span>
+<h2>서류는 채무·소득·재산·생활·거래자료로 나누면 누락을 줄일 수 있습니다</h2>
+<p>개인파산 준비를 어렵게 느끼는 이유는 필요한 자료가 여러 기관에 흩어져 있기 때문입니다. 한 번에 모두 모으기보다 채무자료, 소득자료, 재산자료, 가족과 생활자료, 최근 거래자료로 폴더를 나누어 정리하면 빠진 항목을 확인하기 쉽습니다.</p>
+<p>채무자료에는 금융기관과 카드사뿐 아니라 대부업체, 통신요금, 보증채무, 개인 간 차용금도 포함될 수 있습니다. 채권자를 누락하면 이후 절차가 복잡해질 수 있으므로 신용정보 조회자료와 우편 독촉장, 통장출금내역을 비교하여 가능한 채권자를 모두 확인하는 편이 좋습니다.</p>
+<p>소득자료는 직업별로 달라질 수 있습니다. 직장인은 급여명세서와 원천징수 관련 자료, 자영업자는 매출과 비용, 부가가치세·소득세 관련 자료, 프리랜서는 계약서와 입금내역, 일용직은 일당 입금과 근무확인자료를 준비할 수 있습니다. 소득이 없다면 실직, 폐업, 질병과 구직상황을 설명할 자료가 필요할 수 있습니다.</p>
+<div class="point-grid">
+<div class="point-card"><strong>채무자료</strong><p>채권자명, 원금과 이자, 보증·담보채무, 연체시점과 소송·압류 현황을 정리합니다.</p></div>
+<div class="point-card"><strong>소득자료</strong><p>급여, 매출, 일용수입, 연금과 각종 정기수입을 객관적으로 확인할 자료를 모읍니다.</p></div>
+<div class="point-card"><strong>재산자료</strong><p>부동산, 차량, 예금, 보험, 보증금, 퇴직금, 투자자산과 받을 돈을 확인합니다.</p></div>
+<div class="point-card"><strong>생활자료</strong><p>가족관계, 주거계약, 의료비, 부양비, 교육비와 월별 필수지출을 정리합니다.</p></div>
+</div>
+<div class="image-box"><img alt="개인파산 준비서류를 항목별로 정리하는 이미지" src="assets/personal-rehabilitation-03.png"/><div class="image-caption">필요한 서류는 직업, 재산 형태와 사건 내용에 따라 달라질 수 있으므로 기본자료를 먼저 분류해두는 것이 좋습니다.</div></div>
+<p>개인회생 절차와 필요한 준비자료를 함께 비교하려면 <a class="text-link" href="rehabilitation-process.html">개인회생 절차 안내</a>와 <a class="text-link" href="rehabilitation-cost.html">개인회생 비용·준비사항</a>을 참고할 수 있습니다.</p>
+</section>
+<section class="section" id="section7">
+<span class="eyebrow">07 · 개인회생과 비교</span>
+<h2>계속적인 소득으로 일부라도 변제할 수 있는지가 제도 선택의 중요한 기준입니다</h2>
+<p>개인파산과 개인회생은 모두 과도한 채무를 법원의 절차 안에서 정리하기 위해 검토되지만 진행방식이 다릅니다. 개인회생은 계속적이거나 반복적인 소득을 바탕으로 변제계획을 세우고 일정 기간 납부하는 구조이며, 개인파산은 현재 재산과 채무관계를 정리한 뒤 남은 채무에 대한 면책 여부를 별도로 판단받는 방향입니다.</p>
+<p>월소득이 있다고 해서 반드시 개인회생만 가능하거나, 소득이 적다고 개인파산이 자동으로 적합한 것은 아닙니다. 부양가족 수, 주거비와 의료비, 재산가치, 담보채무, 앞으로의 근로 가능성, 과거 면책 이력과 최근 채무 발생 경위까지 함께 살펴야 합니다.</p>
+<div class="compare-wrap"><table><thead><tr><th>비교 항목</th><th>개인파산</th><th>개인회생</th></tr></thead><tbody>
+<tr><td>핵심 판단</td><td>현재와 장래의 계속적인 변제가 사실상 어려운지 확인</td><td>소득에서 생계비를 제외한 금액으로 일부 변제가 가능한지 확인</td></tr>
+<tr><td>진행 중심</td><td>재산과 채무관계 정리 후 면책 여부 판단</td><td>변제계획 인가 후 정해진 기간 동안 변제</td></tr>
+<tr><td>소득</td><td>소득 유무보다 실제 변제 가능성과 생활상황을 종합 확인</td><td>계속적 또는 반복적인 소득을 확인할 자료가 중요</td></tr>
+<tr><td>재산</td><td>환가 가능한 재산과 최근 처분·이전 내역을 중요하게 확인</td><td>재산가치가 변제계획과 변제금에 영향을 줄 수 있음</td></tr>
+<tr><td>주요 준비</td><td>채무 경위, 재산 변동, 최근 거래와 면책 관련 설명</td><td>소득증빙, 생계비, 채무·재산과 변제계획 관련 자료</td></tr>
+</tbody></table></div>
+<p>두 제도의 차이를 전체적으로 보고 싶다면 <a class="text-link" href="rehabilitation-bankruptcy.html">개인회생과 개인파산 비교 글</a>을 먼저 확인하세요. 개인회생 쪽이 맞을 가능성이 있다면 <a class="text-link" href="personal-rehabilitation.html">개인회생 기본 안내</a>와 <a class="text-link" href="personal-rehabilitation-application-process.html">개인회생 신청절차</a>로 이어서 살펴볼 수 있습니다.</p>
+</section>
+<section class="section" id="section8">
+<span class="eyebrow">08 · 면책 판단과 주의사항</span>
+<h2>모든 채무가 똑같이 면책되는 것은 아니며 최근 행동도 함께 살펴야 합니다</h2>
+<p>개인파산을 신청하는 가장 큰 목적은 면책을 통해 경제적으로 다시 출발하는 데 있지만, 모든 채무와 모든 사건이 동일하게 처리되는 것은 아닙니다. 채무의 성격에 따라 면책 여부를 별도로 확인해야 하는 항목이 있을 수 있고, 신청인의 최근 금융거래와 재산처분, 진술의 정확성도 중요하게 다뤄질 수 있습니다.</p>
+<p>신청을 앞두고 새 대출을 받거나 카드 사용을 크게 늘리는 행동, 재산을 가족 명의로 이전하는 행동, 특정 채권자에게만 많은 금액을 갚는 행동은 전체 사실관계를 복잡하게 만들 수 있습니다. 이미 거래가 있었다면 감추기보다 날짜, 금액, 상대방과 사용 목적을 확인하여 설명자료를 준비해야 합니다.</p>
+<p>채권자목록이나 재산목록에서 일부 내용을 빼는 것도 주의해야 합니다. 오래된 지인 채무, 소액 통신요금, 보증채무, 받을 가능성이 낮다고 생각한 채권이라도 사실관계에 따라 기재와 설명이 필요할 수 있습니다. 계좌와 카드내역을 먼저 검토하면 기억하지 못했던 채무나 재산 변동을 찾는 데 도움이 됩니다.</p>
+<div class="image-box"><img alt="개인파산 면책 판단 전 주의사항 이미지" src="assets/personal-rehabilitation-04.png"/><div class="image-caption">최근 대출과 재산 이전, 특정 채권자 변제, 누락된 채권과 재산이 없는지 미리 확인해야 합니다.</div></div>
+<div class="notice"><strong>불리해 보이는 사실도 먼저 정리하세요</strong><p>설명하기 어려운 거래를 감추면 다른 자료와 맞지 않을 가능성이 커집니다. 거래가 발생한 이유와 자금 사용처를 사실에 맞게 정리하고, 객관적인 자료가 있다면 함께 준비하는 것이 중요합니다.</p></div>
+</section>
+<section class="section" id="section9">
+<span class="eyebrow">09 · 신청 전 최종 점검</span>
+<h2>상담이나 신청 전에는 한 장의 재정현황표를 만들어보세요</h2>
+<p>자료가 많아도 전체 상황이 한눈에 보이지 않으면 상담과 신청 준비가 오래 걸릴 수 있습니다. 월소득, 필수지출, 전체 채무, 보유재산, 최근 1~2년의 주요 거래와 채무 발생 원인을 한 장에 요약하면 어떤 부분의 설명이 부족한지 찾기 쉽습니다.</p>
+<p>특히 채권자 이름과 현재 채무액, 연체 여부, 담보와 보증 관계를 표로 만들고, 재산은 시세와 담보금액을 함께 적는 것이 좋습니다. 월수입은 세전 금액이 아니라 실제 입금액과 변동폭을 확인하고 지출은 단순 카드사용액이 아니라 주거·의료·부양 등 필수항목으로 나누어야 합니다.</p>
+<p>과거 개인회생이나 개인파산, 신용회복위원회 채무조정 등을 진행한 이력이 있다면 결정 시점과 종료 여부를 확인해야 합니다. 법원 안내상 과거 면책 시점은 다시 면책을 검토할 때 중요한 요소가 될 수 있으므로 이전 사건번호와 결정문을 찾을 수 있다면 함께 준비하는 편이 좋습니다.</p>
+<div class="check-box">
+<div class="check-item"><span class="check">✓</span><span>월평균 실제소득과 필수생활비를 계산했습니다.</span></div>
+<div class="check-item"><span class="check">✓</span><span>모든 채권자와 채무액, 보증·담보관계를 정리했습니다.</span></div>
+<div class="check-item"><span class="check">✓</span><span>부동산, 차량, 보험, 보증금과 받을 돈을 확인했습니다.</span></div>
+<div class="check-item"><span class="check">✓</span><span>최근 고액송금, 현금인출, 대출과 재산처분 내역을 점검했습니다.</span></div>
+<div class="check-item"><span class="check">✓</span><span>채무가 늘어난 이유를 날짜순으로 작성했습니다.</span></div>
+<div class="check-item"><span class="check">✓</span><span>과거 회생·파산·면책과 채무조정 이력을 확인했습니다.</span></div>
+</div>
+<div class="cta-section"><h3>개인파산 신청 가능 여부를 확인하고 싶으신가요?</h3><p>소득·생활비·채무·재산과 최근 거래내용을 정리한 뒤 현재 상황에 맞는 상담 정보를 확인해보세요.</p><a class="cta-button" href="https://replyalba.com/pt/HEEa2EBAsi" rel="noopener sponsored" target="_blank">개인파산 무료상담 신청</a></div>
+<div class="inline-guide"><strong>법원 공식 안내도 함께 확인하세요</strong><p>개인파산과 면책은 사건마다 요구되는 자료와 진행이 다를 수 있습니다. 본 글은 일반적인 정보이며 실제 신청과 면책 가능성은 관할 법원의 판단, 최신 법령과 개별 사실관계에 따라 달라질 수 있습니다.</p></div>
+</section>
+<section class="section" id="section10">
+<span class="eyebrow">10 · 직업과 생활상황별 확인</span>
+<h2>직장인·자영업자·프리랜서·무소득자는 준비해야 할 설명이 서로 다릅니다</h2>
+<p>개인파산은 직업의 이름만으로 가능 여부를 판단하지 않습니다. 같은 월소득이라도 고정급여인지, 매출에서 비용을 제외한 사업소득인지, 일용근로처럼 월별 변동이 큰 수입인지에 따라 확인해야 할 자료가 달라집니다. 자신의 직업 형태에 맞춰 실제로 사용할 수 있는 소득이 얼마인지 설명하는 것이 중요합니다.</p>
+<p>직장인은 급여가 계속 발생하더라도 부양가족, 주거비, 치료비와 압류 등으로 실제 가용금액이 적을 수 있습니다. 급여명세서만 제출하기보다 통장에 입금되는 실수령액과 매월 빠져나가는 필수지출을 함께 정리하면 현재의 변제 가능성을 구체적으로 설명하기 쉽습니다. 최근 퇴직했거나 휴직 중이라면 퇴직일, 퇴직금, 실업급여와 재취업 가능성도 확인해야 합니다.</p>
+<p>자영업자는 매출을 그대로 소득으로 보기 어렵기 때문에 임대료, 인건비, 재료비, 배달수수료, 세금과 대출이자 등 실제 사업비용을 구분해야 합니다. 사업을 이미 폐업했다면 폐업 시점과 남은 재고, 보증금, 시설·장비 처분내역, 미수금과 세금 문제를 함께 정리하는 것이 좋습니다. 사업자대출과 개인생활비 대출이 섞여 있다면 사용처를 나누어 설명할 필요가 있습니다.</p>
+<p>프리랜서와 일용직은 정해진 급여일이 없고 수입 변동이 크므로 최근 일정 기간의 입금내역과 계약·근무자료를 모아 평균수입을 계산하는 것이 도움이 됩니다. 주부, 고령자, 장기치료 중인 사람처럼 현재 소득이 거의 없다면 단순히 무소득이라고 적기보다 생활비를 누가 부담하는지, 향후 근로 가능성이 어떠한지, 질병이나 가족돌봄으로 취업이 어려운 이유가 있는지를 자료와 함께 설명할 수 있어야 합니다.</p>
+<div class="point-grid">
+<div class="point-card"><strong>직장인</strong><p>실수령 급여, 압류·공제내역, 퇴직금과 재직·휴직·퇴직 상태를 확인합니다.</p></div>
+<div class="point-card"><strong>자영업자</strong><p>매출과 실제 비용, 사업재산, 보증금, 재고, 세금과 폐업 여부를 구분합니다.</p></div>
+<div class="point-card"><strong>프리랜서·일용직</strong><p>월별 입금내역, 계약과 근무자료를 통해 반복적인 수입과 변동폭을 정리합니다.</p></div>
+<div class="point-card"><strong>무소득·질병·고령</strong><p>생활비 조달방법, 치료와 건강상태, 가족돌봄과 향후 근로 가능성을 설명합니다.</p></div>
+</div>
+</section><section class="section" id="section11">
+<span class="eyebrow">11 · 독촉과 압류가 진행 중일 때</span>
+<h2>신청을 준비한다고 모든 추심과 집행이 즉시 멈춘다고 단정하면 안 됩니다</h2>
+<p>연체가 길어지면 전화와 문자 독촉, 지급명령, 소송, 급여나 통장 압류, 담보권 실행 등이 진행될 수 있습니다. 개인파산을 검토하거나 신청서를 준비한다는 사실만으로 모든 절차가 자동으로 중단된다고 생각하면 대응시기를 놓칠 수 있으므로 현재 어떤 문서를 받았고 어떤 단계까지 진행됐는지 먼저 확인해야 합니다.</p>
+<p>법원이나 채권자로부터 우편을 받았다면 발송기관, 사건번호, 송달일과 대응기한을 기록하고 문서를 보관하는 것이 좋습니다. 지급명령이나 소장, 압류 결정문처럼 기한이 관련된 문서는 개인파산 신청과 별도로 확인해야 할 내용이 있을 수 있습니다. 내용을 이해하지 못한 채 버리거나 주소지 변경 후 송달을 확인하지 못하면 불필요한 문제가 생길 수 있습니다.</p>
+<p>급여와 통장 압류가 이미 진행 중이라면 어떤 채권자가 어떤 금액을 대상으로 집행했는지, 생계에 필요한 계좌와 급여가 어떻게 제한되고 있는지 정리해야 합니다. 담보가 설정된 주택이나 차량은 일반 신용채무와 다른 방식으로 처리될 수 있으므로 담보권자, 남은 대출금, 현재 시세와 연체상태를 따로 확인하는 편이 좋습니다.</p>
+<p>보증채무가 있는 경우 주채무자와 보증인의 책임관계도 살펴야 합니다. 본인이 면책을 받는다고 다른 보증인이나 공동채무자의 책임까지 자동으로 없어지는 것은 아니므로 가족이나 지인이 보증인으로 포함된 채무가 있다면 채권자목록과 계약자료를 통해 관계를 정확히 확인해야 합니다.</p>
+<div class="check-box">
+<div class="check-item"><span class="check">✓</span><span>법원·채권자 우편과 문자, 사건번호와 대응기한을 정리합니다.</span></div>
+<div class="check-item"><span class="check">✓</span><span>통장·급여·부동산·차량 중 어떤 재산에 집행이 진행됐는지 확인합니다.</span></div>
+<div class="check-item"><span class="check">✓</span><span>담보대출과 일반 신용채무를 구분하고 담보물의 현재 상태를 확인합니다.</span></div>
+<div class="check-item"><span class="check">✓</span><span>보증인, 공동채무자와 주채무자의 관계를 계약자료로 확인합니다.</span></div>
+</div>
+<div class="notice"><strong>중요한 문서는 바로 확인하세요</strong><p>개인파산 신청 여부와 별개로 법원 서류에는 대응기한이 있을 수 있습니다. 신청 준비 중이라는 이유로 우편을 방치하지 말고 사건별 진행상태를 확인하는 것이 좋습니다.</p></div>
+</section></main>
 <section class="faq-section" id="faq">
-
-  <p class="faq-label">자주 묻는 질문</p>
-
-  <h2>개인파산 FAQ</h2>
-
-
-  <div class="faq-item">
-    <h3>개인파산을 신청하면 채무가 바로 없어지나요?</h3>
-    <p>
-      파산 선고만으로 모든 채무가 자동으로 없어지는 것은 아닙니다.
-      별도의 면책 절차와 법원의 판단이 필요할 수 있습니다.
-    </p>
-  </div>
-
-
-  <div class="faq-item">
-    <h3>소득이 있으면 개인파산 신청이 불가능한가요?</h3>
-    <p>
-      소득 여부 하나만으로 신청 가능 여부를 판단하기는 어렵습니다.
-      현재 소득과 채무, 재산, 변제 가능성 등을 종합적으로 확인하게 됩니다.
-    </p>
-  </div>
-
-
-  <div class="faq-item">
-    <h3>재산이 있어도 개인파산 신청이 가능한가요?</h3>
-    <p>
-      재산 보유 여부만으로 일률적으로 판단하기는 어렵습니다.
-      재산의 종류와 가치, 전체 채무 상황 등을 함께 검토하게 됩니다.
-    </p>
-  </div>
-
-
-  <div class="faq-item">
-    <h3>개인파산 상담 전에 무엇을 준비하면 좋나요?</h3>
-    <p>
-      현재 채무와 소득, 재산 현황,
-      과거 채무조정 또는 파산 관련 절차 이력을 정리해두면 도움이 될 수 있습니다.
-    </p>
-  </div>
-
-</section>
-
-
+<p class="faq-label">자주 묻는 질문</p><h2>개인파산 FAQ</h2>
+<div class="faq-item"><h3>개인파산을 신청하면 채무가 바로 없어지나요?</h3><p>아닙니다. 파산선고와 면책은 구분되는 절차입니다. 파산선고는 채무자의 재산과 채무관계를 법원의 절차 안에서 정리하는 단계이고, 남은 채무에 대한 책임이 면제되는지는 별도의 면책 판단을 거쳐야 합니다.</p></div>
+<div class="faq-item"><h3>소득이 조금 있어도 개인파산을 검토할 수 있나요?</h3><p>소득이 있다는 사실 하나만으로 신청 가능 여부가 정해지는 것은 아닙니다. 실제 월소득에서 주거비, 의료비, 부양비 등 필요한 생활비를 제외했을 때 지속적인 변제가 가능한지, 앞으로 소득이 회복될 가능성이 있는지 등을 함께 살펴볼 수 있습니다.</p></div>
+<div class="faq-item"><h3>재산이 있으면 개인파산 신청이 불가능한가요?</h3><p>재산의 존재만으로 일률적으로 판단하기 어렵습니다. 부동산과 차량의 시세, 담보채무, 임대차보증금, 보험 해약환급금처럼 실제 환가 가능한 가치가 어느 정도인지 확인해야 하며 최근 처분하거나 이전한 재산도 함께 정리할 필요가 있습니다.</p></div>
+<div class="faq-item"><h3>개인파산과 개인회생 중 무엇을 선택해야 하나요?</h3><p>계속적이거나 반복적인 소득으로 일정 금액을 변제할 수 있다면 개인회생을 함께 검토할 수 있고, 생계비를 고려했을 때 계속적인 변제가 사실상 어려운 상황이라면 개인파산 검토 비중이 커질 수 있습니다. 다만 재산, 부양가족, 채무 발생 경위까지 함께 비교해야 합니다.</p></div>
+<div class="faq-item"><h3>파산선고를 받으면 면책도 반드시 허가되나요?</h3><p>반드시 그렇지는 않습니다. 법원은 신청서와 첨부자료, 재산 변동, 채무가 늘어난 과정, 최근 금융거래와 진술의 일치 여부 등을 살펴 면책 여부를 판단할 수 있습니다. 따라서 파산선고와 면책결정을 같은 의미로 이해하지 않는 것이 중요합니다.</p></div>
+<div class="faq-item"><h3>개인파산 준비 시 어떤 자료를 먼저 모아야 하나요?</h3><p>채권자와 채무 목록, 급여·사업·연금 등 소득자료, 예금·보험·차량·부동산·보증금 등 재산자료, 가족관계와 주거자료, 최근 계좌와 카드 거래내역을 항목별로 나누어 준비하면 현재 상황을 파악하기 쉽습니다.</p></div>
+<div class="faq-item"><h3>최근에 받은 대출이 있어도 신청할 수 있나요?</h3><p>최근 대출이 있다는 이유만으로 결과를 단정하기는 어렵지만 대출 시점과 사용처, 당시 상환 가능성에 대한 설명이 중요할 수 있습니다. 기존 채무를 돌려막았는지, 생활비나 의료비로 사용했는지 등을 거래내역과 함께 사실대로 정리해야 합니다.</p></div>
+<div class="faq-item"><h3>가족에게 송금한 내역도 확인해야 하나요?</h3><p>최근 가족이나 지인에게 큰 금액을 송금했거나 재산 명의를 이전했다면 시기와 이유, 자금의 성격을 확인해두는 것이 좋습니다. 단순 생활비인지, 기존 차용금 상환인지, 재산 처분대금인지에 따라 설명에 필요한 자료가 달라질 수 있습니다.</p></div>
+<div class="faq-item"><h3>개인파산과 면책은 얼마나 걸리나요?</h3><p>법원 공식 안내에서는 파산 및 면책 동시신청의 경우 신청부터 면책 여부 결정까지 약 6~8개월이 걸릴 수 있다고 설명하지만, 사건량, 심문 여부, 보정과 추가자료 제출, 재판부 상황에 따라 실제 기간은 달라질 수 있습니다.</p></div>
+<div class="faq-item"><h3>면책 후에는 모든 문제가 바로 끝나나요?</h3><p>면책결정이 확정되더라도 신용정보 정리와 금융거래 회복에는 시간이 필요할 수 있습니다. 또한 모든 채무가 동일하게 면책되는 것은 아니므로 결정문과 채무별 처리 내용을 확인하고 이후 생활비 관리와 재무계획을 다시 세우는 과정이 필요합니다.</p></div>
+<div class="faq-item"><h3>개인파산 신청 비용은 모두 동일한가요?</h3><p>인지대와 송달료, 사건에 따라 발생할 수 있는 파산관재인 관련 비용 등은 신청 형태와 법원, 사건 내용에 따라 달라질 수 있습니다. 비용만 보고 진행 여부를 정하기보다 예상되는 전체 비용과 지원제도 이용 가능성을 함께 확인하는 것이 좋습니다.</p></div><div class="faq-item"><h3>독촉이나 압류가 진행 중이면 개인파산을 신청할 수 없나요?</h3><p>독촉이나 집행이 진행 중이라는 이유만으로 신청이 불가능하다고 단정할 수는 없습니다. 다만 신청 준비만으로 모든 절차가 즉시 중단되는 것은 아니므로 현재 소송·압류 단계와 받은 문서의 기한을 별도로 확인해야 합니다.</p></div></section>
 <section class="related">
-
-  <div class="cta-section">
-
-    <h3>개인파산 상담을 원하시나요?</h3>
-
-    <p>
-      현재 채무와 재산 상황을 기준으로 개인파산 관련 상담 정보를 확인해보세요.
-    </p>
-
-    <a href="https://replyalba.com/pt/HEEa2EBAsi"
-       class="cta-button"
-       target="_blank"
-       rel="noopener sponsored">
-      개인파산 무료상담 신청하기
-    </a>
-
-  </div>
-
+<div class="related-head"><span>함께 읽으면 좋은 법률정보</span><h2>회생·파산 관련 글</h2></div>
+<div class="related-grid">
+<a class="related-card" href="personal-bankruptcy-eligibility.html"><small>개인파산</small><h3>개인파산 신청자격</h3><p>소득, 재산과 지급불능 상태를 기준으로 신청 전 점검할 내용을 확인합니다.</p></a>
+<a class="related-card" href="bankruptcy-discharge.html"><small>면책</small><h3>파산면책 알아보기</h3><p>파산선고 이후 면책 심사에서 살펴볼 주요 사항을 자세히 확인합니다.</p></a>
+<a class="related-card" href="rehabilitation-bankruptcy.html"><small>제도 비교</small><h3>개인회생과 개인파산 차이</h3><p>소득과 변제 가능성을 기준으로 두 제도의 방향을 비교합니다.</p></a>
+<a class="related-card" href="personal-rehabilitation.html"><small>개인회생</small><h3>개인회생 기본 안내</h3><p>변제계획을 통한 채무조정 제도의 전체적인 내용을 살펴봅니다.</p></a>
+<a class="related-card" href="personal-rehabilitation-eligibility.html"><small>신청조건</small><h3>개인회생 신청자격</h3><p>직업별 소득, 채무와 재산을 중심으로 신청자격을 확인합니다.</p></a>
+<a class="related-card" href="rehabilitation-process.html"><small>진행 절차</small><h3>개인회생 절차</h3><p>신청 준비부터 법원 심사와 변제 진행까지 순서대로 확인합니다.</p></a>
+<a class="related-card" href="rehabilitation-cost.html"><small>준비 비용</small><h3>개인회생 비용</h3><p>신청 과정에서 확인할 비용과 준비사항을 정리합니다.</p></a>
+<a class="related-card" href="personal-rehabilitation-application-process.html"><small>신청 준비</small><h3>개인회생 신청절차</h3><p>서류 준비와 접수 이후 진행되는 단계를 확인합니다.</p></a>
+<a class="related-card" href="law.html"><small>법률정보</small><h3>회생·파산 글 전체보기</h3><p>라이프가이드의 다른 회생·파산 관련 정보를 함께 살펴봅니다.</p></a>
+</div>
+<div class="cta-section"><h3>개인파산 상담을 알아보고 계신가요?</h3><p>현재 채무와 소득, 재산 및 최근 거래내용을 기준으로 상담 정보를 확인해보세요.</p><a class="cta-button" href="https://replyalba.com/pt/HEEa2EBAsi" rel="noopener sponsored" target="_blank">개인파산 무료상담 신청하기</a></div>
 </section>
-
-
-<footer>
-
-  <div class="footer-inner">
-
-    <div class="footer-logo">
-      라이프가이드
-    </div>
-
-    <p>
-      라이프가이드는 건강, 보험, 금융, 법률, 자동차 등
-      생활에 필요한 다양한 정보를 제공합니다.
-    </p>
-
-    <p style="margin-top:18px;">
-      본 페이지는 일반적인 법률정보 제공을 목적으로 합니다.
-      실제 신청 가능 여부와 면책 결과는 개인의 상황, 제출 자료,
-      최신 법령 및 법원의 판단 등에 따라 달라질 수 있습니다.
-    </p>
-
-  </div>
-
-</footer>
-
+<footer><div class="footer-inner"><div class="footer-logo">라이프가이드</div><p>라이프가이드는 건강, 보험, 금융, 법률, 자동차 등 생활에 필요한 다양한 정보를 제공합니다.</p><p style="margin-top:18px;">본 페이지는 일반적인 법률정보 제공을 목적으로 합니다. 실제 신청 가능 여부와 면책 결과는 개인의 소득, 채무, 재산, 제출자료, 최신 법령과 법원의 판단 등에 따라 달라질 수 있습니다.</p></div></footer>
 </body>
 </html>
