@@ -311,6 +311,99 @@
     .footer-logo{margin-bottom:15px;color:#fff;font-size:22px;font-weight:900}
     .footer-inner p{font-size:13px;line-height:1.9}
 
+
+    .related-section{
+      max-width:1000px;
+      margin:95px auto 0;
+      padding:0 20px
+    }
+    .related-label{
+      color:#2563eb;
+      font-size:14px;
+      font-weight:900;
+      margin-bottom:8px
+    }
+    .related-section h2{
+      margin-bottom:12px;
+      font-size:31px;
+      letter-spacing:-1.2px
+    }
+    .related-desc{
+      margin-bottom:28px;
+      color:#64748b;
+      font-size:15px;
+      line-height:1.8
+    }
+    .related-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:17px
+    }
+    .related-card{
+      display:flex;
+      align-items:center;
+      gap:17px;
+      padding:18px;
+      border:1px solid #e5e7eb;
+      border-radius:17px;
+      background:#fff;
+      transition:.25s
+    }
+    .related-card:hover{
+      transform:translateY(-4px);
+      border-color:#bfdbfe;
+      box-shadow:0 12px 28px rgba(15,23,42,.08)
+    }
+    .related-image{
+      width:112px;
+      height:86px;
+      flex:0 0 112px;
+      overflow:hidden;
+      border-radius:12px;
+      background:#eff6ff
+    }
+    .related-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover
+    }
+    .related-content span{
+      display:inline-block;
+      margin-bottom:5px;
+      color:#2563eb;
+      font-size:12px;
+      font-weight:900
+    }
+    .related-content h3{
+      margin-bottom:5px;
+      font-size:17px;
+      line-height:1.45
+    }
+    .related-content p{
+      color:#64748b;
+      font-size:13px;
+      line-height:1.65
+    }
+    .car-main-link{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:15px;
+      margin-top:18px;
+      padding:21px 24px;
+      border-radius:15px;
+      background:#eff6ff;
+      color:#1e3a8a;
+      font-weight:900
+    }
+    .car-main-link small{
+      display:block;
+      margin-top:3px;
+      color:#64748b;
+      font-size:12px;
+      font-weight:500
+    }
+
     @media(max-width:900px){
       .nav{display:none}
       .hero h1{font-size:37px}
@@ -326,6 +419,10 @@
       .toc-grid{grid-template-columns:1fr}
       .section h2{font-size:25px}
       .cta-button{width:100%}
+
+      .related-grid{grid-template-columns:1fr}
+      .related-card{align-items:flex-start}
+      .related-image{width:92px;height:76px;flex-basis:92px}
     }
   </style>
 
@@ -768,6 +865,70 @@
     <h3>상담 전에 무엇을 준비하면 좋나요?</h3>
     <p>원하는 모델과 트림, 옵션, 계약기간, 연간 주행거리, 보증금 또는 무보증 희망조건을 정리하면 보다 구체적인 견적 비교에 도움이 됩니다.</p>
   </div>
+</section>
+
+
+<section class="related-section">
+  <p class="related-label">함께 보면 좋은 자동차정보</p>
+  <h2>다른 장기렌트·리스 조건도 비교해보세요</h2>
+  <p class="related-desc">
+    카슐랭의 계약조건을 확인했다면 다른 장기렌트·리스 안내 글도 함께 살펴보세요.
+    서비스마다 견적 비교의 초점과 확인해야 할 조건이 달라 보다 폭넓게 판단하는 데 도움이 됩니다.
+  </p>
+
+  <div class="related-grid">
+    <a href="lease-rent-seongji.html" class="related-card">
+      <div class="related-image">
+        <img src="assets/lease-rent-seongji-01.png" alt="리스렌트 성지 리스와 장기렌트 비교">
+      </div>
+      <div class="related-content">
+        <span>리스·렌트 비교</span>
+        <h3>리스렌트 성지</h3>
+        <p>자동차 리스와 장기렌트의 차이, 즉시출고와 계약 종료 조건을 비교하세요.</p>
+      </div>
+    </a>
+
+    <a href="chadream.html" class="related-card">
+      <div class="related-image">
+        <img src="assets/chadream-01.png" alt="차드림 신차 장기렌트 진행 과정">
+      </div>
+      <div class="related-content">
+        <span>신차 장기렌트 절차</span>
+        <h3>차드림</h3>
+        <p>차량 선택부터 견적과 심사, 계약과 출고까지 진행 순서를 확인하세요.</p>
+      </div>
+    </a>
+
+    <a href="onepick-longterm-rentcar.html" class="related-card">
+      <div class="related-image">
+        <img src="assets/onepick-longterm-rentcar-01.png" alt="원픽 장기렌트카 비교견적">
+      </div>
+      <div class="related-content">
+        <span>장기렌트 비교견적</span>
+        <h3>원픽 장기렌트카</h3>
+        <p>월 렌트료와 초기비용, 총 납부액을 같은 조건으로 비교하는 방법을 확인하세요.</p>
+      </div>
+    </a>
+
+    <a href="iamcar-longterm-rentcar.html" class="related-card">
+      <div class="related-image">
+        <img src="assets/iamcar-longterm-rentcar-01.png" alt="아이엠카 신차장기렌트카 초기비용">
+      </div>
+      <div class="related-content">
+        <span>초기비용·무보증</span>
+        <h3>아이엠카 신차장기렌트카</h3>
+        <p>무보증·보증금·선납금 차이와 심사에 따라 달라지는 조건을 살펴보세요.</p>
+      </div>
+    </a>
+  </div>
+
+  <a href="car.html" class="car-main-link">
+    <span>
+      자동차정보 전체 보기
+      <small>신차 장기렌트와 자동차 리스 관련 글을 한곳에서 확인하세요.</small>
+    </span>
+    <strong>→</strong>
+  </a>
 </section>
 
 <footer>
