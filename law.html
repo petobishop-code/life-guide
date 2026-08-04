@@ -581,12 +581,12 @@
     </a>
 
 
-    <a href="rehabilitation-period-reduction-conditions.html" class="article-card">
+    <a href="rehabilitation-period-reduction-conditions.html" class="article-card" data-keywords="개인회생 단축조건 기간단축 변제기간 원금전액변제 고령 질병 부양가족">
       <div class="article-image">⌛</div>
       <div class="article-content">
         <span class="article-tag">개인회생</span>
-        <h3>개인회생 단축조건 어떤 경우에 검토할까요?</h3>
-        <p>변제기간 단축 대상과 원금 전액 변제, 연령·건강·가족상황을 확인하세요.</p>
+        <h3>개인회생 단축조건과 기간단축 가능성</h3>
+        <p>원금 전액 변제, 연령·건강·가족상황과 변제기간 단축 시 확인할 조건을 살펴보세요.</p>
       </div>
     </a>
 
@@ -611,12 +611,12 @@
     </a>
 
 
-    <a href="personal-rehabilitation-application-process.html" class="article-card">
+    <a href="personal-rehabilitation-application-process.html" class="article-card" data-keywords="개인회생 신청절차 접수 보정명령 개시결정 채권자집회 인가결정 변제 면책">
       <div class="article-image">🧭</div>
       <div class="article-content">
         <span class="article-tag">개인회생</span>
         <h3>개인회생신청절차 접수부터 면책까지</h3>
-        <p>신청 준비와 개시결정, 채권자집회, 인가, 변제와 면책 순서를 확인하세요.</p>
+        <p>신청 준비, 보정명령, 개시결정, 채권자집회, 인가와 면책까지 전체 순서를 확인하세요.</p>
       </div>
     </a>
 
@@ -701,12 +701,12 @@
     </a>
 
 
-    <a href="bankruptcy-filing-documents.html" class="article-card">
+    <a href="bankruptcy-filing-documents.html" class="article-card" data-keywords="개인파산 신고 신청서류 필요서류 가족관계 채권자목록 재산목록 소득자료 통장내역">
       <div class="article-image">📑</div>
       <div class="article-content">
         <span class="article-tag">개인파산</span>
-        <h3>개인파산신고 신청 서류 무엇을 준비할까요?</h3>
-        <p>가족관계와 주소, 채무·재산, 소득과 생활상황 관련 서류를 확인하세요.</p>
+        <h3>개인파산신고 신청 서류 총정리</h3>
+        <p>가족관계, 채무·재산, 소득·지출, 보험·차량과 최근 금융거래 자료를 확인하세요.</p>
       </div>
     </a>
 
@@ -802,7 +802,9 @@
     let visibleCount = 0;
 
     articleCards.forEach((card) => {
-      const cardText = normalizeText(card.textContent || "");
+      const cardText = normalizeText(
+        (card.textContent || "") + " " + (card.dataset.keywords || "")
+      );
       const isMatch = cardText.includes(normalizedKeyword);
 
       card.style.display = isMatch ? "" : "none";
