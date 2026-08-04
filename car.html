@@ -1,1 +1,684 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>자동차정보 | 신차 장기렌트·리스 비교 가이드 | 라이프가이드</title>
+  <meta name="description" content="카슐랭, 리스렌트 성지, 차드림, 원픽 장기렌트카, 아이엠카 신차장기렌트카 등 신차 장기렌트와 자동차 리스 관련 정보를 한눈에 확인하세요.">
+  <meta name="keywords" content="자동차정보, 신차장기렌트, 장기렌트카, 자동차리스, 카슐랭, 리스렌트 성지, 차드림, 원픽 장기렌트카, 아이엠카 신차장기렌트카">
+  <meta name="robots" content="index,follow">
+
+  <link rel="canonical" href="https://www.life-guide.co.kr/car.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="자동차정보 | 라이프가이드">
+  <meta property="og:description" content="신차 장기렌트와 자동차 리스 관련 정보를 한눈에 확인하세요.">
+  <meta property="og:url" content="https://www.life-guide.co.kr/car.html">
+  <meta property="og:image" content="https://www.life-guide.co.kr/assets/carchelin-01.png">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Arial,"Noto Sans KR",sans-serif;
+      color:#111827;
+      background:#f8fafc;
+      line-height:1.8;
+      word-break:keep-all
+    }
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+
+    .header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(255,255,255,.97);
+      border-bottom:1px solid #e5e7eb;
+      backdrop-filter:blur(10px)
+    }
+    .header-inner{
+      max-width:1200px;
+      height:70px;
+      margin:0 auto;
+      padding:0 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between
+    }
+    .logo{
+      font-size:23px;
+      font-weight:900;
+      color:#2563eb;
+      white-space:nowrap
+    }
+    .logo span{color:#111827}
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:24px;
+      margin-left:34px;
+      margin-right:auto
+    }
+    .nav a{
+      color:#1f2937;
+      font-size:14px;
+      font-weight:700
+    }
+    .nav a:hover,.nav a.active{color:#2563eb}
+
+    .search-box{
+      width:225px;
+      height:42px;
+      padding:0 10px 0 14px;
+      display:flex;
+      align-items:center;
+      border:1px solid #d1d5db;
+      border-radius:10px;
+      background:#fff;
+      transition:.2s
+    }
+    .search-box:focus-within{
+      border-color:#2563eb;
+      box-shadow:0 0 0 3px rgba(37,99,235,.10)
+    }
+    .search-box input{
+      width:100%;
+      min-width:0;
+      border:0;
+      outline:0;
+      background:transparent;
+      font-size:13px;
+      font-family:inherit
+    }
+    .search-box button{
+      border:0;
+      background:transparent;
+      cursor:pointer;
+      font-size:14px
+    }
+
+    .hero{
+      padding:82px 20px 105px;
+      background:
+        radial-gradient(circle at 15% 20%,rgba(59,130,246,.16),transparent 30%),
+        linear-gradient(130deg,#e8f2ff,#f7fbff 55%,#fff)
+    }
+    .hero-inner{
+      max-width:1200px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      align-items:center;
+      gap:45px
+    }
+    .hero-label{
+      margin-bottom:15px;
+      color:#2563eb;
+      font-size:15px;
+      font-weight:900
+    }
+    .hero h1{
+      margin-bottom:22px;
+      font-size:47px;
+      line-height:1.3;
+      letter-spacing:-2.4px
+    }
+    .hero h1 span{color:#2563eb}
+    .hero p{
+      max-width:720px;
+      color:#64748b;
+      font-size:17px;
+      line-height:1.9
+    }
+    .hero-visual{
+      position:relative;
+      padding:26px;
+      border-radius:28px;
+      background:rgba(255,255,255,.8);
+      box-shadow:0 20px 55px rgba(15,23,42,.10)
+    }
+    .hero-visual img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+      border-radius:20px
+    }
+
+    .category-section{
+      max-width:1200px;
+      margin:-45px auto 0;
+      padding:0 20px;
+      position:relative
+    }
+    .category-box{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
+      padding:28px;
+      border-radius:22px;
+      background:#fff;
+      box-shadow:0 18px 50px rgba(15,23,42,.09)
+    }
+    .category-card{
+      padding:25px 18px;
+      border:1px solid transparent;
+      border-radius:16px;
+      text-align:center;
+      transition:.25s
+    }
+    .category-card:hover{
+      transform:translateY(-5px);
+      border-color:#dbeafe;
+      background:#f8fbff
+    }
+    .category-icon{
+      width:58px;
+      height:58px;
+      margin:0 auto 14px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:50%;
+      background:#eff6ff;
+      font-size:27px
+    }
+    .category-card h3{margin-bottom:7px;font-size:18px}
+    .category-card p{
+      color:#6b7280;
+      font-size:13px;
+      line-height:1.6
+    }
+
+    .intro-section{
+      max-width:1100px;
+      margin:75px auto 0;
+      padding:0 20px
+    }
+    .intro-box{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px
+    }
+    .intro-card{
+      padding:26px;
+      border:1px solid #e5e7eb;
+      border-radius:17px;
+      background:#fff
+    }
+    .intro-card strong{
+      display:block;
+      margin-bottom:9px;
+      color:#1e3a8a;
+      font-size:18px
+    }
+    .intro-card p{
+      color:#64748b;
+      font-size:14px;
+      line-height:1.75
+    }
+
+    .content-section{
+      max-width:1200px;
+      margin:78px auto;
+      padding:0 20px
+    }
+    .section-label{
+      margin-bottom:8px;
+      color:#2563eb;
+      font-size:14px;
+      font-weight:900
+    }
+    .section-title{
+      margin-bottom:12px;
+      font-size:33px;
+      letter-spacing:-1.3px
+    }
+    .section-desc{
+      margin-bottom:32px;
+      color:#64748b;
+      font-size:15px
+    }
+    .search-result-info{
+      display:none;
+      margin:-10px 0 25px;
+      padding:13px 16px;
+      border-radius:10px;
+      background:#eff6ff;
+      color:#1d4ed8;
+      font-size:14px;
+      font-weight:800
+    }
+    .article-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px
+    }
+    .article-card{
+      overflow:hidden;
+      border:1px solid #e5e7eb;
+      border-radius:17px;
+      background:#fff;
+      transition:.25s
+    }
+    .article-card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 14px 34px rgba(15,23,42,.09)
+    }
+    .article-image{
+      height:215px;
+      overflow:hidden;
+      background:#eff6ff
+    }
+    .article-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:.35s
+    }
+    .article-card:hover .article-image img{transform:scale(1.04)}
+    .article-content{padding:23px}
+    .article-tag{
+      display:inline-block;
+      margin-bottom:12px;
+      padding:5px 10px;
+      border-radius:15px;
+      background:#eff6ff;
+      color:#2563eb;
+      font-size:12px;
+      font-weight:900
+    }
+    .article-card h3{
+      margin-bottom:10px;
+      font-size:20px;
+      line-height:1.5
+    }
+    .article-card p{
+      min-height:72px;
+      color:#6b7280;
+      font-size:14px;
+      line-height:1.75
+    }
+    .card-more{
+      display:inline-block;
+      margin-top:16px;
+      color:#2563eb;
+      font-size:13px;
+      font-weight:900
+    }
+    .no-search-results{
+      display:none;
+      grid-column:1/-1;
+      padding:55px 20px;
+      border:1px solid #e5e7eb;
+      border-radius:16px;
+      background:#fff;
+      color:#6b7280;
+      text-align:center
+    }
+
+    .guide-section{
+      max-width:1200px;
+      margin:0 auto 85px;
+      padding:0 20px
+    }
+    .guide-box{
+      padding:38px;
+      border:1px solid #bfdbfe;
+      border-radius:22px;
+      background:linear-gradient(135deg,#eff6ff,#f8fbff)
+    }
+    .guide-box h2{
+      margin-bottom:22px;
+      font-size:28px;
+      color:#1e3a8a
+    }
+    .guide-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:16px
+    }
+    .guide-item{
+      display:flex;
+      gap:13px;
+      padding:20px;
+      border-radius:14px;
+      background:#fff
+    }
+    .check{color:#2563eb;font-weight:900}
+    .guide-item span:last-child{
+      color:#475569;
+      font-size:14px;
+      line-height:1.7
+    }
+
+    .notice-section{
+      max-width:1200px;
+      margin:0 auto 80px;
+      padding:0 20px
+    }
+    .notice-box{
+      padding:24px 26px;
+      border-left:4px solid #eab308;
+      border-radius:12px;
+      background:#fff8df;
+      color:#5f5533;
+      font-size:14px;
+      line-height:1.8
+    }
+
+    footer{
+      margin-top:80px;
+      background:#111827;
+      color:#9ca3af
+    }
+    .footer-inner{
+      max-width:1200px;
+      margin:0 auto;
+      padding:48px 20px
+    }
+    .footer-logo{
+      margin-bottom:14px;
+      color:#fff;
+      font-size:21px;
+      font-weight:900
+    }
+    .footer-inner p{font-size:13px;line-height:1.8}
+
+    @media(max-width:950px){
+      .nav,.search-box{display:none}
+      .hero-inner{grid-template-columns:1fr}
+      .hero-visual{display:none}
+      .hero h1{font-size:37px}
+      .category-box{grid-template-columns:repeat(2,1fr)}
+      .intro-box{grid-template-columns:1fr}
+      .article-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:650px){
+      .hero{padding:60px 20px 90px}
+      .hero h1{font-size:30px}
+      .category-box{grid-template-columns:1fr 1fr;padding:15px;gap:6px}
+      .category-card{padding:19px 8px}
+      .category-card p{display:none}
+      .article-grid{grid-template-columns:1fr}
+      .section-title{font-size:28px}
+      .guide-grid{grid-template-columns:1fr}
+      .guide-box{padding:25px 18px}
+    }
+  </style>
+</head>
+
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">라이프<span>가이드</span></a>
+
+    <nav class="nav">
+      <a href="index.html">홈</a>
+      <a href="health.html">건강</a>
+      <a href="index.html#insurance">보험</a>
+      <a href="index.html#finance">금융</a>
+      <a href="law.html">법률</a>
+      <a href="car.html" class="active">자동차</a>
+      <a href="index.html#travel">여행</a>
+      <a href="index.html#life">생활정보</a>
+    </nav>
+
+    <form class="search-box" id="car-search-form" role="search">
+      <input
+        type="search"
+        id="car-search-input"
+        placeholder="자동차 정보를 검색하세요"
+        aria-label="자동차정보 검색"
+        autocomplete="off"
+      >
+      <button type="submit" aria-label="검색">🔍</button>
+    </form>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-label">라이프가이드 자동차정보</div>
+      <h1>신차 장기렌트와 자동차 리스,<br><span>계약 전에 꼭 비교해야 할 정보</span></h1>
+      <p>
+        카슐랭부터 리스렌트 성지, 차드림, 원픽 장기렌트카,
+        아이엠카 신차장기렌트카까지 다양한 견적 서비스를 살펴보고
+        월 납입금과 초기비용, 주행거리, 보험·정비, 반납과 인수 조건을 비교하세요.
+      </p>
+    </div>
+    <div class="hero-visual">
+      <img src="assets/carchelin-01.png" alt="신차 장기렌트 자동차 리스 비교 정보">
+    </div>
+  </div>
+</section>
+
+<section class="category-section">
+  <div class="category-box">
+    <a href="#rent-articles" class="category-card">
+      <div class="category-icon">🚘</div>
+      <h3>신차 장기렌트</h3>
+      <p>차량과 계약조건에 맞는 장기렌트 정보를 확인하세요.</p>
+    </a>
+    <a href="#rent-articles" class="category-card">
+      <div class="category-icon">📋</div>
+      <h3>자동차 리스</h3>
+      <p>리스와 렌트의 차이와 선택기준을 비교하세요.</p>
+    </a>
+    <a href="#comparison-guide" class="category-card">
+      <div class="category-icon">💰</div>
+      <h3>견적 비교</h3>
+      <p>월 납입금과 총비용을 동일조건으로 비교하세요.</p>
+    </a>
+    <a href="#comparison-guide" class="category-card">
+      <div class="category-icon">✅</div>
+      <h3>계약 체크</h3>
+      <p>보험·정비·중도해지·종료 조건을 확인하세요.</p>
+    </a>
+  </div>
+</section>
+
+<section class="intro-section">
+  <div class="intro-box">
+    <div class="intro-card">
+      <strong>월 납입금만 비교하지 않기</strong>
+      <p>선납금과 보증금, 계약기간과 주행거리 조건이 다르면 월 납입액만으로 실제 비용을 판단하기 어렵습니다.</p>
+    </div>
+    <div class="intro-card">
+      <strong>차량조건 동일하게 맞추기</strong>
+      <p>연식·트림·옵션·색상과 출고시점을 동일하게 맞춰야 정확한 비교가 가능합니다.</p>
+    </div>
+    <div class="intro-card">
+      <strong>계약 종료까지 미리 확인하기</strong>
+      <p>반납·인수·재렌트와 중도해지 위약금, 초과주행과 차량손상 정산기준을 확인하세요.</p>
+    </div>
+  </div>
+</section>
+
+<section class="content-section" id="rent-articles">
+  <div class="section-label">자동차정보 추천</div>
+  <h2 class="section-title">신차 장기렌트·리스 비교 콘텐츠</h2>
+  <p class="section-desc">각 서비스별 견적 특징과 계약 전 확인사항을 자세히 살펴보세요.</p>
+
+  <div class="search-result-info" id="search-result-info" aria-live="polite"></div>
+
+  <div class="article-grid" id="car-article-grid">
+    <div class="no-search-results" id="no-search-results">
+      검색 결과가 없습니다.<br>
+      다른 검색어로 다시 입력해 주세요.
+    </div>
+
+    <a href="carchelin.html"
+       class="article-card"
+       data-keywords="카슐랭 신차장기렌트 장기렌트카 비교견적 보증금 선납금 무보증 보험 정비">
+      <div class="article-image">
+        <img src="assets/carchelin-01.png" alt="카슐랭 신차 장기렌트">
+      </div>
+      <div class="article-content">
+        <span class="article-tag">신차 장기렌트</span>
+        <h3>카슐랭 장기렌트 비교견적 알아보기</h3>
+        <p>보증금·선납금, 계약기간과 주행거리, 보험·정비와 계약 종료 조건을 확인하세요.</p>
+        <span class="card-more">자세히 보기 →</span>
+      </div>
+    </a>
+
+    <a href="lease-rent-seongji.html"
+       class="article-card"
+       data-keywords="리스렌트 성지 신차리스 자동차리스 장기렌트 비교 즉시출고 보험 번호판">
+      <div class="article-image">
+        <img src="assets/lease-rent-seongji-01.png" alt="리스렌트 성지 자동차 리스 장기렌트">
+      </div>
+      <div class="article-content">
+        <span class="article-tag">리스·렌트 비교</span>
+        <h3>리스렌트 성지 리스와 렌트 비교하기</h3>
+        <p>자동차 리스와 장기렌트의 차이, 즉시출고와 계약 종료 조건을 비교하세요.</p>
+        <span class="card-more">자세히 보기 →</span>
+      </div>
+    </a>
+
+    <a href="chadream.html"
+       class="article-card"
+       data-keywords="차드림 신차장기렌트 견적 상담 심사 출고 재고차 옵션 계약절차">
+      <div class="article-image">
+        <img src="assets/chadream-01.png" alt="차드림 신차 장기렌트">
+      </div>
+      <div class="article-content">
+        <span class="article-tag">장기렌트 상담</span>
+        <h3>차드림 신차 장기렌트 진행 과정</h3>
+        <p>차종 선택과 견적, 심사, 계약과 차량 배정, 출고까지 전체 순서를 확인하세요.</p>
+        <span class="card-more">자세히 보기 →</span>
+      </div>
+    </a>
+
+    <a href="onepick-longterm-rentcar.html"
+       class="article-card"
+       data-keywords="원픽 장기렌트카 비교견적 최저가 총비용 월렌트료 출고 자동차">
+      <div class="article-image">
+        <img src="assets/onepick-longterm-rentcar-01.png" alt="원픽 장기렌트카">
+      </div>
+      <div class="article-content">
+        <span class="article-tag">장기렌트 비교견적</span>
+        <h3>원픽 장기렌트카 같은 조건으로 비교하기</h3>
+        <p>월 렌트료뿐 아니라 초기비용과 총 납부액, 보험과 종료 비용을 함께 비교하세요.</p>
+        <span class="card-more">자세히 보기 →</span>
+      </div>
+    </a>
+
+    <a href="iamcar-longterm-rentcar.html"
+       class="article-card"
+       data-keywords="아이엠카 신차장기렌트카 무보증 보증금 선납금 초기비용 심사 장기렌트">
+      <div class="article-image">
+        <img src="assets/iamcar-longterm-rentcar-01.png" alt="아이엠카 신차장기렌트카">
+      </div>
+      <div class="article-content">
+        <span class="article-tag">신차 장기렌트</span>
+        <h3>아이엠카 신차장기렌트카 초기비용 확인</h3>
+        <p>무보증·보증금·선납금 차이와 심사에 따라 달라지는 계약조건을 살펴보세요.</p>
+        <span class="card-more">자세히 보기 →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="guide-section" id="comparison-guide">
+  <div class="guide-box">
+    <h2>장기렌트·리스 견적을 비교할 때 꼭 확인하세요</h2>
+    <div class="guide-grid">
+      <div class="guide-item"><span class="check">✓</span><span>차량 연식·트림·옵션과 외장색상이 동일한지 확인합니다.</span></div>
+      <div class="guide-item"><span class="check">✓</span><span>무보증·보증금·선납금과 반환 여부를 구분합니다.</span></div>
+      <div class="guide-item"><span class="check">✓</span><span>계약기간과 연간 약정주행거리를 동일하게 맞춥니다.</span></div>
+      <div class="guide-item"><span class="check">✓</span><span>월 납입액에 부가세·보험·정비가 포함됐는지 확인합니다.</span></div>
+      <div class="guide-item"><span class="check">✓</span><span>운전자 연령과 범위, 사고 자기부담금을 확인합니다.</span></div>
+      <div class="guide-item"><span class="check">✓</span><span>중도해지 위약금과 계약승계 가능 여부를 확인합니다.</span></div>
+      <div class="guide-item"><span class="check">✓</span><span>반납 시 초과주행·차량손상 정산기준을 확인합니다.</span></div>
+      <div class="guide-item"><span class="check">✓</span><span>인수금액과 중고차 시세를 비교한 뒤 종료방식을 정합니다.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="notice-section">
+  <div class="notice-box">
+    <strong>자동차정보 이용 안내</strong><br>
+    본 페이지는 신차 장기렌트와 자동차 리스 관련 일반적인 정보를 제공합니다.
+    실제 월 납입금과 무보증 승인, 출고기간, 보험·정비 및 계약 종료 조건은
+    선택 차량과 렌터카·리스 회사, 이용자의 심사결과와 최종 계약서 내용에 따라 달라질 수 있습니다.
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">라이프가이드</div>
+    <p>라이프가이드는 건강, 보험, 금융, 법률, 자동차 등 생활에 필요한 다양한 정보를 제공합니다.</p>
+  </div>
+</footer>
+
+<script>
+  const searchForm = document.getElementById("car-search-form");
+  const searchInput = document.getElementById("car-search-input");
+  const articleCards = Array.from(document.querySelectorAll(".article-card"));
+  const resultInfo = document.getElementById("search-result-info");
+  const noResults = document.getElementById("no-search-results");
+  const contentSection = document.querySelector(".content-section");
+
+  function normalizeText(text) {
+    return text.toLowerCase().replace(/\s+/g, "").trim();
+  }
+
+  function resetSearch() {
+    articleCards.forEach((card) => {
+      card.style.display = "";
+    });
+
+    resultInfo.style.display = "none";
+    resultInfo.textContent = "";
+    noResults.style.display = "none";
+  }
+
+  function runSearch(keyword) {
+    const normalizedKeyword = normalizeText(keyword);
+
+    if (!normalizedKeyword) {
+      resetSearch();
+      return;
+    }
+
+    let visibleCount = 0;
+
+    articleCards.forEach((card) => {
+      const cardText = normalizeText(
+        (card.textContent || "") + " " + (card.dataset.keywords || "")
+      );
+
+      const isMatch = cardText.includes(normalizedKeyword);
+      card.style.display = isMatch ? "" : "none";
+
+      if (isMatch) {
+        visibleCount += 1;
+      }
+    });
+
+    resultInfo.style.display = "block";
+    resultInfo.textContent = '"' + keyword + '" 검색 결과 ' + visibleCount + '개';
+    noResults.style.display = visibleCount === 0 ? "block" : "none";
+
+    contentSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+
+  searchForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    runSearch(searchInput.value.trim());
+  });
+
+  searchInput.addEventListener("input", function() {
+    if (!searchInput.value.trim()) {
+      resetSearch();
+    }
+  });
+</script>
+</body>
+</html>
