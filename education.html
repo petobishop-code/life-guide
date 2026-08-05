@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>교육정보 | 초등·중등 온라인 학습 비교 | 라이프가이드</title>
+  <meta name="description" content="엘리하이, 비상교육 온리원 중등, 엠베스트 중등인강 등 초등·중등 온라인 학습 서비스의 강의 구성, 학습관리, 복습체계와 내신 대비 정보를 확인하세요.">
+  <meta name="keywords" content="교육정보, 초등인강, 중등인강, 온라인학습, 엘리하이, 비상교육 온리원 중등, 엠베스트 중등인강">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.life-guide.co.kr/education.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="교육정보 | 초등·중등 온라인 학습 비교">
+  <meta property="og:description" content="학년과 학습목표에 맞는 온라인 학습 서비스를 비교해보세요.">
+  <meta property="og:url" content="https://www.life-guide.co.kr/education.html">
+  <meta property="og:image" content="https://www.life-guide.co.kr/assets/elihigh-01.png">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:Arial,"Noto Sans KR",sans-serif;color:#111827;background:#fff;line-height:1.75;word-break:keep-all}
+    a{text-decoration:none;color:inherit} img{display:block;max-width:100%}
+    .header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.97);border-bottom:1px solid #e5e7eb}
+    .header-inner{max-width:1200px;height:70px;margin:auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:23px;font-weight:900;color:#2563eb}.logo span{color:#111827}
+    .nav{display:flex;gap:23px;margin-left:32px;margin-right:auto}.nav a{font-size:14px;font-weight:700}.nav a.active,.nav a:hover{color:#2563eb}
+    .header-button{padding:11px 18px;border-radius:10px;background:#2563eb;color:#fff;font-size:13px;font-weight:900}
+    .hero{padding:85px 20px 95px;background:linear-gradient(135deg,#eff6ff,#f8fbff 55%,#fff)}
+    .hero-inner{max-width:950px;margin:auto;text-align:center}
+    .hero-tag{display:inline-block;margin-bottom:20px;padding:8px 16px;border-radius:999px;background:#dbeafe;color:#1d4ed8;font-size:14px;font-weight:900}
+    .hero h1{margin-bottom:22px;font-size:48px;line-height:1.28;letter-spacing:-2.5px}.hero h1 span{color:#2563eb}
+    .hero p{max-width:780px;margin:auto;color:#64748b;font-size:18px;line-height:1.95}
+    .summary{max-width:1000px;margin:-38px auto 75px;padding:0 20px;position:relative}
+    .summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;padding:22px;border-radius:22px;background:#fff;box-shadow:0 18px 50px rgba(15,23,42,.09)}
+    .summary-card{padding:22px 14px;border-radius:16px;background:#f8fafc;text-align:center}.summary-card strong{display:block;margin-bottom:6px;color:#1d4ed8}.summary-card span{color:#64748b;font-size:13px}
+    .search-section{max-width:850px;margin:0 auto 65px;padding:0 20px}
+    .search-box{display:flex;gap:12px;padding:9px;border:1px solid #dbeafe;border-radius:16px;background:#fff}
+    .search-box input{flex:1;padding:14px 16px;border:0;outline:0;font-size:15px}.search-box button{padding:14px 22px;border:0;border-radius:11px;background:#2563eb;color:#fff;font-weight:900;cursor:pointer}
+    .articles{max-width:1120px;margin:auto;padding:0 20px}.section-head{text-align:center;margin-bottom:30px}.section-head span{color:#2563eb;font-size:14px;font-weight:900}.section-head h2{margin:7px 0 10px;font-size:34px}.section-head p{color:#64748b}
+    .article-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .article-card{overflow:hidden;border:1px solid #e5e7eb;border-radius:20px;background:#fff;transition:.25s}.article-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(15,23,42,.09)}
+    .article-image{height:225px;overflow:hidden;background:#eff6ff}.article-image img{width:100%;height:100%;object-fit:cover}
+    .article-content{padding:25px}.article-tag{display:inline-block;margin-bottom:12px;padding:6px 11px;border-radius:999px;background:#eff6ff;color:#2563eb;font-size:12px;font-weight:900}
+    .article-content h3{margin-bottom:12px;font-size:21px;line-height:1.45}.article-content p{margin-bottom:18px;color:#64748b;font-size:14px;line-height:1.75}.card-more{color:#2563eb;font-size:14px;font-weight:900}
+    .empty-message{display:none;grid-column:1/-1;padding:55px 20px;border-radius:18px;background:#f8fafc;color:#64748b;text-align:center}
+    .guide-section{max-width:1000px;margin:95px auto 0;padding:0 20px}.guide-box{padding:42px;border-radius:24px;background:#f8fafc}.guide-box h2{margin-bottom:12px;font-size:29px}.guide-box>p{margin-bottom:28px;color:#64748b}
+    .guide-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.guide-item{padding:22px;border:1px solid #e5e7eb;border-radius:15px;background:#fff}.guide-item strong{display:block;margin-bottom:7px;color:#1e3a8a}.guide-item p{color:#64748b;font-size:14px}
+    footer{margin-top:100px;background:#111827;color:#9ca3af}.footer-inner{max-width:1100px;margin:auto;padding:52px 20px}.footer-logo{margin-bottom:13px;color:#fff;font-size:22px;font-weight:900}.footer-inner p{font-size:13px;line-height:1.9}
+    @media(max-width:900px){.nav{display:none}.hero h1{font-size:38px}.summary-grid{grid-template-columns:repeat(2,1fr)}.article-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:650px){.hero h1{font-size:31px}.hero p{font-size:16px}.article-grid{grid-template-columns:1fr}.guide-grid{grid-template-columns:1fr}.search-box{display:block}.search-box button{width:100%;margin-top:8px}}
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">라이프<span>가이드</span></a>
+    <nav class="nav">
+      <a href="index.html">홈</a>
+      <a href="health.html">건강</a>
+      <a href="index.html#insurance">보험</a>
+      <a href="index.html#finance">금융</a>
+      <a href="law.html">법률</a>
+      <a href="car.html">자동차</a>
+      <a href="education.html" class="active">교육</a>
+    </nav>
+    <a href="#education-list" class="header-button">교육정보 보기</a>
+  </div>
+</header>
 
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-tag">초등·중등 온라인 학습 정보</span>
+    <h1>아이에게 맞는 <span>교육 서비스</span><br>학년과 학습목표에 따라 비교하세요</h1>
+    <p>엘리하이, 비상교육 온리원 중등, 엠베스트 중등인강의 과목 구성과 학습관리, 복습 체계와 내신 대비 포인트를 살펴보세요.</p>
+  </div>
+</section>
+
+<section class="summary">
+  <div class="summary-grid">
+    <div class="summary-card"><strong>학년 구분</strong><span>초등·중등 과정</span></div>
+    <div class="summary-card"><strong>과목 구성</strong><span>국어·수학·영어 등</span></div>
+    <div class="summary-card"><strong>학습관리</strong><span>진도·계획·복습</span></div>
+    <div class="summary-card"><strong>시험 대비</strong><span>내신·문제풀이</span></div>
+  </div>
+</section>
+
+<section class="search-section">
+  <div class="search-box">
+    <input type="search" id="educationSearch" placeholder="검색어를 입력하세요. 예: 초등, 중등, 내신, 엘리하이">
+    <button type="button" onclick="searchEducation()">검색</button>
+  </div>
+</section>
+
+<section class="articles" id="education-list">
+  <div class="section-head">
+    <span>EDUCATION GUIDE</span>
+    <h2>초등·중등 교육정보</h2>
+    <p>현재 학년과 부족한 과목, 학생의 학습 성향을 기준으로 비교해보세요.</p>
+  </div>
+
+  <div class="article-grid">
+    <a href="elihigh.html" class="article-card" data-keywords="엘리하이 초등 인강 온라인학습 학습습관">
+      <div class="article-image"><img src="assets/elihigh-01.png" alt="엘리하이 초등 온라인 학습"></div>
+      <div class="article-content">
+        <span class="article-tag">초등 온라인 학습</span>
+        <h3>엘리하이 학습 구성과 활용 포인트</h3>
+        <p>초등 주요 과목의 커리큘럼과 학습 습관, 진도관리와 복습 구조를 확인하세요.</p>
+        <span class="card-more">자세히 보기 →</span>
+      </div>
+    </a>
+
+    <a href="onlyone-middle-school.html" class="article-card" data-keywords="비상교육 온리원 중등 중등인강 내신 학습관리">
+      <div class="article-image"><img src="assets/onlyone-middle-school-01.png" alt="비상교육 온리원 중등"></div>
+      <div class="article-content">
+        <span class="article-tag">중등 온라인 학습</span>
+        <h3>비상교육 온리원 중등 내신·학습관리</h3>
+        <p>교과 진도와 시험 대비, 오답 정리, 반복 학습과 자기주도 관리 요소를 살펴보세요.</p>
+        <span class="card-more">자세히 보기 →</span>
+      </div>
+    </a>
+
+    <a href="mbest-middle-school.html" class="article-card" data-keywords="엠베스트 중등인강 중등 강사진 내신 시험대비">
+      <div class="article-image"><img src="assets/mbest-middle-school-01.png" alt="엠베스트 중등인강"></div>
+      <div class="article-content">
+        <span class="article-tag">중등 인강·내신</span>
+        <h3>엠베스트 중등인강 강의·시험 대비</h3>
+        <p>과목별 강사진과 수준별 커리큘럼, 내신 대비와 자기주도 학습 구성을 확인하세요.</p>
+        <span class="card-more">자세히 보기 →</span>
+      </div>
+    </a>
+
+    <div class="empty-message" id="emptyMessage">검색 결과가 없습니다.</div>
+  </div>
+</section>
+
+<section class="guide-section">
+  <div class="guide-box">
+    <h2>온라인 학습 서비스를 비교할 때 확인할 내용</h2>
+    <p>강의 수나 브랜드 인지도보다 실제 학습 흐름과 꾸준한 활용 가능성을 함께 확인하세요.</p>
+    <div class="guide-grid">
+      <div class="guide-item"><strong>1. 현재 학년과 부족한 과목</strong><p>초등은 학습 습관, 중등은 내신과 시험 대비 비중이 커질 수 있습니다.</p></div>
+      <div class="guide-item"><strong>2. 강의 스타일과 난도</strong><p>학생이 이해하기 쉬운 설명 방식과 수준별 선택이 가능한지 확인하세요.</p></div>
+      <div class="guide-item"><strong>3. 진도·복습·오답 관리</strong><p>강의를 듣고 끝나는지, 문제풀이와 취약 단원 복습으로 이어지는지 살펴보세요.</p></div>
+      <div class="guide-item"><strong>4. 실제 활용 가능성</strong><p>아이에게 무리 없는 학습량과 지속 가능한 구조인지 확인하세요.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">라이프가이드</div>
+    <p>라이프가이드는 건강, 보험, 금융, 법률, 자동차, 교육 등 생활에 필요한 다양한 정보를 제공합니다.</p>
+  </div>
+</footer>
+
+<script>
+function searchEducation(){
+  const keyword=document.getElementById("educationSearch").value.trim().toLowerCase();
+  const cards=document.querySelectorAll(".article-card");
+  let count=0;
+  cards.forEach(card=>{
+    const text=(card.dataset.keywords+" "+card.innerText).toLowerCase();
+    const show=keyword===""||text.includes(keyword);
+    card.style.display=show?"block":"none";
+    if(show) count++;
+  });
+  document.getElementById("emptyMessage").style.display=count===0?"block":"none";
+}
+document.getElementById("educationSearch").addEventListener("keydown",e=>{if(e.key==="Enter")searchEducation()});
+</script>
+</body>
+</html>
