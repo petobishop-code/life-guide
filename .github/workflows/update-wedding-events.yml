@@ -1,0 +1,37 @@
+name: Update Wedding Events
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 매일 오전 7시 20분(KST) = 전날 22시 20분(UTC)
+    - cron: "20 22 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Update wedding schedules
+        run: node scripts/update-wedding-events.js
+
+      - name: Commit updated schedules
+        run: |
+          if git diff --quiet; then
+            echo "No schedule changes"
+            exit 0
+          fi
+          git config user.name "life-guide-bot"
+          git config user.email "life-guide-bot@users.noreply.github.com"
+          git add wedding.html daegu-exco-interburgo-wedding-fair.html
+          git commit -m "자동 업데이트: 웨딩박람회 일정"
+          git push
