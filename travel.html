@@ -1,1 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>여행정보 | 국내·해외 여행상품 비교 가이드 | 라이프가이드</title>
+  <meta name="description" content="트립가자 등 국내·해외 여행상품의 항공 일정, 숙소, 포함사항, 선택관광, 예약과 취소조건을 확인하세요.">
+  <meta name="keywords" content="여행정보, 트립가자, 국내여행, 해외여행, 패키지여행, 자유여행, 여행상품">
+  <meta name="robots" content="index,follow">
+
+  <link rel="canonical" href="https://www.life-guide.co.kr/travel.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="여행정보 | 국내·해외 여행상품 비교">
+  <meta property="og:description" content="여행 일정과 전체 비용, 예약조건을 한눈에 비교하세요.">
+  <meta property="og:url" content="https://www.life-guide.co.kr/travel.html">
+  <meta property="og:image" content="https://www.life-guide.co.kr/assets/tripgaja-01.png">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Arial,"Noto Sans KR",sans-serif;
+      color:#2e2139;
+      background:#fff;
+      line-height:1.75;
+      word-break:keep-all
+    }
+    a{text-decoration:none;color:inherit}
+    img{display:block;max-width:100%}
+
+    .header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(255,255,255,.97);
+      border-bottom:1px solid #eadff5;
+      backdrop-filter:blur(12px)
+    }
+    .header-inner{
+      max-width:1200px;
+      height:70px;
+      margin:0 auto;
+      padding:0 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between
+    }
+    .logo{font-size:23px;font-weight:900;color:#8b5bb5;white-space:nowrap}
+    .logo span{color:#2e2139}
+    .nav{display:flex;align-items:center;gap:23px;margin-left:32px;margin-right:auto}
+    .nav a{font-size:14px;font-weight:700;color:#3f3348}
+    .nav a:hover,.nav a.active{color:#8b5bb5}
+    .header-button{
+      padding:11px 18px;
+      border-radius:10px;
+      background:#9365bd;
+      color:#fff;
+      font-size:13px;
+      font-weight:900
+    }
+
+    .hero{
+      padding:85px 20px 95px;
+      background:
+        radial-gradient(circle at 15% 20%,rgba(147,101,189,.16),transparent 30%),
+        linear-gradient(135deg,#f1e8fb 0%,#faf5ff 55%,#ffffff 100%)
+    }
+    .hero-inner{max-width:950px;margin:0 auto;text-align:center}
+    .hero-tag{
+      display:inline-block;
+      margin-bottom:20px;
+      padding:8px 16px;
+      border-radius:999px;
+      background:#e9d8f8;
+      color:#76479e;
+      font-size:14px;
+      font-weight:900
+    }
+    .hero h1{
+      margin-bottom:22px;
+      font-size:48px;
+      line-height:1.28;
+      letter-spacing:-2.5px
+    }
+    .hero h1 span{color:#8b5bb5}
+    .hero p{
+      max-width:780px;
+      margin:0 auto;
+      color:#766783;
+      font-size:18px;
+      line-height:1.95
+    }
+
+    .summary{
+      max-width:1000px;
+      margin:-38px auto 75px;
+      padding:0 20px;
+      position:relative
+    }
+    .summary-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:13px;
+      padding:22px;
+      border-radius:22px;
+      background:#fff;
+      box-shadow:0 18px 50px rgba(66,42,88,.09)
+    }
+    .summary-card{
+      padding:22px 14px;
+      border-radius:16px;
+      background:#faf7fd;
+      text-align:center
+    }
+    .summary-card strong{display:block;margin-bottom:6px;color:#76479e}
+    .summary-card span{color:#766783;font-size:13px}
+
+    .search-section{
+      max-width:850px;
+      margin:0 auto 65px;
+      padding:0 20px
+    }
+    .search-box{
+      display:flex;
+      gap:12px;
+      padding:9px;
+      border:1px solid #dfc8ef;
+      border-radius:16px;
+      background:#fff;
+      box-shadow:0 10px 30px rgba(66,42,88,.06)
+    }
+    .search-box input{
+      flex:1;
+      min-width:0;
+      padding:14px 16px;
+      border:0;
+      outline:0;
+      font-size:15px;
+      background:transparent
+    }
+    .search-box button{
+      padding:14px 22px;
+      border:0;
+      border-radius:11px;
+      background:#9365bd;
+      color:#fff;
+      font-weight:900;
+      cursor:pointer
+    }
+    .search-guide{margin-top:12px;color:#998aa5;font-size:13px;text-align:center}
+
+    .articles{max-width:1120px;margin:0 auto;padding:0 20px}
+    .section-head{margin-bottom:30px;text-align:center}
+    .section-head span{color:#8b5bb5;font-size:14px;font-weight:900}
+    .section-head h2{margin:7px 0 10px;font-size:34px;letter-spacing:-1.5px}
+    .section-head p{color:#766783;font-size:15px}
+
+    .article-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px
+    }
+    .article-card{
+      overflow:hidden;
+      border:1px solid #eadff5;
+      border-radius:20px;
+      background:#fff;
+      transition:.25s
+    }
+    .article-card:hover{
+      transform:translateY(-6px);
+      border-color:#dfc8ef;
+      box-shadow:0 18px 40px rgba(66,42,88,.10)
+    }
+    .article-image{
+      height:225px;
+      overflow:hidden;
+      background:#f3eafe
+    }
+    .article-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:.3s
+    }
+    .article-card:hover .article-image img{transform:scale(1.035)}
+    .article-content{padding:25px}
+    .article-tag{
+      display:inline-block;
+      margin-bottom:12px;
+      padding:6px 11px;
+      border-radius:999px;
+      background:#f1e8fb;
+      color:#8b5bb5;
+      font-size:12px;
+      font-weight:900
+    }
+    .article-content h3{
+      margin-bottom:12px;
+      font-size:21px;
+      line-height:1.45;
+      letter-spacing:-.7px
+    }
+    .article-content p{
+      margin-bottom:18px;
+      color:#766783;
+      font-size:14px;
+      line-height:1.75
+    }
+    .card-more{color:#8b5bb5;font-size:14px;font-weight:900}
+    .empty-message{
+      display:none;
+      grid-column:1/-1;
+      padding:55px 20px;
+      border-radius:18px;
+      background:#faf7fd;
+      color:#766783;
+      text-align:center
+    }
+
+    .guide-section{
+      max-width:1000px;
+      margin:95px auto 0;
+      padding:0 20px
+    }
+    .guide-box{
+      padding:42px;
+      border-radius:24px;
+      background:#faf7fd
+    }
+    .guide-box h2{margin-bottom:12px;font-size:29px;letter-spacing:-1px}
+    .guide-box>p{margin-bottom:28px;color:#766783}
+    .guide-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:15px
+    }
+    .guide-item{
+      padding:22px;
+      border:1px solid #eadff5;
+      border-radius:15px;
+      background:#fff
+    }
+    .guide-item strong{display:block;margin-bottom:7px;color:#68408d}
+    .guide-item p{color:#766783;font-size:14px;line-height:1.7}
+
+    footer{
+      margin-top:100px;
+      background:#2d2038;
+      color:#cbbfd4
+    }
+    .footer-inner{max-width:1100px;margin:0 auto;padding:52px 20px}
+    .footer-logo{margin-bottom:13px;color:#fff;font-size:22px;font-weight:900}
+    .footer-inner p{font-size:13px;line-height:1.9}
+
+    @media(max-width:900px){
+      .nav{display:none}
+      .hero h1{font-size:38px}
+      .summary-grid{grid-template-columns:repeat(2,1fr)}
+      .article-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:650px){
+      .hero{padding:65px 20px 78px}
+      .hero h1{font-size:31px}
+      .hero p{font-size:16px}
+      .article-grid{grid-template-columns:1fr}
+      .guide-grid{grid-template-columns:1fr}
+      .guide-box{padding:30px 22px}
+      .search-box{display:block}
+      .search-box button{width:100%;margin-top:8px}
+    }
+  </style>
+</head>
+
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">라이프<span>가이드</span></a>
+    <nav class="nav">
+      <a href="index.html">홈</a>
+      <a href="health.html">건강</a>
+      <a href="insurance.html">보험</a>
+      <a href="finance.html">금융</a>
+      <a href="law.html">법률</a>
+      <a href="car.html">자동차</a>
+      <a href="travel.html" class="active">여행</a>
+      <a href="education.html">교육</a>
+    </nav>
+    <a href="#travel-list" class="header-button">여행정보 보기</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-tag">국내·해외 여행상품 정보</span>
+    <h1>떠나기 전 꼭 확인할 <span>여행 정보</span><br>일정과 전체 비용을 비교하세요</h1>
+    <p>
+      트립가자를 포함한 여행상품의 항공 일정, 숙소 위치, 포함관광과 자유시간,
+      현지 추가비용과 취소조건을 한눈에 살펴보세요.
+    </p>
+  </div>
+</section>
+
+<section class="summary">
+  <div class="summary-grid">
+    <div class="summary-card"><strong>여행방식</strong><span>패키지·자유여행</span></div>
+    <div class="summary-card"><strong>항공·숙소</strong><span>일정과 위치 확인</span></div>
+    <div class="summary-card"><strong>전체비용</strong><span>포함·불포함 비용</span></div>
+    <div class="summary-card"><strong>예약조건</strong><span>결제·변경·취소</span></div>
+  </div>
+</section>
+
+<section class="search-section">
+  <div class="search-box">
+    <input type="search" id="travelSearch" placeholder="검색어를 입력하세요. 예: 트립가자, 패키지, 숙소, 항공">
+    <button type="button" onclick="searchTravel()">검색</button>
+  </div>
+  <p class="search-guide">여행 서비스명이나 패키지·자유여행·항공·숙소 관련 내용을 검색할 수 있습니다.</p>
+</section>
+
+<section class="articles" id="travel-list">
+  <div class="section-head">
+    <span>TRAVEL GUIDE</span>
+    <h2>추천 여행정보</h2>
+    <p>희망 여행지와 일정, 예산과 원하는 여행방식을 기준으로 비교해보세요.</p>
+  </div>
+
+  <div class="article-grid">
+    <a href="tripgaja.html" class="article-card"
+       data-keywords="트립가자 여행 국내여행 해외여행 패키지 자유여행 항공 숙소 예약 취소">
+      <div class="article-image">
+        <img src="assets/tripgaja-01.png" alt="트립가자 여행 상품 안내">
+      </div>
+      <div class="article-content">
+        <span class="article-tag">여행 상품·예약</span>
+        <h3>트립가자 여행 일정과 예약조건 알아보기</h3>
+        <p>패키지와 자유여행, 항공 일정, 숙소, 포함사항과 취소수수료를 확인하세요.</p>
+        <span class="card-more">자세히 보기 →</span>
+      </div>
+    </a>
+
+    <div class="empty-message" id="emptyMessage">
+      검색 결과가 없습니다. 다른 검색어를 입력해보세요.
+    </div>
+  </div>
+</section>
+
+<section class="guide-section">
+  <div class="guide-box">
+    <h2>여행상품을 비교할 때 확인할 내용</h2>
+    <p>표시가격만 보지 말고 실제 여행에서 이용하게 될 전체 조건을 함께 확인하세요.</p>
+
+    <div class="guide-grid">
+      <div class="guide-item">
+        <strong>1. 항공 일정과 현지 체류시간</strong>
+        <p>직항·경유 여부와 출발·귀국시간에 따라 실제 여행시간이 달라질 수 있습니다.</p>
+      </div>
+      <div class="guide-item">
+        <strong>2. 숙소 위치와 객실 조건</strong>
+        <p>호텔 등급뿐 아니라 관광지 접근성, 조식과 객실 사용 조건을 살펴보세요.</p>
+      </div>
+      <div class="guide-item">
+        <strong>3. 포함·불포함 비용</strong>
+        <p>선택관광, 가이드 경비, 식사와 수하물 등 추가비용을 함께 계산하세요.</p>
+      </div>
+      <div class="guide-item">
+        <strong>4. 예약·변경·취소 조건</strong>
+        <p>예약금과 잔금 납부일, 항공권 발권 이후 취소수수료를 확인하세요.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">라이프가이드</div>
+    <p>라이프가이드는 건강, 보험, 금융, 법률, 자동차, 여행, 교육 등 생활에 필요한 다양한 정보를 제공합니다.</p>
+    <p style="margin-top:15px;">여행 상품의 가격과 일정, 항공·숙소, 포함사항과 취소조건은 예약 시점과 상품에 따라 달라질 수 있습니다.</p>
+  </div>
+</footer>
+
+<script>
+function searchTravel(){
+  const keyword=document.getElementById("travelSearch").value.trim().toLowerCase();
+  const cards=document.querySelectorAll(".article-card");
+  let count=0;
+
+  cards.forEach(card=>{
+    const text=(card.dataset.keywords+" "+card.innerText).toLowerCase();
+    const show=keyword===""||text.includes(keyword);
+    card.style.display=show?"block":"none";
+    if(show) count++;
+  });
+
+  document.getElementById("emptyMessage").style.display=count===0?"block":"none";
+}
+
+document.getElementById("travelSearch").addEventListener("keydown",function(event){
+  if(event.key==="Enter") searchTravel();
+});
+
+document.getElementById("travelSearch").addEventListener("input",function(){
+  if(this.value.trim()==="") searchTravel();
+});
+</script>
+</body>
+</html>
