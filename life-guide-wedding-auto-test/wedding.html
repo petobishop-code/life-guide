@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>전국 웨딩박람회 일정 및 결혼준비 정보 | 라이프가이드</title>
+
+  <meta name="description" content="전국 웨딩박람회 정보를 한눈에 확인하세요. 서울, 부산, 대구, 대전, 인천, 광주, 울산, 수원, 동탄, 부천, 고양, 안산, 김해, 천안 등 지역별 웨딩박람회와 결혼준비 정보를 확인할 수 있습니다.">
+
+  <meta name="keywords" content="웨딩박람회, 전국웨딩박람회, 결혼박람회, 웨딩페어, 결혼준비">
+
+  <meta name="robots" content="index,follow">
+
+  <link rel="canonical" href="https://www.life-guide.co.kr/wedding.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="전국 웨딩박람회 일정 및 결혼준비 정보">
+  <meta property="og:description" content="지역별 웨딩박람회와 결혼준비 정보를 확인해보세요.">
+  <meta property="og:url" content="https://www.life-guide.co.kr/wedding.html">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans KR", sans-serif;
+      background: #fffafa;
+      color: #292524;
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid #f1e7e3;
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      height: 70px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: 800;
+      color: #e8798f;
+      white-space: nowrap;
+    }
+
+    .logo span {
+      color: #292524;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-left: 35px;
+      margin-right: auto;
+    }
+
+    .nav a {
+      font-size: 14px;
+      font-weight: 600;
+      color: #44403c;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: #e8798f;
+    }
+
+    .hero {
+      padding: 85px 20px 100px;
+      background: linear-gradient(
+        135deg,
+        #fff1f4 0%,
+        #fff8f7 55%,
+        #ffffff 100%
+      );
+      text-align: center;
+    }
+
+    .hero-label {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 8px 16px;
+      background: #ffe4e9;
+      color: #be4964;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .hero h1 {
+      margin-bottom: 22px;
+      font-size: 48px;
+      line-height: 1.3;
+      letter-spacing: -2px;
+    }
+
+    .hero h1 span {
+      color: #e8798f;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: #78716c;
+      font-size: 18px;
+      line-height: 1.9;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 85px 20px 100px;
+    }
+
+    .section-title {
+      margin-bottom: 45px;
+      text-align: center;
+    }
+
+    .section-title span {
+      color: #e8798f;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .section-title h2 {
+      margin-top: 8px;
+      font-size: 35px;
+      letter-spacing: -1.5px;
+    }
+
+    .section-title p {
+      margin-top: 12px;
+      color: #78716c;
+      font-size: 15px;
+    }
+
+    .fair-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 25px;
+    }
+
+    .fair-card {
+      overflow: hidden;
+      background: #ffffff;
+      border: 1px solid #f1e7e3;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(41,37,36,0.06);
+      transition: 0.25s;
+    }
+
+    .fair-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(41,37,36,0.11);
+    }
+
+    .fair-image {
+      position: relative;
+      height: 230px;
+      overflow: hidden;
+      background: #f5f5f4;
+    }
+
+    .fair-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.35s;
+    }
+
+    .fair-card:hover .fair-image img {
+      transform: scale(1.04);
+    }
+
+    .fair-region {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      padding: 7px 12px;
+      background: rgba(255,255,255,0.94);
+      color: #be4964;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .fair-content {
+      padding: 25px;
+    }
+
+    .fair-content h3 {
+      margin-bottom: 12px;
+      font-size: 20px;
+      line-height: 1.5;
+      letter-spacing: -0.5px;
+    }
+
+    .fair-content p {
+      min-height: 72px;
+      margin-bottom: 20px;
+      color: #78716c;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+
+    .fair-date {
+      display: inline-block;
+      margin: 0 0 10px;
+      padding: 7px 11px;
+      background: #fff1f4;
+      color: #be4964;
+      border-radius: 9px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .fair-button {
+      display: inline-block;
+      color: #e8798f;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .guide {
+      background: #ffffff;
+      border-top: 1px solid #f5e8e6;
+    }
+
+    .guide-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 90px 20px;
+      text-align: center;
+    }
+
+    .guide-inner h2 {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    .guide-inner > p {
+      max-width: 750px;
+      margin: 0 auto 45px;
+      color: #78716c;
+      line-height: 1.9;
+    }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+      text-align: left;
+    }
+
+    .guide-card {
+      padding: 28px;
+      background: #fff8f7;
+      border-radius: 18px;
+    }
+
+    .guide-card strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .guide-card p {
+      color: #78716c;
+      font-size: 14px;
+    }
+
+    footer {
+      background: #292524;
+      color: #a8a29e;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 20px;
+    }
+
+    .footer-logo {
+      margin-bottom: 15px;
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .footer-inner p {
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    @media (max-width: 950px) {
+      .nav {
+        display: none;
+      }
+
+      .fair-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .hero {
+        padding: 65px 20px 75px;
+      }
+
+      .hero h1 {
+        font-size: 31px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .fair-grid,
+      .guide-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .fair-image {
+        height: 220px;
+      }
+
+      .fair-content p {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-inner">
+
+    <a href="index.html" class="logo">
+      라이프<span>가이드</span>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html">홈</a>
+      <a href="health.html">건강</a>
+      <a href="insurance.html">보험</a>
+      <a href="wedding.html" class="active">웨딩</a>
+      <a href="finance.html">금융</a>
+      <a href="law.html">법률</a>
+      <a href="car.html">자동차</a>
+      <a href="travel.html">여행</a>
+      <a href="education.html">교육</a>
+      <a href="life.html">생활정보</a>
+    </nav>
+
+  </div>
+</header>
+
+<section class="hero">
+
+  <span class="hero-label">WEDDING GUIDE</span>
+
+  <h1>
+    전국 <span>웨딩박람회</span><br>
+    결혼준비 정보를 확인하세요
+  </h1>
+
+  <p>
+    지역별 웨딩박람회 정보를 한눈에 살펴보세요.
+    웨딩홀부터 스드메, 예물, 예복, 혼수까지
+    결혼 준비에 필요한 다양한 정보를 확인할 수 있습니다.
+  </p>
+
+</section>
+
+<section class="section">
+
+  <div class="section-title">
+    <span>WEDDING FAIR</span>
+    <h2>지역별 웨딩박람회</h2>
+    <p>관심 있는 웨딩박람회를 선택해 자세한 정보를 확인해보세요.</p>
+  </div>
+
+  <div class="fair-grid">
+
+    <article class="fair-card">
+      <a href="daegu-exco-interburgo-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/daegu-exco-interburgo-wedding-fair-01.png" alt="대구 엑스코 인터불고 웨딩박람회">
+          <span class="fair-region">대구</span>
+        </div>
+        <div class="fair-content">
+          <h3>대구 엑스코 인터불고 웨딩박람회</h3>
+          <!-- AUTO_EVENT:daegu-exco-interburgo:list:start -->
+          <div class="fair-date">2026년 8월 29일(토)~8월 30일(일)</div>
+          <p>대구 북구 유통단지로 80 인터불고엑스코</p>
+          <!-- AUTO_EVENT:daegu-exco-interburgo:list:end -->
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="direct-wedding-preparation-fair.html">
+        <div class="fair-image">
+          <img src="assets/direct-wedding-preparation-fair-01.png" alt="다이렉트 결혼준비 웨딩박람회">
+          <span class="fair-region">전국</span>
+        </div>
+        <div class="fair-content">
+          <h3>다이렉트 결혼준비 웨딩박람회</h3>
+          <p>결혼 준비에 필요한 웨딩 관련 정보와 다양한 준비 항목을 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="busan-w-wedding-city-fair.html">
+        <div class="fair-image">
+          <img src="assets/busan-w-wedding-city-fair-01.png" alt="부산 W웨딩시티 웨딩박람회">
+          <span class="fair-region">부산</span>
+        </div>
+        <div class="fair-content">
+          <h3>부산 W웨딩시티 웨딩박람회</h3>
+          <p>부산 지역 웨딩홀과 스드메 등 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="daejeon-convention-center-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/daejeon-convention-center-wedding-fair-01.png" alt="대전 컨벤션센터 웨딩박람회">
+          <span class="fair-region">대전</span>
+        </div>
+        <div class="fair-content">
+          <h3>대전 컨벤션센터 웨딩박람회</h3>
+          <p>대전 지역에서 결혼을 준비하는 예비부부를 위한 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="ilsan-kintex-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/ilsan-kintex-wedding-fair-01.png" alt="일산 킨텍스 웨딩박람회">
+          <span class="fair-region">일산</span>
+        </div>
+        <div class="fair-content">
+          <h3>일산 킨텍스 웨딩박람회</h3>
+          <p>일산과 경기 서북부 지역의 웨딩박람회 및 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="yongsan-ipark-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/yongsan-ipark-wedding-fair-01.png" alt="용산 아이파크 웨딩박람회">
+          <span class="fair-region">서울</span>
+        </div>
+        <div class="fair-content">
+          <h3>용산 아이파크 웨딩박람회</h3>
+          <p>서울 용산 지역 웨딩박람회와 다양한 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="suwon-messe-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/suwon-messe-wedding-fair-01.png" alt="수원 메쎄 웨딩박람회">
+          <span class="fair-region">수원</span>
+        </div>
+        <div class="fair-content">
+          <h3>수원 메쎄 웨딩박람회</h3>
+          <p>수원과 경기 남부 지역의 웨딩박람회 및 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="lotte-busan-main-store-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/lotte-busan-main-store-wedding-fair-01.png" alt="롯데백화점 부산본점 웨딩박람회">
+          <span class="fair-region">부산</span>
+        </div>
+        <div class="fair-content">
+          <h3>롯데백화점 부산본점 웨딩박람회</h3>
+          <p>부산 지역 예비부부를 위한 웨딩박람회와 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="knn-busan-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/knn-busan-wedding-fair-01.png" alt="KNN 부산 웨딩박람회">
+          <span class="fair-region">부산</span>
+        </div>
+        <div class="fair-content">
+          <h3>KNN 부산 웨딩박람회</h3>
+          <p>부산 웨딩박람회와 웨딩홀, 스드메 등 다양한 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="gangnam-weddex-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/gangnam-weddex-wedding-fair-01.png" alt="강남 웨덱스 웨딩박람회">
+          <span class="fair-region">서울</span>
+        </div>
+        <div class="fair-content">
+          <h3>강남 웨덱스 웨딩박람회</h3>
+          <p>서울 강남 지역 웨딩박람회와 결혼 준비 관련 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="ulsan-lotte-department-store-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/ulsan-lotte-department-store-wedding-fair-01.png" alt="울산 롯데백화점 웨딩박람회">
+          <span class="fair-region">울산</span>
+        </div>
+        <div class="fair-content">
+          <h3>울산 롯데백화점 웨딩박람회</h3>
+          <p>울산 지역에서 결혼을 준비하는 예비부부를 위한 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="incheon-songdo-convensia-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/incheon-songdo-convensia-wedding-fair-01.png" alt="인천 송도컨벤시아 웨딩박람회">
+          <span class="fair-region">인천</span>
+        </div>
+        <div class="fair-content">
+          <h3>인천 송도컨벤시아 웨딩박람회</h3>
+          <p>인천과 송도 지역 웨딩박람회 및 다양한 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="wonju-ak-plaza-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/wonju-ak-plaza-wedding-fair-01.png" alt="원주 AK플라자 웨딩박람회">
+          <span class="fair-region">원주</span>
+        </div>
+        <div class="fair-content">
+          <h3>원주 AK플라자 웨딩박람회</h3>
+          <p>원주와 강원 지역 예비부부를 위한 웨딩박람회 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="iwc-cheonan-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/iwc-cheonan-wedding-fair-01.png" alt="IWC 천안 웨딩박람회">
+          <span class="fair-region">천안</span>
+        </div>
+        <div class="fair-content">
+          <h3>IWC 천안 웨딩박람회</h3>
+          <p>천안과 충남 지역 웨딩박람회 및 결혼 준비에 필요한 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="seoul-setec-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/seoul-setec-wedding-fair-01.png" alt="서울 세텍 웨딩박람회">
+          <span class="fair-region">서울</span>
+        </div>
+        <div class="fair-content">
+          <h3>서울 세텍 웨딩박람회</h3>
+          <p>서울 지역 웨딩박람회와 웨딩홀, 스드메 등 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="gwangmyeong-ak-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/gwangmyeong-ak-wedding-fair-01.png" alt="광명 AK 대형웨딩박람회">
+          <span class="fair-region">광명</span>
+        </div>
+        <div class="fair-content">
+          <h3>광명 AK 대형웨딩박람회</h3>
+          <p>광명과 경기 지역의 웨딩박람회 및 결혼 준비 관련 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="gwangju-convention-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/gwangju-convention-wedding-fair-01.png" alt="광주 컨벤션 웨딩박람회">
+          <span class="fair-region">광주</span>
+        </div>
+        <div class="fair-content">
+          <h3>광주 컨벤션 웨딩박람회</h3>
+          <p>광주 지역 웨딩박람회와 결혼 준비에 필요한 다양한 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="gimhae-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/gimhae-wedding-fair-01.png" alt="김해 웨딩박람회">
+          <span class="fair-region">김해</span>
+        </div>
+        <div class="fair-content">
+          <h3>김해 웨딩박람회</h3>
+          <p>김해와 경남 지역의 웨딩박람회 및 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="uijeongbu-shinsegae-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/uijeongbu-shinsegae-wedding-fair-01.png" alt="의정부 신세계 웨딩박람회">
+          <span class="fair-region">의정부</span>
+        </div>
+        <div class="fair-content">
+          <h3>의정부 신세계 웨딩박람회</h3>
+          <p>의정부와 경기 북부 지역의 웨딩박람회 및 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="dongtan-lotte-department-store-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/dongtan-lotte-department-store-wedding-fair-01.png" alt="동탄 롯데백화점 웨딩박람회">
+          <span class="fair-region">동탄</span>
+        </div>
+        <div class="fair-content">
+          <h3>동탄 롯데백화점 웨딩박람회</h3>
+          <p>동탄과 화성 지역 웨딩박람회 및 결혼 준비에 필요한 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="busan-lamour-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/busan-lamour-wedding-fair-01.png" alt="부산 라모르 웨딩박람회">
+          <span class="fair-region">부산</span>
+        </div>
+        <div class="fair-content">
+          <h3>부산 라모르 웨딩박람회</h3>
+          <p>부산 지역 웨딩박람회와 다양한 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="busan-charles-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/busan-charles-wedding-fair-01.png" alt="부산 찰스 웨딩박람회">
+          <span class="fair-region">부산</span>
+        </div>
+        <div class="fair-content">
+          <h3>부산 찰스 웨딩박람회</h3>
+          <p>부산 지역 웨딩박람회와 웨딩홀, 스드메 등 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="bucheon-withyou-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/bucheon-withyou-wedding-fair-01.png" alt="부천 위드유 웨딩박람회">
+          <span class="fair-region">부천</span>
+        </div>
+        <div class="fair-content">
+          <h3>부천 위드유 웨딩박람회</h3>
+          <p>부천과 경기 서부 지역의 웨딩박람회 및 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="suwon-ak-plaza-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/suwon-ak-plaza-wedding-fair-01.png" alt="수원 AK플라자 웨딩박람회">
+          <span class="fair-region">수원</span>
+        </div>
+        <div class="fair-content">
+          <h3>수원 AK플라자 웨딩박람회</h3>
+          <p>수원과 경기 남부 지역의 웨딩박람회 및 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="suwon-galleria-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/suwon-galleria-wedding-fair-01.png" alt="수원 갤러리아 웨딩박람회">
+          <span class="fair-region">수원</span>
+        </div>
+        <div class="fair-content">
+          <h3>수원 갤러리아 웨딩박람회</h3>
+          <p>수원 지역 웨딩박람회와 다양한 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="goyang-starfield-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/goyang-starfield-wedding-fair-01.png" alt="고양 스타필드 웨딩박람회">
+          <span class="fair-region">고양</span>
+        </div>
+        <div class="fair-content">
+          <h3>고양 스타필드 웨딩박람회</h3>
+          <p>고양과 일산, 경기 서북부 지역의 웨딩박람회 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="fair-card">
+      <a href="ansan-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/ansan-lotte-department-store-wedding-fair-01.png" alt="안산 롯데백화점 웨딩박람회">
+          <span class="fair-region">안산</span>
+        </div>
+        <div class="fair-content">
+         <h3>안산 웨딩박람회</h3>
+<p>안산 웨딩박람회 일정과 무료 사전신청 정보를 확인하세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+        <!-- 잠실 롯데백화점 웨딩박람회 -->
+    <article class="fair-card">
+      <a href="jamsil-lotte-department-store-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/jamsil-lotte-department-store-wedding-fair-01.png"
+               alt="잠실 롯데백화점 웨딩박람회">
+          <span class="fair-region">서울</span>
+        </div>
+        <div class="fair-content">
+          <h3>잠실 롯데백화점 웨딩박람회</h3>
+          <p>서울 잠실 지역의 웨딩박람회 및 결혼 준비에 필요한 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- 제주 웨딩박람회 -->
+    <article class="fair-card">
+      <a href="jeju-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/jeju-wedding-fair-01.png"
+               alt="제주 웨딩박람회">
+          <span class="fair-region">제주</span>
+        </div>
+        <div class="fair-content">
+          <h3>제주 웨딩박람회</h3>
+          <p>제주 지역의 웨딩박람회와 웨딩홀, 스드메 등 다양한 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- 진주 웨딩박람회 -->
+    <article class="fair-card">
+      <a href="jinju-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/jinju-wedding-fair-01.png"
+               alt="진주 웨딩박람회">
+          <span class="fair-region">진주</span>
+        </div>
+        <div class="fair-content">
+          <h3>진주 웨딩박람회</h3>
+          <p>진주와 경남 서부 지역의 웨딩박람회 및 다양한 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- 창원 웨딩박람회 -->
+    <article class="fair-card">
+      <a href="changwon-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/changwon-wedding-fair-01.png"
+               alt="창원 웨딩박람회">
+          <span class="fair-region">창원</span>
+        </div>
+        <div class="fair-content">
+          <h3>창원 웨딩박람회</h3>
+          <p>창원과 경남 지역의 웨딩박람회 및 결혼 준비에 필요한 다양한 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- 천안 갤러리아 웨딩박람회 -->
+    <article class="fair-card">
+      <a href="cheonan-galleria-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/cheonan-galleria-wedding-fair-01.png"
+               alt="천안 갤러리아 웨딩박람회">
+          <span class="fair-region">천안</span>
+        </div>
+        <div class="fair-content">
+          <h3>천안 갤러리아 웨딩박람회</h3>
+          <p>천안과 충남 지역의 웨딩박람회 및 다양한 결혼 준비 정보를 확인해보세요.</p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+
+        <!-- 청주 오스코 웨딩박람회 -->
+    <article class="fair-card">
+      <a href="cheongju-osco-wedding-fair.html">
+        <div class="fair-image">
+          <img src="assets/cheongju-osco-wedding-fair-01.png"
+               alt="청주 오스코 웨딩박람회">
+          <span class="fair-region">청주</span>
+        </div>
+
+        <div class="fair-content">
+          <h3>청주 오스코 웨딩박람회</h3>
+          <p>
+            청주와 충북 지역의 웨딩박람회 및 결혼 준비에 필요한
+            다양한 정보를 확인해보세요.
+          </p>
+          <span class="fair-button">자세히 알아보기 →</span>
+        </div>
+      </a>
+    </article>
+    
+  </div>
+
+</section>
+
+<section class="guide">
+
+  <div class="guide-inner">
+
+    <h2>웨딩박람회 방문 전 체크하세요</h2>
+
+    <p>
+      결혼 준비는 여러 항목을 동시에 비교해야 하는 만큼
+      방문 전에 원하는 조건과 예산을 미리 정리해두면
+      필요한 정보를 더욱 효율적으로 확인할 수 있습니다.
+    </p>
+
+    <div class="guide-grid">
+
+      <div class="guide-card">
+        <strong>💒 예식 일정</strong>
+        <p>
+          희망하는 결혼 시기와 지역,
+          예상 하객 수를 미리 정리해보세요.
+        </p>
+      </div>
+
+      <div class="guide-card">
+        <strong>💰 예상 예산</strong>
+        <p>
+          웨딩홀과 스드메, 예물, 혼수 등
+          항목별 예상 예산을 정리해보세요.
+        </p>
+      </div>
+
+      <div class="guide-card">
+        <strong>✓ 계약 조건</strong>
+        <p>
+          계약 전 포함 항목과 추가 비용,
+          변경 및 취소 조건을 확인하세요.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <div class="footer-inner">
+
+    <div class="footer-logo">
+      라이프가이드
+    </div>
+
+    <p>
+      라이프가이드는 건강, 보험, 금융, 법률, 웨딩 등
+      생활에 필요한 다양한 정보를 제공합니다.
+    </p>
+
+    <p style="margin-top:18px;">
+      각 웨딩박람회의 일정, 장소, 참여 업체 및 혜택은
+      변경될 수 있으므로 방문 및 신청 전 해당 페이지에서
+      최신 정보를 확인하시기 바랍니다.
+    </p>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
