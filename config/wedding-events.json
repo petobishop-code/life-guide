@@ -1,0 +1,20 @@
+{
+  "sourceUrl": "https://replyalba.com/intros/weddingA/",
+  "events": [
+    {
+      "id": "daegu-exco-interburgo",
+      "detailFile": "daegu-exco-interburgo-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "requiredKeywords": [
+        "대구",
+        "연웨딩",
+        "엑스코인터불고"
+      ],
+      "excludedKeywords": [
+        "대박웨딩"
+      ],
+      "fallbackVenue": "대구 북구 유통단지로 80 인터불고엑스코",
+      "matchPhrase": "대구 연웨딩 엑스코인터불고 웨딩박람회"
+    }
+  ]
+}
