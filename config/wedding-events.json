@@ -2,19 +2,311 @@
   "sourceUrl": "https://replyalba.com/intros/weddingA/",
   "events": [
     {
+      "id": "bucheon-withyou",
+      "displayName": "부천 위드유 웨딩박람회",
+      "detailFile": "bucheon-withyou-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "부천 위드유 웨딩박람회",
+      "requiredKeywords": [
+        "부천",
+        "위드유"
+      ],
+      "fallbackVenue": "삼성스토어 부천중동",
+      "applyUrl": "https://replyalba.com/pt/IZ0BAFxBAr"
+    },
+    {
+      "id": "busan-charles",
+      "displayName": "부산 찰스 웨딩박람회",
+      "detailFile": "busan-charles-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "부산 찰스 웨딩박람회",
+      "requiredKeywords": [
+        "부산",
+        "찰스"
+      ],
+      "fallbackVenue": "한라시그마타워 1F",
+      "applyUrl": "https://replyalba.com/pt/YnMW6eOiUJ"
+    },
+    {
+      "id": "busan-lamour",
+      "displayName": "부산 라모르 웨딩박람회",
+      "detailFile": "busan-lamour-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "부산 라모르 웨딩박람회",
+      "requiredKeywords": [
+        "부산",
+        "라모르"
+      ],
+      "fallbackVenue": "라모르웨딩 부산",
+      "applyUrl": "https://replyalba.com/pt/SO0299MJDg"
+    },
+    {
+      "id": "busan-w-wedding-city-fair",
+      "displayName": "부산 W웨딩시티 웨딩박람회",
+      "detailFile": "busan-w-wedding-city-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "W웨딩시티 부산웨딩박람회",
+      "requiredKeywords": [
+        "부산",
+        "W웨딩시티"
+      ],
+      "fallbackVenue": "W웨딩시티",
+      "applyUrl": "https://replyalba.com/pt/LOQI95No4q"
+    },
+    {
+      "id": "cheonan-galleria",
+      "displayName": "천안 갤러리아 웨딩박람회",
+      "detailFile": "cheonan-galleria-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "천안 갤러리아 대형 웨딩박람회",
+      "requiredKeywords": [
+        "천안",
+        "갤러리아"
+      ],
+      "fallbackVenue": "갤러리아백화점 센터시티점 7F",
+      "applyUrl": "https://replyalba.com/pt/Y0cJ1kSzer"
+    },
+    {
       "id": "daegu-exco-interburgo",
+      "displayName": "대구 엑스코 인터불고 웨딩박람회",
       "detailFile": "daegu-exco-interburgo-wedding-fair.html",
       "listingFile": "wedding.html",
+      "matchPhrase": "대구 연웨딩 엑스코인터불고 웨딩박람회",
       "requiredKeywords": [
         "대구",
         "연웨딩",
         "엑스코인터불고"
       ],
-      "excludedKeywords": [
-        "대박웨딩"
+      "fallbackVenue": "인터불고엑스코",
+      "applyUrl": "https://replyalba.com/pt/MJgAUYRntM"
+    },
+    {
+      "id": "daejeon-convention-center",
+      "displayName": "대전 컨벤션센터 웨딩박람회",
+      "detailFile": "daejeon-convention-center-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "대전 컨벤션센터 대형 웨딩박람회",
+      "requiredKeywords": [
+        "대전",
+        "컨벤션센터",
+        "대형"
       ],
-      "fallbackVenue": "대구 북구 유통단지로 80 인터불고엑스코",
-      "matchPhrase": "대구 연웨딩 엑스코인터불고 웨딩박람회"
+      "fallbackVenue": "DCC 대전 컨벤션센터 1층",
+      "applyUrl": "https://replyalba.com/pt/IA50YLQNSl"
+    },
+    {
+      "id": "direct-wedding-preparation-fair",
+      "displayName": "다이렉트 결혼준비 웨딩박람회",
+      "detailFile": "direct-wedding-preparation-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "다이렉트 결혼준비 웨딩박람회",
+      "requiredKeywords": [
+        "다이렉트",
+        "결혼준비"
+      ],
+      "fallbackVenue": "압구정 서울본사",
+      "applyUrl": "https://replyalba.com/pt/yOK34hXK8U"
+    },
+    {
+      "id": "goyang-starfield",
+      "displayName": "고양 스타필드 웨딩박람회",
+      "detailFile": "goyang-starfield-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "스타필드 고양 그랜드 웨딩페어",
+      "requiredKeywords": [
+        "고양",
+        "스타필드"
+      ],
+      "fallbackVenue": "스타필드 고양 B1층",
+      "applyUrl": "https://replyalba.com/pt/GnNcyV4arR"
+    },
+    {
+      "id": "gwangju-convention",
+      "displayName": "광주 컨벤션 웨딩박람회",
+      "detailFile": "gwangju-convention-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "광주 컨벤션 웨딩박람회",
+      "requiredKeywords": [
+        "광주",
+        "컨벤션"
+      ],
+      "fallbackVenue": "컨벤션타워 2층",
+      "applyUrl": "https://replyalba.com/pt/xLdDEdLTJh"
+    },
+    {
+      "id": "gwangmyeong-ak",
+      "displayName": "광명 AK 대형웨딩박람회",
+      "detailFile": "gwangmyeong-ak-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "광명 AK 대형 웨딩박람회",
+      "requiredKeywords": [
+        "광명",
+        "AK",
+        "대형"
+      ],
+      "fallbackVenue": "AK PLAZA 광명 B2",
+      "applyUrl": "https://replyalba.com/pt/IJlt4YYXNm"
+    },
+    {
+      "id": "ilsan-kintex",
+      "displayName": "일산 킨텍스 웨딩박람회",
+      "detailFile": "ilsan-kintex-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "일산킨텍스 최대규모 대형 웨딩박람회",
+      "requiredKeywords": [
+        "일산",
+        "킨텍스"
+      ],
+      "fallbackVenue": "킨텍스 2전시장",
+      "applyUrl": "https://replyalba.com/pt/FPcVlFXfx0"
+    },
+    {
+      "id": "incheon-songdo-convensia",
+      "displayName": "인천 송도컨벤시아 웨딩박람회",
+      "detailFile": "incheon-songdo-convensia-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "인천 송도컨벤시아 대형 웨딩박람회",
+      "requiredKeywords": [
+        "인천",
+        "송도컨벤시아",
+        "대형"
+      ],
+      "fallbackVenue": "송도컨벤시아",
+      "applyUrl": "https://replyalba.com/pt/BwI4OKKxIH"
+    },
+    {
+      "id": "iwc-cheonan",
+      "displayName": "IWC 천안 웨딩박람회",
+      "detailFile": "iwc-cheonan-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "IWC 천안 웨딩박람회",
+      "requiredKeywords": [
+        "IWC",
+        "천안"
+      ],
+      "fallbackVenue": "IWC 천안 웨딩박람회",
+      "applyUrl": "https://replyalba.com/pt/LZQ7xtdSsB"
+    },
+    {
+      "id": "jamsil-lotte-department-store",
+      "displayName": "잠실 롯데백화점 웨딩박람회",
+      "detailFile": "jamsil-lotte-department-store-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "잠실 롯데백화점 대형 웨딩박람회",
+      "requiredKeywords": [
+        "잠실",
+        "롯데백화점"
+      ],
+      "fallbackVenue": "롯데백화점 잠실점 10층",
+      "applyUrl": "https://replyalba.com/pt/ByRVhAhS1D"
+    },
+    {
+      "id": "jinju",
+      "displayName": "진주 웨딩박람회",
+      "detailFile": "jinju-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "진주 최대규모 웨딩박람회",
+      "requiredKeywords": [
+        "진주",
+        "최대규모"
+      ],
+      "fallbackVenue": "LG전자베스트샵 진주시청점",
+      "applyUrl": "https://replyalba.com/pt/Axg5BrS2Hy"
+    },
+    {
+      "id": "knn-busan",
+      "displayName": "KNN 부산 웨딩박람회",
+      "detailFile": "knn-busan-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "KNN 부산 웨딩엑스포",
+      "requiredKeywords": [
+        "KNN",
+        "부산",
+        "웨딩엑스포"
+      ],
+      "fallbackVenue": "KNN방송국 특별행사장",
+      "applyUrl": "https://replyalba.com/pt/10OMZg0DPSC"
+    },
+    {
+      "id": "suwon-ak-plaza",
+      "displayName": "수원 AK플라자 웨딩박람회",
+      "detailFile": "suwon-ak-plaza-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "수원 AK플라자 웨딩박람회",
+      "requiredKeywords": [
+        "수원",
+        "AK플라자"
+      ],
+      "fallbackVenue": "AK플라자 수원",
+      "applyUrl": "https://replyalba.com/pt/IuHG4W9lk4"
+    },
+    {
+      "id": "suwon-galleria",
+      "displayName": "수원 갤러리아 웨딩박람회",
+      "detailFile": "suwon-galleria-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "수원 갤러리아 광교 대형 웨딩박람회",
+      "requiredKeywords": [
+        "수원",
+        "갤러리아",
+        "광교"
+      ],
+      "fallbackVenue": "수원 갤러리아 백화점",
+      "applyUrl": "https://replyalba.com/pt/UGdytZ24Gq"
+    },
+    {
+      "id": "uijeongbu-shinsegae",
+      "displayName": "의정부 신세계 웨딩박람회",
+      "detailFile": "uijeongbu-shinsegae-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "더셜리 의정부 신세계 웨딩박람회",
+      "requiredKeywords": [
+        "의정부",
+        "신세계",
+        "더셜리"
+      ],
+      "fallbackVenue": "신세계백화점 8층",
+      "applyUrl": "https://replyalba.com/pt/zS89lovoc9"
+    },
+    {
+      "id": "ulsan-lotte-department-store",
+      "displayName": "울산 롯데백화점 웨딩박람회",
+      "detailFile": "ulsan-lotte-department-store-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "울산 롯데백화점 웨딩박람회",
+      "requiredKeywords": [
+        "울산",
+        "롯데백화점"
+      ],
+      "fallbackVenue": "롯데백화점 울산점 B1",
+      "applyUrl": "https://replyalba.com/pt/D8avXLYA5m"
+    },
+    {
+      "id": "wonju-ak-plaza",
+      "displayName": "원주 AK플라자 웨딩박람회",
+      "detailFile": "wonju-ak-plaza-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "AK플라자 원주 그랜드 웨딩페어",
+      "requiredKeywords": [
+        "원주",
+        "AK플라자"
+      ],
+      "fallbackVenue": "AK플라자 원주 6층",
+      "applyUrl": "https://replyalba.com/pt/WuhMduFykk"
+    },
+    {
+      "id": "yongsan-ipark",
+      "displayName": "용산 아이파크 웨딩박람회",
+      "detailFile": "yongsan-ipark-wedding-fair.html",
+      "listingFile": "wedding.html",
+      "matchPhrase": "용산 아이파크 웨딩박람회",
+      "requiredKeywords": [
+        "용산",
+        "아이파크",
+        "웨딩박람회"
+      ],
+      "fallbackVenue": "아이파크몰 리빙파크 5층",
+      "applyUrl": "https://replyalba.com/pt/DHRNyWlY7O"
     }
   ]
 }

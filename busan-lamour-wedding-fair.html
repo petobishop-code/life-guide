@@ -898,6 +898,17 @@
       }
     }
 
+  
+    /* 자동 웨딩 일정 정보 */
+    .auto-event-wrap { max-width:900px; margin:-30px auto 55px; padding:0 20px; position:relative; z-index:2; }
+    .auto-event-box { padding:28px; background:#fff; border:1px solid #f3ded9; border-radius:20px; box-shadow:0 15px 45px rgba(41,37,36,.09); }
+    .auto-event-box h2 { margin-bottom:18px; font-size:24px; line-height:1.45; letter-spacing:-1px; }
+    .auto-event-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+    .auto-event-item { padding:18px; background:#fff8f7; border-radius:14px; }
+    .auto-event-item span { display:block; margin-bottom:5px; color:#be4964; font-size:13px; font-weight:800; }
+    .auto-event-item strong { display:block; color:#292524; font-size:16px; line-height:1.6; }
+    .auto-event-note { margin:16px 0 0; color:#78716c; font-size:13px; line-height:1.8; }
+    @media(max-width:650px){ .auto-event-grid{grid-template-columns:1fr;} .auto-event-box{padding:22px;} }
   </style>
 </head>
 
@@ -973,6 +984,27 @@
 
   </div>
 </section>
+<section class="auto-event-wrap" aria-label="부산 라모르 웨딩박람회 최신 행사 정보">
+  <div class="auto-event-box">
+    <h2>부산 라모르 웨딩박람회 최신 일정</h2>
+    <div class="auto-event-grid">
+      <div class="auto-event-item">
+        <span>행사 일정</span>
+        <!-- AUTO_EVENT:busan-lamour:date:start -->
+        <strong>최신 일정 확인 중</strong>
+        <!-- AUTO_EVENT:busan-lamour:date:end -->
+      </div>
+      <div class="auto-event-item">
+        <span>행사 장소</span>
+        <!-- AUTO_EVENT:busan-lamour:venue:start -->
+        <strong>라모르웨딩 부산</strong>
+        <!-- AUTO_EVENT:busan-lamour:venue:end -->
+      </div>
+    </div>
+    <p class="auto-event-note">행사 일정과 장소는 변경될 수 있습니다. <!-- AUTO_EVENT:busan-lamour:checked:start -->마지막 일정 확인: 자동 확인 전<!-- AUTO_EVENT:busan-lamour:checked:end --></p>
+  </div>
+</section>
+
 
 <div class="toc-wrap">
   <div class="toc">
