@@ -699,6 +699,22 @@
     .past-schedule .fair-card:hover { opacity: 1; }
     .schedule-count-note { display:block; margin-top:8px; color:#78716c; font-size:12px; font-weight:700; }
     @media (max-width:650px){ .past-schedule { padding:58px 20px 68px; } }
+
+    /* 4차: 지역 웨딩박람회 허브 */
+    .region-hub-section { max-width:1200px; margin:0 auto; padding:68px 20px 18px; }
+    .region-hub-title { text-align:center; margin-bottom:30px; }
+    .region-hub-title span { color:#e8798f; font-size:13px; font-weight:800; }
+    .region-hub-title h2 { margin-top:6px; font-size:31px; letter-spacing:-1px; }
+    .region-hub-title p { max-width:760px; margin:10px auto 0; color:#78716c; font-size:14px; }
+    .region-hub-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .region-hub-card { display:block; padding:23px; background:#fff; border:1px solid #f1e7e3; border-radius:17px; transition:.2s; }
+    .region-hub-card:hover { transform:translateY(-3px); box-shadow:0 10px 28px rgba(41,37,36,.07); border-color:#efcbd3; }
+    .region-hub-card strong { display:block; margin-bottom:7px; font-size:18px; }
+    .region-hub-card p { color:#78716c; font-size:13px; line-height:1.7; }
+    .region-hub-card em { display:block; margin-top:12px; color:#e8798f; font-size:13px; font-style:normal; font-weight:800; }
+    @media(max-width:900px){ .region-hub-grid{grid-template-columns:repeat(2,1fr);} }
+    @media(max-width:650px){ .region-hub-section{padding:54px 20px 10px;} .region-hub-grid{grid-template-columns:1fr;} }
+
 </style>
 </head>
 <body>
@@ -709,15 +725,14 @@
 </a>
 <nav class="nav">
 <a href="index.html">홈</a>
+<a class="active" href="wedding.html">웨딩</a>
 <a href="health.html">건강</a>
 <a href="insurance.html">보험</a>
-<a class="active" href="wedding.html">웨딩</a>
 <a href="finance.html">금융</a>
 <a href="law.html">법률</a>
 <a href="car.html">자동차</a>
 <a href="travel.html">여행</a>
 <a href="education.html">교육</a>
-<a href="life.html">생활정보</a>
 </nav>
 </div>
 </header>
@@ -752,6 +767,23 @@
 <p class="schedule-note">자동 확인 대상은 외부 일정 페이지와 일치하는 행사 23개입니다. 일정이 연결되지 않은 박람회는 상세페이지의 사전신청 링크에서 최신 날짜를 최종 확인해 주세요.</p>
 </div>
 </section>
+
+<section class="region-hub-section" aria-label="지역별 웨딩박람회 허브">
+  <div class="region-hub-title">
+    <span>REGIONAL WEDDING FAIR</span>
+    <h2>지역별 웨딩박람회 일정 모아보기</h2>
+    <p>전국 일정에서 바로 행사 하나를 고르기 어렵다면, 먼저 지역 허브에서 가까운 박람회를 묶어 비교해보세요.</p>
+  </div>
+  <div class="region-hub-grid">
+    <a class="region-hub-card" href="seoul-wedding-fair.html"><strong>서울 웨딩박람회</strong><p>강남·SETEC·용산·잠실 행사들을 권역별로 확인합니다.</p><em>서울 일정 모아보기 →</em></a>
+    <a class="region-hub-card" href="gyeonggi-wedding-fair.html"><strong>경기 웨딩박람회</strong><p>일산·광명·부천·동탄·의정부·고양·안산 일정을 연결합니다.</p><em>경기 일정 모아보기 →</em></a>
+    <a class="region-hub-card" href="suwon-wedding-fair.html"><strong>수원 웨딩박람회</strong><p>수원메쎄·AK플라자·갤러리아 세 행사를 따로 비교합니다.</p><em>수원 일정 모아보기 →</em></a>
+    <a class="region-hub-card" href="busan-wedding-fair.html"><strong>부산 웨딩박람회</strong><p>W웨딩시티·KNN·롯데 부산본점·라모르·찰스 일정을 묶었습니다.</p><em>부산 일정 모아보기 →</em></a>
+    <a class="region-hub-card" href="daegu-wedding-fair.html"><strong>대구 웨딩박람회</strong><p>대구 엑스코·인터불고권 행사와 방문 전 비교 기준을 확인합니다.</p><em>대구 일정 모아보기 →</em></a>
+    <a class="region-hub-card" href="daejeon-chungcheong-wedding-fair.html"><strong>대전·충청 웨딩박람회</strong><p>대전 DCC·천안·청주 오스코 일정을 생활권별로 연결합니다.</p><em>충청권 일정 모아보기 →</em></a>
+  </div>
+</section>
+
 <section class="section">
 <div class="section-title">
 <span>WEDDING FAIR</span>
